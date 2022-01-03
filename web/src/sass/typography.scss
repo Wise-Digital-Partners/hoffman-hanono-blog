@@ -1,0 +1,88 @@
+body {
+  @apply font-body text-gray-400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-one,
+.heading-two,
+.heading-three,
+.heading-four,
+.heading-five,
+.heading-six {
+  @apply text-gray-900 font-heading;
+}
+
+h1,
+.heading-one {
+  @apply text-mobile5xl md:text-5xl leading-snug font-extrabold mb-5 md:mb-8;
+}
+
+h2,
+.heading-two {
+  @apply text-mobile4xl md:text-4xl leading-tight font-bold mb-5 md:mb-6;
+}
+
+h3,
+.heading-three {
+  @apply text-mobile3xl md:text-3xl leading-tight font-bold mb-5 md:mb-6;
+}
+
+h4,
+.heading-four {
+  @apply text-mobile2xl md:text-2xl leading-tight font-bold mb-5 md:mb-6;
+}
+
+h5,
+.heading-five {
+  @apply text-mobilexl md:text-xl leading-tight font-bold mb-5 md:mb-6;
+}
+
+h6,
+.heading-six {
+  @apply text-mobilexl md:text-xl leading-tight font-bold mb-5 md:mb-6;
+}
+
+p {
+  @apply text-base leading-7 mb-6;
+}
+
+.text-2xlarge {
+  @apply text-2xl leading-10;
+}
+
+.text-xlarge {
+  @apply text-xl leading-8;
+}
+
+.text-large {
+  @apply text-lg leading-7;
+}
+
+.text-medium {
+  @apply text-md leading-6;
+}
+
+.text-small {
+  @apply text-sm leading-6;
+}
+
+.decorative-text {
+  @apply text-primary_600 text-sm md:text-base font-medium uppercase flex items-center mb-8;
+  letter-spacing: 1.75px;
+  &:before {
+    content: "";
+    width: 64px;
+    height: 1px;
+    @apply bg-primary_600 mr-8 base-animation-ease;
+  }
+  @screen md {
+    &:before {
+      width: 104px;
+    }
+  }
+}

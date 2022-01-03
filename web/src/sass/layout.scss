@@ -1,0 +1,24 @@
+.container {
+    @apply max-w-7xl w-full mx-auto px-4;
+}
+
+.wrapper {
+    @apply relative mb-20;
+    @screen md {
+        @apply mb-32;
+    }
+}
+
+
+#call-to-action-module {
+    @screen md {
+        &::before {
+            content: '';
+            width: calc(100% - 32px);
+            height: calc(100% - 32px);
+            top: 16px;
+            left: 16px;
+            @apply absolute border border-solid border-white rounded-3xl;
+        }
+    }
+}

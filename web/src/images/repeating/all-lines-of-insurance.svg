@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="74px" viewBox="0 0 74 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>All Lines of Insurance</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Homepage" transform="translate(-681.000000, -2515.000000)">
+            <g id="Why-Us" transform="translate(120.000000, 2380.000000)">
+                <g id="Group" transform="translate(145.000000, 134.000000)">
+                    <g id="All-Lines-of-Insurance" transform="translate(416.000000, 1.000000)">
+                        <polyline id="Stroke-1" stroke="#002091" points="9 58 9 36 66 36"></polyline>
+                        <line x1="37.5" y1="23" x2="37.5" y2="42" id="Stroke-3" stroke="#002091"></line>
+                        <line x1="37.5" y1="46.5" x2="37.5" y2="46.5" id="Stroke-4" stroke="#002091"></line>
+                        <g id="Group-10">
+                            <polygon id="Stroke-5" stroke="#002091" fill="#002091" points="25.9166667 22.75 48.0833333 22.75 48.0833333 0.583333333 25.9166667 0.583333333"></polygon>
+                            <polygon id="Stroke-5" stroke="#FFFFFF" points="28.9166667 19.75 44.9166667 19.75 44.9166667 3.75 28.9166667 3.75"></polygon>
+                            <polygon id="Stroke-7" stroke="#002091" fill="#E2E6F2" points="0.583333333 73.4166667 16.4166667 73.4166667 16.4166667 57.5833333 0.583333333 57.5833333"></polygon>
+                            <polygon id="Stroke-8" stroke="#002091" fill="#E2E6F2" points="57.5833333 73.4166667 73.4166667 73.4166667 73.4166667 57.5833333 57.5833333 57.5833333"></polygon>
+                            <polygon id="Stroke-9" stroke="#002091" fill="#E2E6F2" points="29.0833333 73.4166667 44.9166667 73.4166667 44.9166667 57.5833333 29.0833333 57.5833333"></polygon>
+                        </g>
+                        <line x1="66.5" y1="36" x2="66.5" y2="57" id="Stroke-2" stroke="#002091"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="38px" viewBox="0 0 43 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>quote</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M13.86,10.5644 C9.3968,10.5644 5.7764,14.2884 5.7764,18.8832 C5.7764,23.478 9.3968,27.1992 13.86,27.1992 C21.9436,27.1992 16.5536,43.2796 5.7764,43.2796 L5.7764,47.1604 C25.0096,47.1604 32.5472,10.5644 13.86,10.5644 L13.86,10.5644 Z M37.1476,10.5644 C32.6816,10.5644 29.064,14.2884 29.064,18.8832 C29.064,23.478 32.6816,27.1992 37.1476,27.1992 C45.2312,27.1992 39.8412,43.2796 29.064,43.2796 L29.064,47.1604 C48.2972,47.1604 55.8348,10.5644 37.1476,10.5644 L37.1476,10.5644 Z" id="path-1"></path>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Testimonials" transform="translate(-700.000000, -206.000000)">
+            <g id="quote" transform="translate(720.000000, 224.000000) scale(-1, 1) translate(-720.000000, -224.000000) translate(692.000000, 196.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <g id="Colors/Blue" mask="url(#mask-2)" fill="#002091" fill-rule="evenodd">
+                    <rect id="Rectangle-3" x="0" y="0" width="56" height="56"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

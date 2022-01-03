@@ -1,0 +1,38 @@
+.base-animation-ease {
+    @apply transition-all duration-300 ease-linear;
+}
+
+html, body {
+    @apply overflow-x-hidden max-w-full;
+}
+
+a {
+    @apply text-primary_600 font-semibold underline cursor-pointer base-animation-ease;
+    &:hover {
+        @apply text-primary_400;
+    }
+}
+
+.link-overlay {
+    @apply absolute top-0 left-0 h-full w-full z-10;
+}
+
+.styled-list {
+    @apply list-none;
+    li {
+        @apply flex items-center text-lg;
+        &:not(:last-child) {
+            @apply mb-2;
+        }
+        &:before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            @apply bg-primary_600 mr-3;
+        }
+    }
+}
+
+#callnowbutton {
+    @apply top-auto bottom-0 #{!important};
+}

@@ -1,0 +1,95 @@
+#main-navigation {
+  &[data-fixed="true"] {
+    @apply fixed top-0 left-0 w-full bg-white shadow z-20;
+  }
+  a,
+  button {
+    @apply min-w-0;
+  }
+}
+
+#navigation-desktop {
+  > .navigation-item {
+    &:not(:last-child) {
+      @apply mr-8;
+    }
+    > a {
+      @apply relative text-gray-900 font-medium text-md pb-8 no-underline;
+      &:after {
+        content: "";
+        @apply absolute left-0 bottom-0 h-2px bg-primary_600 w-0 transform -translate-y-6 transition-all duration-300 ease-linear;
+      }
+      &:hover {
+        &:after {
+          @apply w-full;
+        }
+      }
+    }
+  }
+  .is-submenu-parent {
+    @apply relative;
+    .submenu {
+      @apply absolute flex flex-col w-auto bg-white px-10 pt-6 pb-10 opacity-0 invisible z-10 transform -translate-x-10 translate-y-12 transition-all duration-300 ease-linear;
+      box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.06);
+      .navigation-item {
+        @apply whitespace-nowrap;
+        &:not(:last-child) {
+          @apply mb-4;
+        }
+        a {
+          @apply text-gray-900 font-normal no-underline;
+          &:hover {
+            @apply text-primary_400;
+          }
+        }
+      }
+    }
+    &:hover {
+      .submenu {
+        @apply opacity-100 visible translate-y-6;
+      }
+    }
+  }
+}
+
+#navigation-mobile {
+  @apply w-full;
+  .navigation-item {
+    @apply relative;
+    &:not(:last-child) {
+      @apply mb-8;
+    }
+    a {
+      @apply text-gray-900 font-bold text-xl no-underline;
+      &:hover {
+        @apply text-primary_400;
+      }
+    }
+    &.is-submenu-parent {
+      > a {
+        @apply block;
+        &:after {
+          content: "\f078";
+          font-family: "Font Awesome 5 Pro";
+          @apply absolute top-0 right-0 font-normal text-black transition-all duration-300 ease-linear;
+        }
+        &[aria-expanded="true"] {
+          &:after {
+            content: "\f068";
+          }
+        }
+      }
+    }
+  }
+  .submenu {
+    @apply overflow-hidden flex-col transition-all duration-300 ease-linear;
+    li {
+      &:not(:last-child) {
+        @apply mb-4;
+      }
+      a {
+        @apply text-base font-medium;
+      }
+    }
+  }
+}

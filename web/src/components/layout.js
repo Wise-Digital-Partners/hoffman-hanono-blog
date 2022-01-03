@@ -1,28 +1,28 @@
 import React from "react";
-import Header from "./header";
+import PropTypes from "prop-types";
+import {Helmet} from "react-helmet";
 
-import "../styles/layout.css";
-import * as styles from "./layout.module.css";
+import Header from './Header/Header'
+import Footer from './Footer/Footer'
 
-const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
-  <>
-    <Header
-      siteTitle={siteTitle}
-      onHideNav={onHideNav}
-      onShowNav={onShowNav}
-      showNav={showNav}
-    />
-    <div className={styles.content}>{children}</div>
-    <footer className={styles.footer}>
-      <div className={styles.footerWrapper}>
-        <div className={styles.siteInfo}>
-          &copy; {new Date().getFullYear()}, Built with{" "}
-          <a href="https://www.sanity.io">Sanity</a> &amp;{" "}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </div>
-      </div>
-    </footer>
-  </>
-);
+const Layout = ({ children }) => {
+  return (
+    <div>
+      <Helmet>
+        <meta name="google-site-verification" content="8Rix5rHu8nQJiFgsax1I2eWez6oVxWmlZVQF8Fr6M8o" />
+      </Helmet>
+      <Header />
+      <main id="body-content">
+        {children}
+      </main>
+      <Footer />
+      <div id="callnowbutton"></div>
+    </div>
+  );
+}
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired
+};
 
 export default Layout;

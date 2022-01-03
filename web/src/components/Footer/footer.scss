@@ -1,0 +1,20 @@
+#main-footer{
+    a {
+        @apply text-gray-400 font-normal no-underline;
+        &:hover,
+        &:focus,
+        &:active {
+            @apply text-primary_400;
+        }
+    }
+    .powered-by-nest {
+        a {
+            @apply font-medium text-black;
+            &:hover,
+            &:focus,
+            &:active {
+                @apply text-primary_400;
+            }            
+        }
+    }
+}

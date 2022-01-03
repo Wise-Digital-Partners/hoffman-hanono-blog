@@ -1,7 +1,10 @@
-module.exports = () => ({
+module.exports = {
   plugins: [
+    require("postcss-import"),
+    require("autoprefixer"),
+    require("postcss-nested"),
     require("postcss-preset-env")({
-      stage: 3,
+      stage: 2,
       features: {
         "color-mod-function": { unresolved: "warn" },
         "nesting-rules": true,
@@ -13,5 +16,8 @@ module.exports = () => ({
         },
       },
     }),
+    require("cssnano")({
+      preset: `default`,
+    }),
   ],
-});
+};

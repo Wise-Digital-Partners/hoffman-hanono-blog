@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 12</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.62326539,8.5 L5.8741327,12.2491327 C5.59751132,12.5257541 5.59751132,12.9742459 5.8741327,13.2508673 C6.15075407,13.5274887 6.59924593,13.5274887 6.8758673,13.2508673 L11.1258673,9.0008673 C11.4024887,8.72424593 11.4024887,8.27575407 11.1258673,7.9991327 L6.8758673,3.7491327 C6.59924593,3.47251132 6.15075407,3.47251132 5.8741327,3.7491327 C5.59751132,4.02575407 5.59751132,4.47424593 5.8741327,4.7508673 L9.62326539,8.5 Z" id="path-1"></path>
+    </defs>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Commercial-Insurance" transform="translate(-318.000000, -1752.000000)">
+            <g id="Group-2" transform="translate(255.000000, 1753.000000)">
+                <g id="Group-12" transform="translate(64.000000, 0.000000)">
+                    <circle id="Oval" stroke="#BFBFBF" cx="20" cy="20" r="20"></circle>
+                    <g id="chevron-right" transform="translate(12.000000, 12.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="Colors/Blue" mask="url(#mask-2)" fill="#002091" fill-rule="evenodd">
+                            <rect id="Rectangle-3" x="0" y="0" width="17" height="17"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
