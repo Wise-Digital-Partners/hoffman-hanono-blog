@@ -7,7 +7,7 @@ module.exports = {
         DEFAULT: "1rem",
       },
       screens: {
-        DEFAULT: "77rem",
+        DEFAULT: "75rem",
       },
     },
     fontFamily: {
