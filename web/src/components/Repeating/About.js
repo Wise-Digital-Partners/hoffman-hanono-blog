@@ -31,10 +31,7 @@ const About = ({ className }) => {
             <div className="md:col-end-13 md:col-span-6">
               <h2>First-Class Service Since 1959</h2>
               <p>
-                Our story started with founder Jerry Hoffman, who aimed to offer
-                cost-effective insurance solutions, superior customer service,
-                and ultimately, peace of mind. Since then, the company has been
-                passed down generations without losing our founder’s commitment.{" "}
+                The story of our commercial insurance company starts with founder Jerry Hoffman, who aimed to offer cost-effective insurance solutions, superior customer service, and ultimately, peace of mind. Since then, the company has been passed down generations without losing our founder’s commitment. 
               </p>
               <ButtonWithIcon
                 href="/about-hoffman-hanono-insurance/"
