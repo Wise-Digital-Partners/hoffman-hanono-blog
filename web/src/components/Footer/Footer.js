@@ -22,7 +22,7 @@ const Footer = () => {
     cities: [
       {
         name: "Bonita",
-        href: "/bonita-commercial-insurance",
+        href: "/bonita-commercial-insurance/",
       },
       {
         name: "Chula Vista",
