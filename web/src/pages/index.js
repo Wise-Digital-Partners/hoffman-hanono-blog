@@ -54,7 +54,7 @@ const Page = ({ data }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-24">
             <div>
               <h1>
-                Commercial Insurance from Chula Vista to San Diego’s North
+                Commercial Insurance Company from Chula Vista to San Diego’s North
                 County
               </h1>
             </div>

@@ -22,7 +22,7 @@ const Footer = () => {
     cities: [
       {
         name: "Bonita",
-        href: "/bonita-commercial-insurance",
+        href: "/bonita-commercial-insurance/",
       },
       {
         name: "Chula Vista",
@@ -158,7 +158,7 @@ const Footer = () => {
           <div className="flex flex-wrap md:flex-no-wrap flex-col md:flex-row items-center justify-center md:justify-between">
             <ul className="flex items-center flex-col md:flex-row md:space-x-10">
               <li className="text-small mb-1 md:mb-0">
-                © {getYear()} Hoffman Honono
+                © {getYear()} Hoffman Hanono
               </li>
               <div className="flex md:space-x-10">
                 <li className="text-small mb-1 md:mb-0">
