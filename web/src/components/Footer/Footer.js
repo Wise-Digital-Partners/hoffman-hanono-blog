@@ -36,6 +36,14 @@ const Footer = () => {
         name: "National City",
         href: "/national-city-commercial-insurance/",
       },
+      {
+        name: "San Diego",
+        href: "/san-diego-commercial-insurance",
+      },
+      {
+        name: "Spring Valley",
+        href: "/spring-valley-commercial-insurance",
+      },
     ],
   };
 
