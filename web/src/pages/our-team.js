@@ -485,7 +485,7 @@ export const query = graphql`
       relativePath: { eq: "about/our-team/meet-the-team.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 548) {
+        fluid(maxWidth: 560) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
