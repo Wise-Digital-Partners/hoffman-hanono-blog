@@ -33,6 +33,10 @@ const Footer = () => {
         href: "/coronado-commercial-insurance/",
       },
       {
+        name: "Escondido",
+        href: "/escondido-commercial-insurance/",
+      },
+      {
         name: "La Mesa",
         href: "/la-mesa-commercial-insurance/",
       },
