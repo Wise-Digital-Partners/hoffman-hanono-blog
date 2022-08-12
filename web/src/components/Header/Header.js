@@ -227,6 +227,11 @@ const Header = () => {
                       Restaurants
                     </AniLink>
                   </li>
+                <li className="navigation-item">
+                    <AniLink fade to="/builders-risk-insurance/">
+                     Builder’s Risk
+                    </AniLink>
+                  </li>
                   <li className="navigation-item">
                     <AniLink fade to="/nonprofit-insurance/">
                       Non-Profits
@@ -412,6 +417,16 @@ const Header = () => {
                           to="/restaurant-insurance/"
                         >
                           Restaurants
+                        </AniLink>
+                      </li>
+                                            <li className="navigation-item">
+                        <AniLink
+                          onKeyDown={clickHandler}
+                          onClick={clickHandler}
+                          fade
+                          to="/builders-risk-insurance/"
+                        >
+                          Builder's Risk
                         </AniLink>
                       </li>
                       <li className="navigation-item">
