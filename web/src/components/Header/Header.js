@@ -239,6 +239,11 @@ const Header = () => {
                     </AniLink>
                   </li>
                   <li className="navigation-item">
+                    <AniLink fade to="/general-liability-insurance/">
+                      General Liability
+                    </AniLink>
+                  </li>
+                  <li className="navigation-item">
                     <AniLink fade to="/nonprofit-insurance/">
                       Non-Profits
                     </AniLink>
@@ -376,15 +381,6 @@ const Header = () => {
                       }}
                     >
                       <li className="navigation-item">
-                        <AniLink
-                          onKeyDown={clickHandler}
-                          onClick={clickHandler}
-                          fade
-                          to="/business-insurance-chula-vista/"
-                        >
-                          Commercial Insurance
-                        </AniLink>
-                      </li>       <li className="navigation-item">
                         <AniLink
                           onKeyDown={clickHandler}
                           onClick={clickHandler}
