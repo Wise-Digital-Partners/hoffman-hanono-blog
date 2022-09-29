@@ -440,6 +440,16 @@ const Header = () => {
                           onKeyDown={clickHandler}
                           onClick={clickHandler}
                           fade
+                          to="/general-liability-insurance/"
+                        >
+                          General Liability
+                        </AniLink>
+                      </li>
+                      <li className="navigation-item">
+                        <AniLink
+                          onKeyDown={clickHandler}
+                          onClick={clickHandler}
+                          fade
                           to="/nonprofit-insurance/"
                         >
                           Non-Profits
@@ -541,6 +551,7 @@ const Header = () => {
                           Landlord
                         </AniLink>
                       </li>
+
                       <li className="navigation-item">
                         <AniLink
                           onKeyDown={clickHandler}
