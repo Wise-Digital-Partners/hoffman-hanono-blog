@@ -52,6 +52,26 @@ const Footer = () => {
         name: "Spring Valley",
         href: "/spring-valley-commercial-insurance",
       },
+      {
+        name: "La Jolla",
+        href: "/la-jolla-commercial-insurance/",
+      },
+      {
+        name: "Santee",
+        href: "/santee-commercial-insurance/",
+      },
+      {
+        name: "El Cajon",
+        href: "/el-cajon-commercial-insurance/",
+      },
+      {
+        name: "Imperial Beach",
+        href: "/imperial-beach-commercial-insurance/",
+      },
+      {
+        name: "Otay Mesa",
+        href: "/otay-mesa-commercial-insurance/",
+      },
     ],
   };
 
