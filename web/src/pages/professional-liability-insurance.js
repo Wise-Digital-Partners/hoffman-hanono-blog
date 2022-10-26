@@ -22,8 +22,8 @@ const Page = ({ data }) => {
   return (
     <Layout>
       <SearchEngineOptimization
-        title="Builder's Risk Insurance San Diego | Hoffman Hanono"
-        description="If you need Builder's Risk Insurance in San Diego County, look no further. Hoffman Hanono gets you the right coverage for your needs. Get a free quote!"
+        title="Professional Liability Insurance Chula Vista | HH Insurance"
+        description="Need transportation insurance in San Diego County? Hoffman Hanono brings you the right coverage for your business’ needs. Get a free quote today!"
         openGraphImage={data.openGraphImage.publicURL}
         twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
@@ -35,14 +35,13 @@ const Page = ({ data }) => {
         maxHeightMobile="500px"
       >
         <div className="max-w-2xl">
-          <h1>Builder’s Risk Insurance in California</h1>
+          <h1> Professional Liability Insurance in Chula Vista & Beyond</h1>
           <p className="mb-0">
-            If you’re a contractor or stakeholder in a new construction project,
-            remodel, or installation in California, you’ll want to consider
-            builder’s risk insurance (also referred to as course of construction
-            coverage). It can protect you from loss and damage due to events out
-            of your control, such as natural disasters, severe weather, theft,
-            or vandalism.
+            If you own and operate a business in Chula Vista or the greater San
+            Diego area, professional liability insurance will protect you if you
+            make a mistake in the services you provide to your customer or
+            client. It’s designed to shield you against financial losses from
+            lawsuits you may face from your customers.
           </p>
         </div>
       </HeroSplit>
@@ -54,21 +53,23 @@ const Page = ({ data }) => {
               <Img fluid={data.whatsIncluded.childImageSharp.fluid} />
             </div>
             <div className="md:col-end-13 md:col-span-6">
-              <h2>Custom Coverage For Your Project</h2>
+              <h2>What It Covers</h2>
               <p>
-                Builder’s risk insurance can be purchased by property owners,
-                general contractors, subcontractors, architects, and others who
-                have a stake in a commercial or residential project. Each policy
-                is tailored to fit your needs. At Hoffman Hanono, we pair you
-                with trusted insurance providers so you’ll have a strong policy
-                to cover incidents such as:
+                Professional liability insurance can cover you against the
+                following types of claims, plus the legal and settlement costs
+                associated with them:
               </p>
               <ul className="styled-list">
-                <li>Weather damage</li>
-                <li>Fire damage</li>
-                <li>Natural disaster damage (i.e., earthquake or flooding)</li>
-                <li>Theft and vandalism</li>
-                <li>Damage due to faulty design or materials</li>
+                <li>
+                  Insurance for non-emergency medical transportation companies
+                </li>
+                <li>Mistakes or Negligence</li>
+                <li>Misrepresentation</li>
+                <li>Copyright Infringement</li>
+                <li>Breach of Contract</li>
+                <li>Failure to Deliver a Promised Service On Timet</li>
+                <li>Personal Injury</li>
+                <li>And more…</li>
               </ul>
             </div>
           </div>
@@ -81,21 +82,19 @@ const Page = ({ data }) => {
             <p className="decorative-text">Custom Solutions</p>
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
               <div>
-                <h2>Our Builder’s Risk Insurance Approach</h2>
+                <h2>Our Professional Liability Insurance Approach</h2>
               </div>
               <div>
                 <p className="mb-0">
-                  Whether you're working on a residential or commercial
-                  construction project in California, Hoffman Hanono Insurance
-                  Services is here to advise and partner with you. We specialize
-                  in finding builder’s risk insurance solutions meant entirely
-                  for you—because we know that insurance is not
-                  "one-size-fits-all." And when it comes to builder's risk
-                  insurance, the policies are as unique as your project. We
-                  provide quality service and resources that will help you
-                  secure better insurance premiums in the long run. Our
-                  commitment has made us a pillar of the San Diego and Chula
-                  Vista insurance community since 1959
+                  Hoffman Hanono Insurance Services is here to advise and
+                  partner with you to ensure you get the right professional
+                  liability insurance for your Chula Vista or San Diego-area
+                  business. We specialize in finding insurance solutions meant
+                  entirely for you—because we know that insurance is not
+                  "one-size-fits-all." We provide quality service and resources
+                  that will help you secure better insurance premiums in the
+                  long run. Our commitment has made us a pillar of the San Diego
+                  and Chula Vista insurance community since 1959.
                 </p>
               </div>
             </div>
@@ -116,18 +115,22 @@ export default Page;
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/restaurants-FB.jpg" }
+      relativePath: {
+        eq: "open-graph/facebook/ProfessionalLiabilityInsuranceFb.jpg"
+      }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/restaurants-twitter.jpg" }
+      relativePath: {
+        eq: "open-graph/twitter/ProfessionalLiabilityInsuranceTwitter.jpg"
+      }
     ) {
       publicURL
     }
     heroDesktop: file(
       relativePath: {
-        eq: "commercial-insurance/builders-risk-insurance/builders-hero-desktop.jpg"
+        eq: "commercial-insurance/personal-liability/ProfessionalLiabilityInsuranceDesktop.jpg"
       }
     ) {
       childImageSharp {
@@ -138,7 +141,7 @@ export const query = graphql`
     }
     heroMobile: file(
       relativePath: {
-        eq: "commercial-insurance/builders-risk-insurance/builders-hero-mobile.jpg"
+        eq: "commercial-insurance/personal-liability/ProfessionalLiabilityInsuranceMobile.jpg"
       }
     ) {
       childImageSharp {
@@ -149,7 +152,7 @@ export const query = graphql`
     }
     whatsIncluded: file(
       relativePath: {
-        eq: "commercial-insurance/builders-risk-insurance/whats-included.jpg"
+        eq: "commercial-insurance/personal-liability/ProfessionalLiabilityInsuranceDesktopMobile.jpg"
       }
     ) {
       childImageSharp {

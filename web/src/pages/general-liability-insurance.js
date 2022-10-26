@@ -35,12 +35,13 @@ const Page = ({ data }) => {
         maxHeightMobile="500px"
       >
         <div className="max-w-2xl">
-          <h1>General Liability Insurance</h1>
+          <h1>General Liability Insurance in Chula Vista & Beyond</h1>
           <p className="mb-0">
-            Protect your business from the types of claims that may arise during
-            your normal operations, such as property damage or physical injury.
-            Without general liability coverage, you could end up having to pay
-            for someone’s medical expenses, or property damage, out of pocket.
+            Protect your Chula Vista or greater San Diego-area business from the
+            types of claims that may arise during your normal operations, such
+            as property damage or physical injury. Without general liability
+            insurance, you could end up having to pay for someone’s medical
+            expenses, or property damage, out of pocket.
           </p>
         </div>
       </HeroSplit>
@@ -54,7 +55,7 @@ const Page = ({ data }) => {
             <div className="md:col-end-13 md:col-span-6">
               <h2>What It Covers</h2>
               <p>
-                General Liability Insurance is important coverage to have when
+                General liability insurance is important coverage to have when
                 you own a business. It can cover you in the event someone
                 injures themselves in your place of business, for example, or if
                 your employees damage a customer’s property. It can even cover
@@ -85,12 +86,13 @@ const Page = ({ data }) => {
                 <p className="mb-0">
                   Hoffman Hanono Insurance Services is here to advise and
                   partner with you to ensure you get the right general liability
-                  insurance. We specialize in finding insurance solutions meant
-                  entirely for you—because we know that insurance is not
-                  "one-size-fits-all." We provide quality service and resources
-                  that will help you secure better insurance premiums in the
-                  long run. Our commitment has made us a pillar of the San Diego
-                  and Chula Vista insurance community since 1959.
+                  insurance for your Chula Vista or San Diego business. We
+                  specialize in finding insurance solutions meant entirely for
+                  you—because we know that insurance is not "one-size-fits-all."
+                  We provide quality service and resources that will help you
+                  secure better insurance premiums in the long run. Our
+                  commitment has made us a pillar of the San Diego and Chula
+                  Vista insurance community since 1959.
                 </p>
               </div>
             </div>

@@ -35,13 +35,13 @@ const Page = ({ data }) => {
         maxHeightMobile="500px"
       >
         <div className="max-w-2xl">
-          <h1>Building Insurance</h1>
+          <h1>Building Insurance in California</h1>
           <p className="mb-0">
             Protect what’s likely the largest physical asset of your
             business—the building and the land surrounding it. Building
-            insurance coverage is critical for anyone who owns a building or is
-            planning to purchase one. It needs to be in place in the event the
-            worst happens.
+            insurance coverage is critical for anyone who owns a building in
+            California or is planning to purchase one. It needs to be in place
+            in the event the worst happens.
           </p>
         </div>
       </HeroSplit>
@@ -86,12 +86,13 @@ const Page = ({ data }) => {
                 <p className="mb-0">
                   Hoffman Hanono Insurance Services is here to advise and
                   partner with you to ensure you get the right building
-                  insurance. We specialize in finding insurance solutions meant
-                  entirely for you—because we know that insurance is not
-                  "one-size-fits-all." We provide quality service and resources
-                  that will help you secure better insurance premiums in the
-                  long run. Our commitment has made us a pillar of the San Diego
-                  and Chula Vista insurance community since 1959.
+                  insurance for your California project. We specialize in
+                  finding insurance solutions meant entirely for you—because we
+                  know that insurance is not "one-size-fits-all." We provide
+                  quality service and resources that will help you secure better
+                  insurance premiums in the long run. Our commitment has made us
+                  a pillar of the San Diego and Chula Vista insurance community
+                  since 1959.
                 </p>
               </div>
             </div>
