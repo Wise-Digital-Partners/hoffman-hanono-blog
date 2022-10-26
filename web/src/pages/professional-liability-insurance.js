@@ -23,7 +23,7 @@ const Page = ({ data }) => {
     <Layout>
       <SearchEngineOptimization
         title="Professional Liability Insurance Chula Vista | HH Insurance"
-        description="Need transportation insurance in San Diego County? Hoffman Hanono brings you the right coverage for your business’ needs. Get a free quote today!"
+        description="Need professional liabilitiy insurance in Chula Vista? Hoffman Hanono Insurance provides only the best full liability coverage for your business needs!"
         openGraphImage={data.openGraphImage.publicURL}
         twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
