@@ -8,6 +8,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 import author from "./documents/author";
 import category from "./documents/category";
 import post from "./documents/post";
+import insurance from "./documents/insurance";
 
 // Object types
 import bodyPortableText from "./objects/bodyPortableText";
@@ -26,6 +27,7 @@ export default createSchema({
     youtube,
     iframe,
     post,
+    insurance,
     category,
     author,
     bodyPortableText,

@@ -47,6 +47,11 @@ export const getDefaultDocumentNode = (props) => {
    .title("Content")
    .items([
      S.listItem()
+       .title("Insurance Posts")
+       .icon(FcDocument)
+       .schemaType("insurance")
+       .child(S.documentTypeList("insurance").title("Insurance Posts")),     
+       S.listItem()
        .title("Blog Posts")
        .icon(FcDocument)
        .schemaType("post")
