@@ -9,6 +9,10 @@ export default {
       name: "title",
       type: "string",
       title: "Title",
+    },    {
+      name: "nav",
+      type: "string",
+      title: "Navigation Text",
     },
     {
       name: "slug",
