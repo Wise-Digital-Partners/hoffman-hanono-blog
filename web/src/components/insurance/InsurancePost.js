@@ -1,19 +1,19 @@
 import React from "react";
-import { graphql } from "gatsby";
+// import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-import BackgroundImage from "gatsby-background-image";
-import { differenceInDays, formatDistance, format } from "date-fns";
+// import BackgroundImage from "gatsby-background-image";
+// import { differenceInDays, formatDistance, format } from "date-fns";
 import PortableText from "./portableText";
-import HeroSplit from "./HeroSplit";
+// import HeroSplit from "./HeroSplit";
 
 import styled from "@emotion/styled";
 import tw from "twin.macro";
-import {
-  FacebookShareButton,
-  LinkedinShareButton,
-  TwitterShareButton,
-  EmailShareButton,
-} from "react-share";
+// import {
+//   FacebookShareButton,
+//   LinkedinShareButton,
+//   TwitterShareButton,
+//   EmailShareButton,
+// } from "react-share";
 
 // import RecentInsurancePosts from "../Repeating/RecentInsurancePosts";
 // import Newsletter from "../Form/Newsletter";

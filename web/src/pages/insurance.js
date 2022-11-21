@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 // import SearchEngineOptimization from "../components/SEO";
 import InsurancePostPreview from "../components/insurance/InsurancePostGrid";
-import GraphQLErrorList from "../components/Insurance/graphql-error-list";
+import GraphQLErrorList from "../components/insurance/graphql-error-list";
 import {
   filterOutDocsPublishedInTheFuture,
   filterOutDocsWithoutSlugs,
