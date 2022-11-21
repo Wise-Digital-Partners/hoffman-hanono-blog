@@ -209,12 +209,12 @@ const Header = () => {
                 <ul className="submenu">
                   {/* COPY */}
                   <li className="navigation-item">
-                    <AniLink fade to="/professional-liability-insurance/">
+                    <AniLink fade to="/product-liability-insurance/">
                       Product Liability
                     </AniLink>
                   </li>
                   {/* END OF COPY */}
- 
+
                   <li className="navigation-item">
                     <AniLink fade to="/manufacturers-insurance/">
                       Manufacturers
