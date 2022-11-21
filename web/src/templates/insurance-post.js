@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import InsurancePost from "../components/insurance/InsurancePost";
-import GraphQLErrorList from "../components/Insurance/graphql-error-list";
+import GraphQLErrorList from "../components/insurance/graphql-error-list";
 // import { toPlainText } from "../lib/helpers";
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
