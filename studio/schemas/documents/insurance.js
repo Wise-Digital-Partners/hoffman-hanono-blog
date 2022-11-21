@@ -5,14 +5,11 @@ export default {
   type: "document",
   title: "Insurance Post",
   fields: [
+    
     {
-      name: "title",
-      type: "string",
-      title: "Title",
-    },    {
       name: "nav",
       type: "string",
-      title: "Navigation Text",
+      title: "Navigation menu Text",
     },
     {
       name: "slug",
@@ -22,28 +19,17 @@ export default {
         source: "title",
       },
     },
-    {
-      name: "publishedAt",
-      type: "datetime",
-      title: "Published at",
-      // validation: (Rule) => Rule.required(),s
+      {
+      name: "metaDescription",
+      type: "string",
+      title: "Meta Description",
     },
     {
       name: "seoTitle",
       type: "string",
       title: "SEO Title",
     },
-    {
-      name: "metaDescription",
-      type: "string",
-      title: "Meta Description",
-    },
-    {
-      name: "image",
-      type: "image",
-      title: "Main image",
-    },
-    {
+        {
       title: "Author",
       name: "author",
       type: "reference",
@@ -51,6 +37,55 @@ export default {
         disableNew: true,
       },
       to: [{ type: "author" }],
+    },
+     {
+      name: "publishedAt",
+      type: "datetime",
+      title: "Published at",
+      // validation: (Rule) => Rule.required(),s
+    },
+
+    {
+      name: "image",
+      type: "image",
+      title: "Hero Split image",
+    },
+
+        {
+      name: "title",
+      type: "string",
+      title: "Hero Split Title",
+    },
+    {
+      name: "body",
+      type: "bodyPortableText",
+      title: "Hero Split Paragraph",
+    },
+        {
+      name: "imageSecond",
+      type: "image",
+      title: "What It Covers image",
+    },
+
+        {
+      name: "titleSecond",
+      type: "string",
+      title: "What It Covers Title",
+    },
+    {
+      name: "bodySecond",
+      type: "bodyPortableText",
+      title: "What It Covers Paragraph",
+    },
+    {
+      name: "titleThird",
+      type: "string",
+      title: "Our Approach Paragraph",
+    },
+    {
+      name: "bodyThird",
+      type: "bodyPortableText",
+      title: "Our Approach Paragraph",
     },
     {
       name: "categories",
@@ -65,11 +100,7 @@ export default {
         },
       ],
     },
-    {
-      name: "body",
-      type: "bodyPortableText",
-      title: "Body",
-    },
+
   ],
   orderings: [
     {

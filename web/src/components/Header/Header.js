@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import { useOnClickOutside } from "../../hooks";
 import Img from "gatsby-image";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-
+// import InsurancePostPreview from "../insurance/InsurancePostPreview";
 import Burger from "../Burger/Burger";
 import OffCanvas from "../OffCanvas/OffCanvas";
 import ButtonSolid from "../Button/ButtonSolid";
@@ -207,11 +207,14 @@ const Header = () => {
                   Commercial
                 </AniLink>
                 <ul className="submenu">
+                  {/* COPY */}
                   <li className="navigation-item">
-                    <AniLink fade to="/test-post/">
-                      Test
+                    <AniLink fade to="/professional-liability-insurance/">
+                      Product Liability
                     </AniLink>
-                  </li>          
+                  </li>
+                  {/* END OF COPY */}
+ 
                   <li className="navigation-item">
                     <AniLink fade to="/manufacturers-insurance/">
                       Manufacturers
@@ -684,6 +687,7 @@ const Header = () => {
                     data="modal-contact"
                     text="Contact"
                   />
+                  {/* <InsurancePostPreview  /> */}
                   <ButtonSolid data="modal-quote" text="Get a Quote" />
                 </div>
               </OffCanvas>

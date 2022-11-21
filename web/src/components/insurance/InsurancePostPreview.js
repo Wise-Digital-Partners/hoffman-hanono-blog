@@ -13,7 +13,7 @@ function InsurancePostPreview(props) {
       to={getInsuranceUrl(props.slug.current)}
       className="no-underline text-gray-900 hover:text-primary_600"
     >
-      <div className="group bg-secondary-50 rounded-xl pt-4 px-4 pb-12 h-full">
+      {/* <div className="group bg-secondary-50 rounded-xl pt-4 px-4 pb-12 h-full">
         <div className="overflow-hidden rounded-md mb-3.5">
           {props.image && props.image.asset && (
             <GatsbyImage image={props.image.asset.gatsbyImageData} />
@@ -34,15 +34,11 @@ function InsurancePostPreview(props) {
           )}
           <p className="font-heading text-xl font-semibold mb-0">
             {props.title}
+            <p>{props.nav}</p>
           </p>
-          {/* {props._rawExcerpt && (
-          <div>
-            <PortableText blocks={props._rawExcerpt} />
-          </div>
-        )} */}
-          {/* <div>{format(new Date(props.publishedAt), "MMMM Mo, yyyy")}</div> */}
         </div>
-      </div>
+      </div> */}
+      <p>{props.nav}</p>
     </AniLink>
   );
 }

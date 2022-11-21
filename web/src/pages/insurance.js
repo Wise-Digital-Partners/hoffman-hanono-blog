@@ -31,16 +31,24 @@ export const query = graphql`
         node {
           id
           publishedAt
+          
           image {
             asset {
               gatsbyImageData
             }
           }
+
           categories {
             _id
             title
           }
+          nav
           title
+          titleThird
+          titleSecond
+          _rawBody
+          _rawBodySecond
+          _rawBodyThird
           slug {
             current
           }

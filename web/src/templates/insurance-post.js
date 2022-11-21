@@ -5,6 +5,10 @@ import GraphQLErrorList from "../components/Insurance/graphql-error-list";
 // import { toPlainText } from "../lib/helpers";
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
+import WhyUs from "../components/Repeating/WhyUs";
+import SliderTestimonials from "../components/Slider/SliderTestimonials";
+import About from "../components/Repeating/About";
+import CallToAction from "../components/Repeating/CallToAction";
 
 export const query = graphql`
   query InsurancePostTemplateQuery($id: String!) {
@@ -20,13 +24,22 @@ export const query = graphql`
           gatsbyImageData
         }
       }
+      imageSecond {
+        asset {
+          gatsbyImageData
+        }
+      }
       title
+      titleSecond
+      titleThird
       slug {
         current
       }
       seoTitle
       metaDescription
       _rawBody(resolveReferences: { maxDepth: 5 })
+      _rawBodySecond(resolveReferences: { maxDepth: 5 })
+      _rawBodyThird(resolveReferences: { maxDepth: 5 })
       author {
         _id
         image {
@@ -69,6 +82,10 @@ const InsurancePostTemplate = (props) => {
       )}
 
       {insurance && <InsurancePost {...insurance} {...site} />}
+      <WhyUs />
+      <SliderTestimonials />
+      <About />
+      <CallToAction />
     </Layout>
   );
 };

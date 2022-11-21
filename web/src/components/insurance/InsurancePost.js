@@ -1,7 +1,11 @@
 import React from "react";
+import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
+import BackgroundImage from "gatsby-background-image";
 import { differenceInDays, formatDistance, format } from "date-fns";
 import PortableText from "./portableText";
+import HeroSplit from "./HeroSplit";
+
 import styled from "@emotion/styled";
 import tw from "twin.macro";
 import {
@@ -15,167 +19,111 @@ import {
 // import Newsletter from "../Form/Newsletter";
 
 const StyledContent = styled.div`
-  /* p,
-  span,
-  li {
-    ${tw``}
-  } */
   ul {
-    ${tw`list-disc pl-7 mb-6 flex flex-col space-y-0.5`}
+    ${tw` pl-2 mb-6 flex flex-col space-y-0.5`}
+  }
+  ol {
+    ${tw`list-decimal pl-7 mb-6 flex flex-col space-y-0.5`}
   }
 `;
+
+;
+
 
 function InsurancePost(props) {
   const {
     siteMetadata,
     _rawBody,
+    _rawBodySecond,
+    _rawBodyThird,
     author,
     slug,
-    // categories,
+    nav,
+    categories,
     title,
+    titleSecond,
+    titleThird,
     image,
+    imageSecond,
     publishedAt,
   } = props;
+
   return (
-    <article className="pt-12 md:pt-16 pb-20 md:pb-32">
+    <>
+      <section className="pt-0 mb-20 lg:pt-8 md:mb-32">
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-10 lg:gap-y-0 lg:gap-x-24 items-center">
+            <div className="row-start-2 lg:row-start-1">
+              <h1>{title}</h1>
+              <p className="mb-0">
+                {_rawBody && <PortableText blocks={_rawBody} />}
+              </p>
+            </div>
+
+            <div className="row-start-1 lg:row-start-1 relative">
+              <GatsbyImage
+                image={props.image.asset.gatsbyImageData}
+                className="w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* section two */}
+      <section className="wrapper">
+        <div className="container">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-y-10 md:gap-y-0 md:gap-x-24 items-center">
+            <div className="md:col-start-1 md:col-end-7">
+              <GatsbyImage
+                image={props.imageSecond.asset.gatsbyImageData}
+                className="w-full"
+              />
+            </div>
+            <div className="md:col-end-13 md:col-span-6">
+              <h2>{titleSecond}</h2>
+              <p className="mb-0">
+                <StyledContent className="styled-list">
+                  {_rawBodySecond && <PortableText blocks={_rawBodySecond} />}
+                </StyledContent>
+              </p>
+              {/* <ul className="styled-list">
+                <li>
+                  Insurance for non-emergency medical transportation companies
+                </li>
+                <li>Mistakes or Negligence</li>
+                <li>Misrepresentation</li>
+                <li>Copyright Infringement</li>
+                <li>Breach of Contract</li>
+                <li>Failure to Deliver a Promised Service On Timet</li>
+                <li>Personal Injury</li>
+                <li>And more…</li>
+              </ul> */}
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* secton three */}
       <div className="container">
-        <div className="max-w-[800px] mx-auto mb-10">
-          <header>
-            <h1>{title}</h1>
-          </header>
-
-          <div className="flex justify-between items-end mb-8 md:mb-10">
-            <div className="flex">
-              {author && author.image && (
-                <div className="mr-3">
-                  <GatsbyImage
-                    image={author.image.asset.gatsbyImageData}
-                    className="w-12 h-12 rounded-full z-0"
-                  />
-                </div>
-              )}
-
+        <section className="wrapper bg-gray-100 pt-24 pb-20 md:py-32 px-6 rounded-xl md:rounded-3xl">
+          <div className="max-w-4xl mx-auto">
+            <p className="decorative-text">Custom Solutions</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
               <div>
-                {author && (
-                  <div className="text-primary_600 font-heading font-semibold flex items-center space-x-1">
-                    <span>{author.name}</span>
-                  </div>
-                )}
-
-                {publishedAt && (
-                  <div className="text-sm text-gray-900 font-normal">
-                    {differenceInDays(new Date(publishedAt), new Date()) > 3
-                      ? formatDistance(new Date(publishedAt), new Date())
-                      : format(new Date(publishedAt), "MMMM d, yyyy")}
-                  </div>
-                )}
+                <h2>{titleThird}</h2>
+              </div>
+              <div>
+                <p className="mb-0">
+                  {_rawBodyThird && <PortableText blocks={_rawBodyThird} />}
+                </p>
               </div>
             </div>
-
-            <div className="hidden md:flex items-center space-x-7">
-              <FacebookShareButton
-                url={`${siteMetadata.siteUrl}/insurancerance/${slug.current}/`}
-                quote={title}
-              >
-                <i className="fab fa-facebook-f text-primary_600 hover:text-primary_400 text-xl transition-colors duration-300 ease-linear"></i>
-              </FacebookShareButton>
-
-              <LinkedinShareButton
-                url={`${siteMetadata.siteUrl}/insurancerance/${slug.current}/`}
-                title={title}
-              >
-                <i className="fab fa-linkedin-in text-primary_600 hover:text-primary_400 text-xl transition-colors duration-300 ease-linear"></i>
-              </LinkedinShareButton>
-
-              <TwitterShareButton
-                url={`${siteMetadata.siteUrl}/insurancerance/${slug.current}/`}
-                title={title}
-              >
-                <i className="fab fa-twitter text-primary_600 hover:text-primary_400 text-xl transition-colors duration-300 ease-linear"></i>
-              </TwitterShareButton>
-
-              <EmailShareButton
-                url={`${siteMetadata.siteUrl}/insurancerance/${slug.current}/`}
-                subject={title}
-              >
-                <i className="fas fa-envelope text-primary_600 hover:text-primary_400 text-xl transition-colors duration-300 ease-linear"></i>
-              </EmailShareButton>
-            </div>
           </div>
-          {/* {categories && (
-            <div className="mb-8">
-              <ul>
-                {categories.map((category) => (
-                  <li
-                    className="text-primary-500 font-bold tracking-widest uppercase"
-                    key={category._id}
-                  >
-                    {category.title}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )} */}
-        </div>
-
-        {image && image.asset && (
-          <div className="mb-16 md:mb-20">
-            <GatsbyImage
-              image={props.image.asset.gatsbyImageData}
-              className="w-full"
-            />
-          </div>
-        )}
-
-        <StyledContent className="max-w-[800px] mx-auto mb-16 md:mb-20">
-          {_rawBody && <PortableText blocks={_rawBody} />}
-        </StyledContent>
-
-        <div className="flex items-center justify-center space-x-7 mb-20 md:mb-30">
-          <FacebookShareButton
-            url={`${siteMetadata.siteUrl}/insurancerance/${slug.current}/`}
-            quote={title}
-          >
-            <i className="fab fa-facebook-f text-primary_600 hover:text-primary_400 text-xl transition-colors duration-300 ease-linear"></i>
-          </FacebookShareButton>
-
-          <LinkedinShareButton
-            url={`${siteMetadata.siteUrl}/insurancerance/${slug.current}/`}
-            title={title}
-          >
-            <i className="fab fa-linkedin-in text-primary_600 hover:text-primary_400 text-xl transition-colors duration-300 ease-linear"></i>
-          </LinkedinShareButton>
-
-          <TwitterShareButton
-            url={`${siteMetadata.siteUrl}/insurancerance/${slug.current}/`}
-            title={title}
-          >
-            <i className="fab fa-twitter text-primary_600 hover:text-primary_400 text-xl transition-colors duration-300 ease-linear"></i>
-          </TwitterShareButton>
-
-          <EmailShareButton
-            url={`${siteMetadata.siteUrl}/insurancerance/${slug.current}/`}
-            subject={title}
-          >
-            <i className="fas fa-envelope text-primary_600 hover:text-primary_400 text-xl transition-colors duration-300 ease-linear"></i>
-          </EmailShareButton>
-        </div>
-
-        {/* <div className="max-w-[800px] mx-auto mb-20 md:mb-28 border border-gray-200 px-6 py-10 md:p-10 lg:p-20 text-center">
-          <div className="max-w-[480px] mx-auto">
-            <p className="heading-four">Subscribe Heading</p>
-            <p>
-              15-20 words lorem ipsum dolor sit amet, consectetur adipiscing
-              elit ut aliquam, purus sit amet luctus venenatis
-            </p>
-            <Newsletter />
-          </div>
-        </div> */}
+        </section>
       </div>
-
-      {/* <RecentInsurancePosts heading={false} className="mb-16 md:mb-32" /> */}
-    </article>
+    </>
   );
 }
 
 export default InsurancePost;
+
