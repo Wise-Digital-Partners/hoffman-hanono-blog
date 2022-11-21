@@ -38,5 +38,6 @@ Netlify automatically deploys new changes commited to master on GitHub. If you w
 Join [Sanity’s developer community](https://slack.sanity.io) or ping us [on twitter](https://twitter.com/sanity_io).
 
 ## FORCE GITHUB REPO UPDATE
-#-- FORCE UPDATE -- 10/26/2022
-#-- FORCE UPDATE -- 11/21/2022
+-- FORCE UPDATE -- 10/26/2022
+
+-- FORCE UPDATE -- 11/21/2022
