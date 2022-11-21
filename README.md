@@ -39,3 +39,5 @@ Join [Sanity’s developer community](https://slack.sanity.io) or ping us [on tw
 
 ## FORCE GITHUB REPO UPDATE
 -- FORCE UPDATE -- 10/26/2022
+
+-- FORCE UPDATE -- 11/21/2022
