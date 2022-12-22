@@ -111,35 +111,29 @@ const Page = ({ data }) => {
           </header>
 
           <div className="md:table w-full">
-            <div className="md:table-row-group">
-              <div className="hidden md:table-row">
-                <div className="md:table-cell text-xlarge text-gray-900 font-heading text-left font-semibold border-b border-solid border-gray-200 md:px-4 md:py-2">
-                  Name
-                </div>
-                <div className="md:table-cell text-xlarge text-gray-900 font-heading text-left font-semibold border-b border-solid border-gray-200 md:px-4 md:py-2">
-                  Title
-                </div>
-                <div className="md:table-cell text-xlarge text-gray-900 font-heading text-left font-semibold border-b border-solid border-gray-200 md:px-4 md:py-2">
-                  Email
-                </div>
-                <div className="md:table-cell text-xlarge text-gray-900 font-heading text-left font-semibold border-b border-solid border-gray-200 md:px-4 md:py-2">
-                  Extension
-                </div>
+            <div className="hidden md:table-row ">
+              <div className="md:table-cell text-xlarge text-gray-900 font-heading text-left font-semibold border-b border-solid border-gray-200 md:px-4 md:py-2">
+                Name
               </div>
-              <div className="hidden md:table-row">
-                <div className="md:table-cell py-3"></div>
-                <div className="md:table-cell py-3"></div>
-                <div className="md:table-cell py-3"></div>
-                <div className="md:table-cell py-3"></div>
+              <div className="md:table-cell text-xlarge text-gray-900 font-heading text-left font-semibold border-b border-solid border-gray-200 md:px-4 md:py-2">
+                Title
               </div>
-              <div className="md:table-row bg-gray-100 rounded-sm px-4 py-3">
+              <div className="md:table-cell text-xlarge text-gray-900 font-heading text-left font-semibold border-b border-solid border-gray-200 md:px-4 md:py-2">
+                Email
+              </div>
+              <div className="md:table-cell text-xlarge text-gray-900 font-heading text-left font-semibold border-b border-solid border-gray-200 md:px-4 md:py-2">
+                Extension
+              </div>
+            </div>
+            <div className="md:table-row-group alternating-colors-1">
+              <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
                   David Hoffman
                 </div>
-                <div className="md:table-cell md:px-4 md:py-2 mb-1 md:mb-0">
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   President
                 </div>
-                <div className="md:table-cell md:px-4 md:py-2 mb-1 md:mb-0">
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   <a
                     className="no-underline font-normal"
                     href="mailto:david@hhinsurance.com"
@@ -151,7 +145,7 @@ const Page = ({ data }) => {
                   <span className="md:hidden">ext. </span>101
                 </div>
               </div>
-              <div className="md:table-row px-4 py-4">
+              <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
                   Philip Hoffman
                 </div>
@@ -169,15 +163,15 @@ const Page = ({ data }) => {
                 <div className="md:table-cell md:px-4 md:py-4">
                   <span className="md:hidden">ext. </span>103
                 </div>
-              </div>
-              <div className="md:table-row bg-gray-100 rounded-sm px-4 py-3">
+              </div>              
+              <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
                   Ezra Hanono
                 </div>
-                <div className="md:table-cell md:px-4 md:py-2 mb-1 md:mb-0">
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   Partner/Treasurer
                 </div>
-                <div className="md:table-cell md:px-4 md:py-2 mb-1 md:mb-0">
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   <a
                     className="no-underline font-normal"
                     href="mailto:ezra@hhinsurance.com"
@@ -189,7 +183,7 @@ const Page = ({ data }) => {
                   <span className="md:hidden">ext. </span>102
                 </div>
               </div>
-              <div className="md:table-row px-4 py-4">
+              <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
                   Michelle Torres
                 </div>
@@ -208,14 +202,14 @@ const Page = ({ data }) => {
                   <span className="md:hidden">ext. </span>104
                 </div>
               </div>
-              <div className="md:table-row bg-gray-100 rounded-sm px-4 py-3">
+              <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
                   Ben Antl
                 </div>
-                <div className="md:table-cell md:px-4 md:py-2 mb-1 md:mb-0">
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   Account Executive
                 </div>
-                <div className="md:table-cell md:px-4 md:py-2 mb-1 md:mb-0">
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   <a
                     className="no-underline font-normal"
                     href="mailto:ben@hhinsurance.com"
@@ -227,7 +221,7 @@ const Page = ({ data }) => {
                   <span className="md:hidden">ext. </span>113
                 </div>
               </div>
-              <div className="md:table-row px-4 py-4">
+              <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
                   Johanna Guedea
                 </div>
@@ -246,14 +240,14 @@ const Page = ({ data }) => {
                   <span className="md:hidden">ext. </span>120
                 </div>
               </div>
-              <div className="md:table-row bg-gray-100 rounded-sm px-4 py-3">
+              <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
                   Judy Schwartz
                 </div>
-                <div className="md:table-cell md:px-4 md:py-2 mb-1 md:mb-0">
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   Commercial Lines Account Manager
                 </div>
-                <div className="md:table-cell md:px-4 md:py-2 mb-1 md:mb-0">
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   <a
                     className="no-underline font-normal"
                     href="mailto:jschwartz@hhinsurance.com"
@@ -265,26 +259,26 @@ const Page = ({ data }) => {
                   <span className="md:hidden">ext. </span>107
                 </div>
               </div>
-              <div className="md:table-row px-4 py-4">
+              <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
                   Paola Ramos
                 </div>
                 <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   Director of First Impressions
                 </div>
-                <div className="md:table-cell md:px-4 md:py-2 mb-1 md:mb-0">
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   <a
                     className="no-underline font-normal"
-                    href="mailto:svargas@hhinsurance.com"
+                    href="mailto:pramos@hhinsurance.com"
                   >
-                    svargas@hhinsurance.com
+                    pramos@hhinsurance.com
                   </a>
                 </div>
                 <div className="md:table-cell md:px-4 md:py-4">
                   <span className="md:hidden">ext. </span>109
                 </div>
               </div>
-              <div className="md:table-row px-4 py-4">
+              <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
                   Lisa Preisler
                 </div>
@@ -303,14 +297,14 @@ const Page = ({ data }) => {
                   <span className="md:hidden">ext. </span>108
                 </div>
               </div>
-              <div className="md:table-row bg-gray-100 rounded-sm px-4 py-3">
+              <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
                   Manuela Warren
                 </div>
-                <div className="md:table-cell md:px-4 md:py-2 mb-1 md:mb-0">
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   Commercial Lines Account Manager
                 </div>
-                <div className="md:table-cell md:px-4 md:py-2 mb-1 md:mb-0">
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   <a
                     className="no-underline font-normal"
                     href="mailto:mwarren@hhinsurance.com"
@@ -322,33 +316,14 @@ const Page = ({ data }) => {
                   <span className="md:hidden">ext. </span>106
                 </div>
               </div>
-              <div className="md:table-row px-4 py-4">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Janika King
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  Commercial Lines Account Manager
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:jking@hhinsurance.com"
-                  >
-                    jking@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4">
-                  <span className="md:hidden">ext. </span>111
-                </div>
-              </div>
-              <div className="md:table-row bg-gray-100 rounded-sm px-4 py-3">
+              <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
                   Osmar Espinoza
                 </div>
-                <div className="md:table-cell md:px-4 md:py-2 mb-1 md:mb-0">
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   Account Executive
                 </div>
-                <div className="md:table-cell md:px-4 md:py-2 mb-1 md:mb-0">
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   <a
                     className="no-underline font-normal"
                     href="mailto:osmar@hhinsurance.com"
@@ -360,14 +335,14 @@ const Page = ({ data }) => {
                   <span className="md:hidden">ext. </span>105
                 </div>
               </div>
-              <div className="md:table-row bg-gray-100 rounded-sm px-4 py-3">
+              <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
                   Rosanne Fuentes
                 </div>
-                <div className="md:table-cell md:px-4 md:py-2 mb-1 md:mb-0">
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   Commercial Lines Account Manager
                 </div>
-                <div className="md:table-cell md:px-4 md:py-2 mb-1 md:mb-0">
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   <a
                     className="no-underline font-normal"
                     href="mailto:rfuentes@hhinsurance.com"
@@ -379,7 +354,7 @@ const Page = ({ data }) => {
                   <span className="md:hidden">ext. </span>110
                 </div>
               </div>
-              <div className="md:table-row px-4 py-4">
+              <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
                   Patricia Strand
                 </div>
@@ -398,14 +373,14 @@ const Page = ({ data }) => {
                   <span className="md:hidden">ext. </span>122
                 </div>
               </div>
-              <div className="md:table-row bg-gray-100 rounded-sm px-4 py-3">
+              <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
                   Elias Vazquez
                 </div>
-                <div className="md:table-cell md:px-4 md:py-2 mb-1 md:mb-0">
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   Account Executive
                 </div>
-                <div className="md:table-cell md:px-4 md:py-2 mb-1 md:mb-0">
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   <a
                     className="no-underline font-normal"
                     href="mailto:evazquez@hhinsurance.comcom"
@@ -417,7 +392,7 @@ const Page = ({ data }) => {
                   <span className="md:hidden">ext. </span>118
                 </div>
               </div>
-              <div className="md:table-row px-4 py-4">
+              <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
                   John Borja
                 </div>
@@ -436,6 +411,48 @@ const Page = ({ data }) => {
                   <span className="md:hidden">ext. </span>124
                 </div>
               </div>
+              {/* START OF TEAM MEMBER SECTION */}
+              <div className="md:table-row  rounded-sm px-4 py-3">
+                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
+                  Pamela Garcia
+                </div>
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
+                  Customer Service Representative
+                </div>
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
+                  <a
+                    className="no-underline font-normal"
+                    href="mailto:pgarcia@hhinsurance.com"
+                  >
+                    pgarcia@hhinsurance.com
+                  </a>
+                </div>
+                <div className="md:table-cell md:px-4 md:py-4">
+                  <span className="md:hidden">ext. </span>127
+                </div>
+              </div>
+              {/* END OF TEAM MEMBER SECTION */}              
+              {/* START OF TEAM MEMBER SECTION */}
+              <div className="md:table-row  rounded-sm px-4 py-3">
+                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
+                  Samantha Arenas
+                </div>
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
+                  Commercial Lines Assistant Account Manager
+                </div>
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
+                  <a
+                    className="no-underline font-normal"
+                    href="mailto:sarenas@hhinsurance.com"
+                  >
+                    sarenas@hhinsurance.com
+                  </a>
+                </div>
+                <div className="md:table-cell md:px-4 md:py-4">
+                  <span className="md:hidden">ext. </span>128
+                </div>
+              </div>
+              {/* END OF TEAM MEMBER SECTION */}
             </div>
           </div>
         </div>
