@@ -5,6 +5,7 @@ import Img from "gatsby-image";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 // import InsurancePostPreview from "../insurance/InsurancePostPreview";
 import Burger from "../Burger/Burger";
+import InsuranceItem from "../insurance/InsurancePostItem";
 import OffCanvas from "../OffCanvas/OffCanvas";
 import ButtonSolid from "../Button/ButtonSolid";
 import ButtonGhost from "../Button/ButtonGhost";
@@ -207,6 +208,13 @@ const Header = () => {
                   Commercial
                 </AniLink>
                 <ul className="submenu">
+                  {/* COPY */}
+                  <li className="navigation-item">
+                    <AniLink fade to="/chula-vista-business-insurance/">
+                      Business Insurance
+                    </AniLink>
+                  </li>
+                  {/* END OF COPY */}                  
                   {/* COPY */}
                   <li className="navigation-item">
                     <AniLink fade to="/product-liability-insurance/">
