@@ -5,10 +5,11 @@ import Img from "gatsby-image";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 // import InsurancePostPreview from "../insurance/InsurancePostPreview";
 import Burger from "../Burger/Burger";
-import InsuranceItem from "../insurance/InsurancePostItem";
+// import InsuranceItem from "../insurance/InsurancePostItem";
 import OffCanvas from "../OffCanvas/OffCanvas";
 import ButtonSolid from "../Button/ButtonSolid";
 import ButtonGhost from "../Button/ButtonGhost";
+import { mapEdgesToNodes } from "../../lib/helpers";
 
 // mobile submenu temporary height
 let submenuTempHeight1 = null;
@@ -152,8 +153,19 @@ const Header = () => {
     };
   }, [scrolled]);
 
+
   const data = useStaticQuery(graphql`
     {
+  navTitle: allSanityInsurance {
+    edges {
+      node {
+        nav
+        slug {
+          current
+        }
+      }
+    }
+  }
       desktopLogo: file(relativePath: { eq: "global/logo.png" }) {
         childImageSharp {
           fixed(width: 296) {
@@ -170,7 +182,8 @@ const Header = () => {
       }
     }
   `);
-
+  const navBarTitle =
+    data && data.navTitle && mapEdgesToNodes(data.navTitle);
   return (
     <div id="site-navigation">
       {/* <div id="utlity-navigation"></div> */}
@@ -209,20 +222,16 @@ const Header = () => {
                 </AniLink>
                 <ul className="submenu">
                   {/* COPY */}
-                  <li className="navigation-item">
-                    <AniLink fade to="/chula-vista-business-insurance/">
-                      Business Insurance
-                    </AniLink>
-                  </li>
-                  {/* END OF COPY */}                  
-                  {/* COPY */}
-                  <li className="navigation-item">
-                    <AniLink fade to="/product-liability-insurance/">
-                      Product Liability
-                    </AniLink>
-                  </li>
-                  {/* END OF COPY */}
-
+                  {navBarTitle.map((item, i) => (
+                    <li className="navigation-item" key={i}>
+                      <AniLink
+                        fade
+                        to={`/${item.slug.current}/`}
+                      >
+                        {item.nav}
+                      </AniLink>
+                    </li>
+                  ))}
                   <li className="navigation-item">
                     <AniLink fade to="/manufacturers-insurance/">
                       Manufacturers
