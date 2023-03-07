@@ -145,7 +145,7 @@ const Page = ({ data }) => {
                   <span className="md:hidden">ext. </span>101
                 </div>
               </div>
-              <div className="md:table-row  rounded-sm px-4 py-3">
+              {/* <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
                   Philip Hoffman
                 </div>
@@ -163,7 +163,7 @@ const Page = ({ data }) => {
                 <div className="md:table-cell md:px-4 md:py-4">
                   <span className="md:hidden">ext. </span>103
                 </div>
-              </div>              
+              </div>               */}
               <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
                   Ezra Hanono
@@ -220,6 +220,25 @@ const Page = ({ data }) => {
                 <div className="md:table-cell md:px-4 md:py-2">
                   <span className="md:hidden">ext. </span>113
                 </div>
+              </div>              
+              <div className="md:table-row  rounded-sm px-4 py-3">
+                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
+                 Nestor Aguilar
+                </div>
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
+                  Account Executive
+                </div>
+                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
+                  <a
+                    className="no-underline font-normal"
+                    href="mailto:naguilar@hhinsurance.com"
+                  >
+                   naguilar@hhinsurance.com
+                  </a>
+                </div>
+                <div className="md:table-cell md:px-4 md:py-2">
+                  <span className="md:hidden">ext. </span>131
+                </div>
               </div>
               <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
@@ -261,7 +280,7 @@ const Page = ({ data }) => {
               </div>
               <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Paola Ramos
+                  Karen Hernandez
                 </div>
                 <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   Director of First Impressions
@@ -269,9 +288,9 @@ const Page = ({ data }) => {
                 <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   <a
                     className="no-underline font-normal"
-                    href="mailto:pramos@hhinsurance.com"
+                    href="mailto: khernandez@hhinsurance.com"
                   >
-                    pramos@hhinsurance.com
+                     khernandez@hhinsurance.com
                   </a>
                 </div>
                 <div className="md:table-cell md:px-4 md:py-4">
@@ -299,7 +318,7 @@ const Page = ({ data }) => {
               </div>
               <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Manuela Warren
+                   Liliana Robles
                 </div>
                 <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   Commercial Lines Account Manager
@@ -307,9 +326,9 @@ const Page = ({ data }) => {
                 <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   <a
                     className="no-underline font-normal"
-                    href="mailto:mwarren@hhinsurance.com"
+                    href="mailto:lrobles@hhinsurance.com"
                   >
-                    mwarren@hhinsurance.com
+                    lrobles@hhinsurance.com
                   </a>
                 </div>
                 <div className="md:table-cell md:px-4 md:py-2">

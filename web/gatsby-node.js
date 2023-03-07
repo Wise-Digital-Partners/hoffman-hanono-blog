@@ -88,7 +88,40 @@ exports.createPages = async ({ graphql, actions }) => {
   await createBlogPostPages(graphql, actions);  
   await createInsurancePostPages(graphql, actions);
 };
+async function createTeamMemberPages(graphql, actions) {
+  const { createPage } = actions;
+  const result = await graphql(`
+    {
+      allSanityTeamMember(filter: { slug: { current: { ne: null } } }) {
+        edges {
+          node {
+            id
+            slug {
+              current
+            }
+          }
+        }
+      }
+    }
+  `);
 
+  if (result.errors) throw result.errors;
+
+  const postEdges = (result.data.allSanityTeamMember || {}).edges || [];
+
+  postEdges.forEach((edge) => {
+    const { id, slug = {} } = edge.node;
+    const path = `/${slug.current}/`;
+
+    createPage({
+      path,
+      component: require.resolve("./src/templates/team-member.js"),
+      context: {
+        id,
+      },
+    });
+  });
+}
 exports.onCreateWebpackConfig = ({ stage, actions, loaders }) => {
   if (stage === "build-html" || stage === "develop-html") {
     actions.setWebpackConfig({
