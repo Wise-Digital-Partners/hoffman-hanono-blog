@@ -25,10 +25,9 @@ a {
             @apply mb-2;
         }
         &:before {
-            content: "";
-            width: 6px;
-            height: 6px;
-            @apply bg-primary_600 mr-3;
+            content: "■";
+            font-size: 25px;
+            @apply text-primary_600 mr-3;
             margin-top:10px;
         }
     }
