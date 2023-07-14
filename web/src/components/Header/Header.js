@@ -166,6 +166,30 @@ const Header = () => {
       }
     }
   }
+  navTitleCom: allSanityInsurance(
+    filter: {categories: {elemMatch: {title: {eq: "commercial pages"}}}}
+  ) {
+    edges {
+      node {
+        nav
+        slug {
+          current
+        }
+      }
+    }
+  }
+  navTitleRes: allSanityInsurance(
+    filter: {categories: {elemMatch: {title: {eq: "residential pages"}}}}
+  ) {
+    edges {
+      node {
+        nav
+        slug {
+          current
+        }
+      }
+    }
+  }
       desktopLogo: file(relativePath: { eq: "global/logo.png" }) {
         childImageSharp {
           fixed(width: 296) {
@@ -184,6 +208,10 @@ const Header = () => {
   `);
   const navBarTitle =
     data && data.navTitle && mapEdgesToNodes(data.navTitle);
+  const navBarTitleCom =
+    data && data.navTitleCom && mapEdgesToNodes(data.navTitleCom);
+  const navBarTitleRes =
+    data && data.navTitleRes && mapEdgesToNodes(data.navTitleRes);
   return (
     <div id="site-navigation">
       {/* <div id="utlity-navigation"></div> */}
@@ -222,7 +250,7 @@ const Header = () => {
                 </AniLink>
                 <ul className="submenu">
                   {/* COPY */}
-                  {navBarTitle.map((item, i) => (
+                  {navBarTitleCom.map((item, i) => (
                     <li className="navigation-item" key={i}>
                       <AniLink
                         fade
@@ -300,6 +328,17 @@ const Header = () => {
                   Personal
                 </AniLink>
                 <ul className="submenu">
+                {/* COPY */}
+                {navBarTitleRes.map((item, i) => (
+                    <li className="navigation-item" key={i}>
+                      <AniLink
+                        fade
+                        to={`/${item.slug.current}/`}
+                      >
+                        {item.nav}
+                      </AniLink>
+                    </li>
+                  ))}
                   <li className="navigation-item">
                     <AniLink fade to="/home-insurance-chula-vista/">
                       Home
