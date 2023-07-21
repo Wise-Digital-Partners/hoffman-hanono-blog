@@ -66,6 +66,71 @@ const ReviewCards = ({ className }) => {
 
   const reviews = [
     {
+      name: "Eyobe Mengistu",
+      review: " ",
+      platform: data.google.childImageSharp.fixed,
+      },	
+      {		
+      name: "Cynthia Meinhardt",
+      review: "Johanna was a great help in shopping for us a new insurance company. She kept me posted and I got her the information that the company had requested. Communication was great and all turned out well.",
+      platform: data.google.childImageSharp.fixed,
+      },
+      {	
+      name: "Jackie J",
+      review: "I've had Hoffman Hanono as my insurance agent since buying my rental 4-plex back in 2004. They're prompt and responsive - they take care of things without my having to keep on checking. Lisa Preisler has been helping me and she's very good about making sure all my questions are answered - so I can feel secure that the property is well covered.",
+      platform: data.google.childImageSharp.fixed,
+      },
+      {
+      name: "Antonia Vasquez",
+      review: "I have been a customer of the most professional insurance broker in Southern California, Hoffman Hanono Insurance, for 15 years. I have received advice, reference, and assistance in getting the right coverage for all my business, residential and personal needs with the most professional/personal attention. They always provide reminders of important dates and updates. For the right insurance coverage for your needs, I highly recommend HHI in Chula Vista, California.",
+      platform: data.google.childImageSharp.fixed,
+      },
+      {
+      name: "Emily Le-Han",
+      review: "We’ve been with Hoffman Ins. for nearly 14 years, initially for our business insurance and, most recently, for our personal policy. Love the personal attention from Ben Antl for our business policies and now with Lisa Preisley for our personal policy.",
+      platform: data.google.childImageSharp.fixed,
+      },
+      {
+      name: "Patrick Kachi",
+      review: "Excellent customer service and even better pricing!",
+      platform: data.google.childImageSharp.fixed,
+      },
+      {
+      name: "Stephanie Frid",
+      review: " ",
+      platform: data.google.childImageSharp.fixed,
+      },
+      {
+      name: "Jasmine Lopez",
+      review: "For starters, Johanna has been simply amazing to work with! She goes above and beyond to ensure that clients are well taken care of. Johanna has been nothing but helpful when I have had such difficulty with my business matter. She is amazing! Thank you!",
+      platform: data.google.childImageSharp.fixed,
+      },
+      {
+      name: "David Roth",
+      review: "Great service and communicate very well with exceptional turnaround times - highly recommended.",	
+      platform: data.google.childImageSharp.fixed,
+      },
+      {
+      name: "Keflu Aereha",
+      review: "I have been with Hoffman Hanono Insurance for over 5 years. Johanna is so helpful and knowledgeable on commercial Auto and GL insurance. I would highly recommend her to get your commercial policy.",
+      platform: data.google.childImageSharp.fixed,
+      },
+      {
+      name: "Amir	Zarasvandi",
+      review: "Very organized and structured! Been working with them for over 5 years. Keep up the good work. Thanks again.",
+      platform: data.google.childImageSharp.fixed,
+      },
+      {
+      name: "Anastasia Rechif",
+      review: "Professional, responsible, courteous.",
+      platform: data.google.childImageSharp.fixed,
+      },
+      {
+      name: "Dubai Transportation LLC",
+      review: "The best customer service and is very professional. Definitely recommended, and 5 stars.",
+      platform: data.google.childImageSharp.fixed,
+      },
+    {
       name: "Peter Schwarz",
       review:
         "I recently had my homeowner's provider raise our rate by 50% for next year despite no claims or change in status of any kind.  Lisa, at Hoffman Hanono, worked tirelessly with me to find me a new carrier and get me a quote that was almost exactly what I paid last year for even better coverage!",
