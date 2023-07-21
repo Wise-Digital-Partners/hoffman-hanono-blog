@@ -73,21 +73,25 @@ const ReviewCards = ({ className }) => {
       {		
       name: "Cynthia Meinhardt",
       review: "Johanna was a great help in shopping for us a new insurance company. She kept me posted and I got her the information that the company had requested. Communication was great and all turned out well.",
+      headshot: "https://lh3.googleusercontent.com/a-/AD_cMMSmAOZNL3pRimYjPmpSlw2_a1Y7ZafmzVjuj9QKEoj8BUk=w60-h60-p-rp-mo-br100",
       platform: data.google.childImageSharp.fixed,
       },
       {	
       name: "Jackie J",
       review: "I've had Hoffman Hanono as my insurance agent since buying my rental 4-plex back in 2004. They're prompt and responsive - they take care of things without my having to keep on checking. Lisa Preisler has been helping me and she's very good about making sure all my questions are answered - so I can feel secure that the property is well covered.",
+      headshot: "https://lh3.googleusercontent.com/a-/AD_cMMRosTI10uqEbysH9Q7RO7tDA0gF_pH-d966RFJegew9sg=w60-h60-p-rp-mo-br100",
       platform: data.google.childImageSharp.fixed,
       },
       {
       name: "Antonia Vasquez",
       review: "I have been a customer of the most professional insurance broker in Southern California, Hoffman Hanono Insurance, for 15 years. I have received advice, reference, and assistance in getting the right coverage for all my business, residential and personal needs with the most professional/personal attention. They always provide reminders of important dates and updates. For the right insurance coverage for your needs, I highly recommend HHI in Chula Vista, California.",
+      headshot: "https://lh3.googleusercontent.com/a-/AD_cMMRkbK-GVNutwMcs-kwxJZKFE2eK60OxL2BXmpyIpxJbApo=w60-h60-p-rp-mo-br100",
       platform: data.google.childImageSharp.fixed,
       },
       {
       name: "Emily Le-Han",
       review: "We’ve been with Hoffman Ins. for nearly 14 years, initially for our business insurance and, most recently, for our personal policy. Love the personal attention from Ben Antl for our business policies and now with Lisa Preisley for our personal policy.",
+      headshot: "https://lh3.googleusercontent.com/a-/AD_cMMT29OS8zzgYZ_zNi70lZslg5W-uSBm4Ayy9jppxIx5gSg=w60-h60-p-rp-mo-br100",
       platform: data.google.childImageSharp.fixed,
       },
       {
@@ -118,6 +122,7 @@ const ReviewCards = ({ className }) => {
       {
       name: "Amir	Zarasvandi",
       review: "Very organized and structured! Been working with them for over 5 years. Keep up the good work. Thanks again.",
+      headshot: "https://lh3.googleusercontent.com/a-/AD_cMMRFgUZQpmMXzXE1hDr7zuWmm27Ta8Zh6JvkYFVzU7chLjw=w60-h60-p-rp-mo-br100",
       platform: data.google.childImageSharp.fixed,
       },
       {
