@@ -62,7 +62,7 @@ const Page = ({ data }) => {
                 President
               </p>
             </div>
-            <div>
+            {/* <div>
               <div className="relative m-auto w-xl overflow-hidden mb-6 md:mb-8">
                 <button
                   data-modal-open="modal-team-members"
@@ -80,7 +80,7 @@ const Page = ({ data }) => {
               <p className="text-gray-900 opacity-50 text-large md:text-xlarge mb-0">
                 Partner
               </p>
-            </div>
+            </div> */}
             <div>
               <div className="relative m-auto w-xl overflow-hidden mb-6 md:mb-8">
                 <button
@@ -164,7 +164,7 @@ const Page = ({ data }) => {
                   <span className="md:hidden">ext. </span>103
                 </div>
               </div>               */}
-              <div className="md:table-row  rounded-sm px-4 py-3">
+              {/* <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
                   Ezra Hanono
                 </div>
@@ -182,7 +182,7 @@ const Page = ({ data }) => {
                 <div className="md:table-cell md:px-4 md:py-2">
                   <span className="md:hidden">ext. </span>102
                 </div>
-              </div>
+              </div> */}
               <div className="md:table-row  rounded-sm px-4 py-3">
                 <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
                   Michelle Torres
