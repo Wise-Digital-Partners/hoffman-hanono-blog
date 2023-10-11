@@ -16,6 +16,60 @@ let submenuTempHeight1 = null;
 let submenuTempHeight2 = null;
 let submenuTempHeight3 = null;
 
+const restOfCommercialNavItems = [
+  {
+    itemLink: "/manufacturers-insurance/",
+    itemLabel: "Manufacturers",
+  },
+  {
+    itemLink: "/professional-liability-insurance/",
+    itemLabel: "Professional Liability",
+  },
+  {
+    itemLink: "/cyber-liability-insurance/",
+    itemLabel: "Cyber Liability",
+  },
+  {
+    itemLink: "/property-owners-insurance/",
+    itemLabel: "Property Owners",
+  },
+  {
+    itemLink: "/contractors-insurance/",
+    itemLabel: "Contractors",
+  },
+  {
+    itemLink: "/restaurant-insurance/",
+    itemLabel: "Restaurants",
+  },
+  {
+    itemLink: "/builders-risk-insurance/",
+    itemLabel: "Builder’s Risk",
+  },
+  {
+    itemLink: "/building-insurance/",
+    itemLabel: "Building Insurance",
+  },
+  {
+    itemLink: "/general-liability-insurance/",
+    itemLabel: "General Liability",
+  },
+  {
+    itemLink: "/nonprofit-insurance/",
+    itemLabel: "Non-Profits",
+  },
+  {
+    itemLink: "/transportation-insurance/",
+    itemLabel: "Transportation",
+  },
+  {
+    itemLink: "/health-benefits-insurance/",
+    itemLabel: "Health Benefits",
+  },
+  {
+    itemLink: "/commercial-auto-insurance-san-diego/",
+    itemLabel: "Auto",
+  },
+];
 const Header = () => {
   // mobile submenu animate height variables
   const [submenuHeight1, submenuSetHeight1] = useState("initial");
@@ -250,7 +304,7 @@ const Header = () => {
                 <AniLink fade to="/business-insurance-chula-vista/">
                   Commercial
                 </AniLink>
-                <ul className="submenu">
+                <ul className="submenu overflow-y-scroll h-[600px]">
                   {/* COPY */}
                   {navBarTitleCom.map((item, i) => (
                     <li className="navigation-item" key={i}>
@@ -259,71 +313,19 @@ const Header = () => {
                       </AniLink>
                     </li>
                   ))}
-                  <li className="navigation-item">
-                    <AniLink fade to="/manufacturers-insurance/">
-                      Manufacturers
-                    </AniLink>
-                  </li>
-                  <li className="navigation-item">
-                    <AniLink fade to="/professional-liability-insurance/">
-                      Professional Liability
-                    </AniLink>
-                  </li>
-                  <li className="navigation-item">
-                    <AniLink fade to="/cyber-liability-insurance/">
-                      Cyber Liability
-                    </AniLink>
-                  </li>
-                  <li className="navigation-item">
-                    <AniLink fade to="/property-owners-insurance/">
-                      Property Owners
-                    </AniLink>
-                  </li>
-                  <li className="navigation-item">
-                    <AniLink fade to="/contractors-insurance/">
-                      Contractors
-                    </AniLink>
-                  </li>
-                  <li className="navigation-item">
-                    <AniLink fade to="/restaurant-insurance/">
-                      Restaurants
-                    </AniLink>
-                  </li>
-                  <li className="navigation-item">
-                    <AniLink fade to="/builders-risk-insurance/">
-                      Builder’s Risk
-                    </AniLink>
-                  </li>
-                  <li className="navigation-item">
-                    <AniLink fade to="/building-insurance/">
-                      Building Insurance
-                    </AniLink>
-                  </li>
-                  <li className="navigation-item">
-                    <AniLink fade to="/general-liability-insurance/">
-                      General Liability
-                    </AniLink>
-                  </li>
-                  <li className="navigation-item">
-                    <AniLink fade to="/nonprofit-insurance/">
-                      Non-Profits
-                    </AniLink>
-                  </li>
-                  <li className="navigation-item">
-                    <AniLink fade to="/transportation-insurance/">
-                      Transportation
-                    </AniLink>
-                  </li>
-                  <li className="navigation-item">
-                    <AniLink fade to="/health-benefits-insurance/">
-                      Health Benefits
-                    </AniLink>
-                  </li>
-                  <li className="navigation-item">
-                    <AniLink fade to="/commercial-auto-insurance-san-diego/">
-                      Auto
-                    </AniLink>
-                  </li>
+                  {restOfCommercialNavItems
+                    .sort((a, b) =>
+                      a.itemLabel
+                        .toLowerCase()
+                        .localeCompare(b.itemLabel.toUpperCase())
+                    )
+                    .map((item, index) => (
+                      <li className="navigation-item" key={index}>
+                        <AniLink fade to={item.itemLink}>
+                          {item.itemLabel}
+                        </AniLink>
+                      </li>
+                    ))}
                 </ul>
               </li>
               <li className="is-submenu-parent navigation-item">
@@ -459,116 +461,19 @@ const Header = () => {
                           Commercial Insurance
                         </AniLink>
                       </li>
-                      <li className="navigation-item">
-                        <AniLink
-                          onKeyDown={clickHandler}
-                          onClick={clickHandler}
-                          fade
-                          to="/manufacturers-insurance/"
-                        >
-                          Manufacturers
-                        </AniLink>
-                      </li>
-                      <li className="navigation-item">
-                        <AniLink
-                          onKeyDown={clickHandler}
-                          onClick={clickHandler}
-                          fade
-                          to="/professional-liability-insurance/"
-                        >
-                          Professional Liability
-                        </AniLink>
-                      </li>
-                      <li className="navigation-item">
-                        <AniLink
-                          onKeyDown={clickHandler}
-                          onClick={clickHandler}
-                          fade
-                          to="/property-owners-insurance/"
-                        >
-                          Property Owners
-                        </AniLink>
-                      </li>
-                      <li className="navigation-item">
-                        <AniLink
-                          onKeyDown={clickHandler}
-                          onClick={clickHandler}
-                          fade
-                          to="/contractors-insurance/"
-                        >
-                          Contractors
-                        </AniLink>
-                      </li>
-                      <li className="navigation-item">
-                        <AniLink
-                          onKeyDown={clickHandler}
-                          onClick={clickHandler}
-                          fade
-                          to="/restaurant-insurance/"
-                        >
-                          Restaurants
-                        </AniLink>
-                      </li>
-                      <li className="navigation-item">
-                        <AniLink
-                          onKeyDown={clickHandler}
-                          onClick={clickHandler}
-                          fade
-                          to="/builders-risk-insurance/"
-                        >
-                          Builder's Risk
-                        </AniLink>
-                      </li>
-                      <li className="navigation-item">
-                        <AniLink
-                          onKeyDown={clickHandler}
-                          onClick={clickHandler}
-                          fade
-                          to="/general-liability-insurance/"
-                        >
-                          General Liability
-                        </AniLink>
-                      </li>
-                      <li className="navigation-item">
-                        <AniLink
-                          onKeyDown={clickHandler}
-                          onClick={clickHandler}
-                          fade
-                          to="/nonprofit-insurance/"
-                        >
-                          Non-Profits
-                        </AniLink>
-                      </li>
-                      <li className="navigation-item">
-                        <AniLink
-                          onKeyDown={clickHandler}
-                          onClick={clickHandler}
-                          fade
-                          to="/transportation-insurance/"
-                        >
-                          Transportation
-                        </AniLink>
-                      </li>
-                      <li className="navigation-item">
-                        <AniLink
-                          onKeyDown={clickHandler}
-                          onClick={clickHandler}
-                          fade
-                          to="/health-benefits-insurance/"
-                        >
-                          Health Benefits
-                        </AniLink>
-                      </li>
-                      <li className="navigation-item">
-                        <AniLink
-                          onKeyDown={clickHandler}
-                          onClick={clickHandler}
-                          fade
-                          to="/commercial-auto-insurance-san-diego/"
-                        >
-                          Auto
-                        </AniLink>
-                      </li>
+                      {restOfCommercialNavItems
+                        .sort((a, b) =>
+                          a.itemLabel
+                            .toLowerCase()
+                            .localeCompare(b.itemLabel.toUpperCase())
+                        )
+                        .map((item, index) => (
+                          <li className="navigation-item" key={index}>
+                            <AniLink fade to={item.itemLink}>
+                              {item.itemLabel}
+                            </AniLink>
+                          </li>
+                        ))}
                     </ul>
                   </li>
                   <li className="navigation-item is-submenu-parent">
