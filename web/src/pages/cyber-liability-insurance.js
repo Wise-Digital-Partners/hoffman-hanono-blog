@@ -90,7 +90,7 @@ const Page = ({ data }) => {
             <p className="decorative-text">Custom Solutions</p>
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
               <div>
-                <h2>Our Cyber Insurance Approachh</h2>
+                <h2>Our Cyber Insurance Approach</h2>
               </div>
               <div>
                 <p className="mb-0">
