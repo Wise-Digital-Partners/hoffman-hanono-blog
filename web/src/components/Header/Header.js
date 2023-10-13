@@ -26,6 +26,10 @@ const restOfCommercialNavItems = [
     itemLabel: "Professional Liability",
   },
   {
+    itemLink: "/crime-insurance/",
+    itemLabel: "Crime",
+  },
+  {
     itemLink: "/cyber-liability-insurance/",
     itemLabel: "Cyber Liability",
   },
