@@ -34,6 +34,10 @@ const restOfCommercialNavItems = [
     itemLabel: "Cyber Liability",
   },
   {
+    itemLink: "/epli-insurance/",
+    itemLabel: "Employment Practices Liability Insurance (EPLI)",
+  },
+  {
     itemLink: "/property-owners-insurance/",
     itemLabel: "Property Owners",
   },
