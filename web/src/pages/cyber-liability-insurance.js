@@ -36,7 +36,7 @@ const Page = ({ data }) => {
       >
         <div className="max-w-2xl">
           <h1>Cyber Liability Insurance</h1>
-          <p className="mb-0">
+          <p>
             Technology makes it exponentially easier to run a business, whether
             you’re a mom-and-pop shop or a global corporation. But just because
             technology has many rewards doesn’t mean it’s without risk. If you
