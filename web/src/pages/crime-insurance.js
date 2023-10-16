@@ -36,7 +36,7 @@ const Page = ({ data }) => {
       >
         <div className="max-w-2xl">
           <h1>Business Crime Insurance Coverage</h1>
-          <p className="mb-0">
+          <p>
             What’s a good rule of thumb when it comes to your business? Hope for
             the best, but prepare for the worst. While companies take great care
             in hiring, striving to build teams of trustworthy professionals,
