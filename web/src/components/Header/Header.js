@@ -34,6 +34,10 @@ const restOfCommercialNavItems = [
     itemLabel: "Cyber Liability",
   },
   {
+    itemLink: "/earthquake-insurance/",
+    itemLabel: "Earthquake",
+  },
+  {
     itemLink: "/epli-insurance/",
     itemLabel: "Employment Practices Liability Insurance (EPLI)",
   },
