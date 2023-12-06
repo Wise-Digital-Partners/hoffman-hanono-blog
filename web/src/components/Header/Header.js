@@ -85,6 +85,10 @@ const restOfCommercialNavItems = [
     itemLink: "/commercial-auto-insurance-san-diego/",
     itemLabel: "Auto",
   },
+  {
+    itemLink: "/inland-marine-insurance/",
+    itemLabel: "Inland Marine",
+  },
 ];
 const Header = () => {
   // mobile submenu animate height variables
