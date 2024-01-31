@@ -89,6 +89,10 @@ const restOfCommercialNavItems = [
     itemLink: "/inland-marine-insurance/",
     itemLabel: "Inland Marine",
   },
+  {
+    itemLink: "/errors-and-omissions-insurance/",
+    itemLabel: "Errors & Omissions Insurance",
+  },
 ];
 const Header = () => {
   // mobile submenu animate height variables
