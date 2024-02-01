@@ -483,7 +483,7 @@ const Page = ({ data }) => {
                 <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
                   <a
                     className="no-underline font-normal"
-                    href="mailto:sarenas@hhinsurance.com"
+                    href="mailto:mmartinez@hhinsurance.com"
                   >
                     mmartinez@hhinsurance.com
                   </a>
