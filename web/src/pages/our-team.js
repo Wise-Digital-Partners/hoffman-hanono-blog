@@ -6,6 +6,7 @@ import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
 import CallToAction from "../components/Repeating/CallToAction";
 import ModalTeamMembers from "../components/Modal/ModalTeamMembers";
+import { te } from "date-fns/locale";
 
 const Page = ({ data }) => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -126,373 +127,9 @@ const Page = ({ data }) => {
               </div>
             </div>
             <div className="md:table-row-group alternating-colors-1">
-              <div className="md:table-row  rounded-sm px-4 py-3">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  David Hoffman
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  President
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:david@hhinsurance.com"
-                  >
-                    david@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-2">
-                  <span className="md:hidden">ext. </span>101
-                </div>
-              </div>
-              {/* <div className="md:table-row  rounded-sm px-4 py-3">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Philip Hoffman
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  Vice President
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:phil@hhinsurance.com"
-                  >
-                    phil@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4">
-                  <span className="md:hidden">ext. </span>103
-                </div>
-              </div>               */}
-              {/* <div className="md:table-row  rounded-sm px-4 py-3">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Ezra Hanono
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  Partner/Treasurer
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:ezra@hhinsurance.com"
-                  >
-                    ezra@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-2">
-                  <span className="md:hidden">ext. </span>102
-                </div>
-              </div> */}
-              <div className="md:table-row  rounded-sm px-4 py-3">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Michelle Torres
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  Operations Manager
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:mtorres@hhinsurance.com"
-                  >
-                    mtorres@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4">
-                  <span className="md:hidden">ext. </span>104
-                </div>
-              </div>
-              <div className="md:table-row  rounded-sm px-4 py-3">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Ben Antl
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  Account Executive
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:ben@hhinsurance.com"
-                  >
-                    ben@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-2">
-                  <span className="md:hidden">ext. </span>113
-                </div>
-              </div>
-              <div className="md:table-row  rounded-sm px-4 py-3">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Nestor Aguilar
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  Account Executive
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:naguilar@hhinsurance.com"
-                  >
-                    naguilar@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-2">
-                  <span className="md:hidden">ext. </span>131
-                </div>
-              </div>
-              <div className="md:table-row  rounded-sm px-4 py-3">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Johanna Guedea
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  Commercial Lines Account Manager
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:jguedea@hhinsurance.com"
-                  >
-                    jguedea@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4">
-                  <span className="md:hidden">ext. </span>120
-                </div>
-              </div>
-              <div className="md:table-row  rounded-sm px-4 py-3">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Judy Schwartz
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  Commercial Lines Account Manager
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:jschwartz@hhinsurance.com"
-                  >
-                    jschwartz@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-2">
-                  <span className="md:hidden">ext. </span>107
-                </div>
-              </div>
-              <div className="md:table-row  rounded-sm px-4 py-3">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Karen Hernandez
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  Director of First Impressions
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:khernandez@hhinsurance.com"
-                  >
-                    khernandez@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4">
-                  <span className="md:hidden">ext. </span>109
-                </div>
-              </div>
-              <div className="md:table-row  rounded-sm px-4 py-3">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Lisa Preisler
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  Personal Lines Account Manager
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:lpreisler@hhinsurance.com"
-                  >
-                    lpreisler@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4">
-                  <span className="md:hidden">ext. </span>108
-                </div>
-              </div>
-              <div className="md:table-row  rounded-sm px-4 py-3">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Liliana Robles
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  Commercial Lines Account Manager
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:lrobles@hhinsurance.com"
-                  >
-                    lrobles@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-2">
-                  <span className="md:hidden">ext. </span>106
-                </div>
-              </div>
-              <div className="md:table-row  rounded-sm px-4 py-3">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Osmar Espinoza
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  Account Executive
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:osmar@hhinsurance.com"
-                  >
-                    osmar@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-2">
-                  <span className="md:hidden">ext. </span>105
-                </div>
-              </div>
-              <div className="md:table-row  rounded-sm px-4 py-3">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Rosanne Fuentes
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  Commercial Lines Account Manager
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:rfuentes@hhinsurance.com"
-                  >
-                    rfuentes@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-2">
-                  <span className="md:hidden">ext. </span>110
-                </div>
-              </div>
-              <div className="md:table-row  rounded-sm px-4 py-3">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Patricia Strand
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  Accounting
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:pstrand@hhinsurance.com"
-                  >
-                    pstrand@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4">
-                  <span className="md:hidden">ext. </span>122
-                </div>
-              </div>
-              <div className="md:table-row  rounded-sm px-4 py-3">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Elias Vazquez
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  Account Executive
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:evazquez@hhinsurance.comcom"
-                  >
-                    evazquez@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-2">
-                  <span className="md:hidden">ext. </span>118
-                </div>
-              </div>
-              <div className="md:table-row  rounded-sm px-4 py-3">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  John Borja
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  Account Executive
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:jborja@hhinsurance.com"
-                  >
-                    jborja@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4">
-                  <span className="md:hidden">ext. </span>124
-                </div>
-              </div>
-              {/* START OF TEAM MEMBER SECTION */}
-              <div className="md:table-row  rounded-sm px-4 py-3">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Pamela Garcia
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  Customer Service Representative
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:pgarcia@hhinsurance.com"
-                  >
-                    pgarcia@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4">
-                  <span className="md:hidden">ext. </span>127
-                </div>
-              </div>
-              {/* END OF TEAM MEMBER SECTION */}
-              {/* START OF TEAM MEMBER SECTION */}
-              <div className="md:table-row  rounded-sm px-4 py-3">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Samantha Arenas
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  Commercial Lines Account Manager
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:sarenas@hhinsurance.com"
-                  >
-                    sarenas@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4">
-                  <span className="md:hidden">ext. </span>128
-                </div>
-              </div>
-              {/* END OF TEAM MEMBER SECTION */}
-              {/* START OF TEAM MEMBER SECTION */}
-              <div className="md:table-row  rounded-sm px-4 py-3">
-                <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
-                  Marlene Martinez 
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  Personal Lines Account Manager
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
-                  <a
-                    className="no-underline font-normal"
-                    href="mailto:mmartinez@hhinsurance.com"
-                  >
-                    mmartinez@hhinsurance.com
-                  </a>
-                </div>
-                <div className="md:table-cell md:px-4 md:py-4">
-                  <span className="md:hidden">ext. </span>133
-                </div>
-              </div>
-              {/* END OF TEAM MEMBER SECTION */}
+              {teamMembers.map((teamMember) => (
+                <TeamMemberRow teamMember={teamMember} key={teamMember.ext} />
+              ))}
             </div>
           </div>
         </div>
@@ -502,6 +139,148 @@ const Page = ({ data }) => {
 
       <ModalTeamMembers slideIndex={slideIndex} />
     </Layout>
+  );
+};
+
+const teamMembers = [
+  {
+    name: "David Hoffman",
+    position: "President",
+    email: "david@hhinsurance.com",
+    ext: 101,
+  },
+  {
+    name: "Michelle Torres",
+    position: "Operations Manager",
+    email: "mtorres@hhinsurance.com",
+    ext: 104,
+  },
+  {
+    name: "Ben Antl",
+    position: "Account Executive",
+    email: "ben@hhinsurance.com",
+    ext: 113,
+  },
+  {
+    name: "Nestor Aguilar",
+    position: "Account Executive",
+    email: "naguilar@hhinsurance.com",
+    ext: 131,
+  },
+  {
+    name: "Johanna Guedea",
+    position: "Commercial Lines Account Manager",
+    email: "jguedea@hhinsurance.com",
+    ext: 120,
+  },
+  {
+    name: "Judy Schwartz",
+    position: "Commercial Lines Account Manager",
+    email: "jschwartz@hhinsurance.com",
+    ext: 107,
+  },
+  {
+    name: "Karen Hernandez",
+    position: "Director of First Impressions",
+    email: "khernandez@hhinsurance.com",
+    ext: 109,
+  },
+  {
+    name: "Lisa Preisler",
+    position: "Personal Lines Account Manager",
+    email: "lpreisler@hhinsurance.com",
+    ext: 108,
+  },
+  {
+    name: "Osmar Espinoza",
+    position: "Account Executive",
+    email: "osmar@hhinsurance.com",
+    ext: 105,
+  },
+  {
+    name: "Rosanne Fuentes",
+    position: "Commercial Lines Account Manager",
+    email: "rfuentes@hhinsurance.com",
+    ext: 110,
+  },
+  {
+    name: "Patricia Strand",
+    position: "Accounting",
+    email: "pstrand@hhinsurance.com",
+    ext: 122,
+  },
+  {
+    name: "Elias Vazquez",
+    position: "Account Executive",
+    email: "evazquez@hhinsurance.com",
+    ext: 118,
+  },
+  {
+    name: "John Borja",
+    position: "Account Executive",
+    email: "jborja@hhinsurance.com",
+    ext: 124,
+  },
+  {
+    name: "Pamela Garcia",
+    position: "Customer Service Representative",
+    email: "pgarcia@hhinsurance.com",
+    ext: 127,
+  },
+  {
+    name: "Samantha Arenas",
+    position: "Commercial Lines Account Manager",
+    email: "sarenas@hhinsurance.com",
+    ext: 128,
+  },
+  {
+    name: "Marlene Martinez ",
+    position: "Personal Lines Account Manager",
+    email: "mmartinez@hhinsurance.com",
+    ext: 133,
+  },
+  {
+    name: "German Gonzalez ",
+    position: "Account Executive",
+    email: "ggonzalez@hhinsurance.com ",
+    ext: 136,
+  },
+  {
+    name: "Jorge Lopez",
+    position: "Commercial Lines Associate",
+    email: "jlopez@hhinsurance.com",
+    ext: 135,
+  },
+  {
+    name: "Carlos Garcia",
+    position: "Customer Service Representative",
+    email: "cgarcia@hhinsurance.com",
+    ext: 134,
+  },
+];
+
+const TeamMemberRow = ({ teamMember }) => {
+  return (
+    <div className="md:table-row  rounded-sm px-4 py-3">
+      <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
+        {teamMember.name}
+      </div>
+      <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
+        {teamMember.position}
+      </div>
+      <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
+        <a
+          className="no-underline font-normal"
+          href={`mailto:${teamMember.email}`}
+        >
+          {teamMember.email}
+        </a>
+      </div>
+      <div className="md:table-cell md:px-4 md:py-2">
+        <span className="md:hidden">ext. </span>
+        {teamMember.ext}
+      </div>
+    </div>
   );
 };
 
