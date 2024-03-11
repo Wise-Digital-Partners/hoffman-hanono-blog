@@ -37,7 +37,7 @@ const Page = ({ data }) => {
         maxHeightMobile="500px"
       >
         <div className="max-w-2xl">
-          <h1>Business Insurance in Chula Vista & Beyond</h1>
+          <h1>Commercial Business Insurance in Chula Vista & Beyond</h1>
           <p>
             Hoffman Hanono Insurance Services offers a wide range of commercial
             lines products for our clients. We go on-site with business owners
