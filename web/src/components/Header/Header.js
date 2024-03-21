@@ -94,6 +94,186 @@ const restOfCommercialNavItems = [
     itemLabel: "Errors & Omissions Insurance",
   },
 ];
+
+const constructionItems = [
+  {
+    itemLink: "/contractors-equipment-insurance/",
+    itemLabel: "Contractors Equipment Insurance",
+  },
+  {
+    itemLink: "/builders-risk-insurance/",
+    itemLabel: "Builder’s Risk",
+  },
+  {
+    itemLink: "/building-insurance/",
+    itemLabel: "Building Insurance",
+  },
+  {
+    itemLink: "/contractors-insurance/",
+    itemLabel: "Contractors",
+  },
+];
+
+const manufacturingItems = [
+  {
+    itemLink: "/product-liability-insurance/",
+    itemLabel: "Product Liability",
+  },
+];
+
+const nonProfitsItems = [
+  {
+    itemLink: "/nonprofit-insurance/",
+    itemLabel: "Non-Profits",
+  },
+];
+
+const transportationItems = [
+  {
+    itemLink: "/commercial-auto-insurance-san-diego/",
+    itemLabel: "Auto",
+  },
+  {
+    itemLink: "/cargo-insurance/",
+    itemLabel: "Cargo",
+  },
+  {
+    itemLink: "/transportation-insurance/",
+    itemLabel: "Transportation",
+  },
+];
+
+const otherIndustriesItems = [
+  {
+    itemLink: "/restaurant-insurance/",
+    itemLabel: "Restaurants",
+  },
+];
+
+const propertyLiabilityItems = [
+  {
+    itemLink: "/property-owners-insurance/",
+    itemLabel: "Property Owners",
+  },
+  {
+    itemLink: "/general-liability-insurance/",
+    itemLabel: "General Liability",
+  },
+  {
+    itemLink: "/earthquake-insurance/",
+    itemLabel: "Earthquake",
+  },
+];
+
+const businessProtectionItems = [
+  {
+    itemLink: "/chula-vista-business-insurance/",
+    itemLabel: "Business Insurance",
+  },
+  {
+    itemLink: "/workers-compensation-insurance/",
+    itemLabel: "Workers Compensation",
+  },
+  {
+    itemLink: "/loss-of-income-insurance/",
+    itemLabel: "Loss of Income",
+  },
+  {
+    itemLink: "/bonds-insurance/",
+    itemLabel: "Bonds Insurance",
+  },
+  {
+    itemLink: "/directors-officers-liability-insurance/",
+    itemLabel: "Directors and Officers Liability",
+  },
+  {
+    itemLink: "/cyber-liability-insurance/",
+    itemLabel: "Cyber Liability",
+  },
+
+  {
+    itemLink: "/epli-insurance/",
+    itemLabel: "Employment Practices Liability Insurance (EPLI)",
+  },
+];
+
+const errorsOmissionsItems = [
+  {
+    itemLink: "/professional-liability-insurance/",
+    itemLabel: "Professional Liability",
+  },
+  {
+    itemLink: "/errors-and-omissions-insurance/",
+    itemLabel: "Errors & Omissions Insurance",
+  },
+];
+
+const otherCoveragesItems = [
+  {
+    itemLink: "/inland-marine-insurance/",
+    itemLabel: "Inland Marine",
+  },
+  {
+    itemLink: "/crime-insurance/",
+    itemLabel: "Crime",
+  },
+];
+
+const healthBenefitsItems = [
+  {
+    itemLink: "/health-benefits-insurance/",
+    itemLabel: "Health Benefits",
+  },
+];
+
+const commercialIndustries = [
+  {
+    itemChildren: constructionItems,
+    itemLabel: "Construction",
+  },
+  {
+    itemChildren: manufacturingItems,
+    itemLabel: "Manufacturing",
+  },
+  {
+    itemChildren: nonProfitsItems,
+    itemLabel: "Non-Profits",
+  },
+  {
+    itemChildren: transportationItems,
+    itemLabel: "Transportation",
+  },
+  {
+    itemChildren: otherIndustriesItems,
+    itemLabel: "Other Industries",
+  },
+];
+
+const commercialCoverages = [
+  {
+    itemChildren: propertyLiabilityItems,
+    itemLabel: "Property & Liability",
+  },
+  {
+    itemChildren: businessProtectionItems,
+    itemLabel: "Business Protection",
+  },
+  {
+    itemChildren: errorsOmissionsItems,
+    itemLabel: "Errors & Omissions",
+  },
+  {
+    itemChildren: otherCoveragesItems,
+    itemLabel: "Other Coverages",
+  },
+];
+
+const commercialEmployeeBenefits = [
+  {
+    itemChildren: healthBenefitsItems,
+    itemLabel: "Health Benefits",
+  },
+];
 const Header = () => {
   // mobile submenu animate height variables
   const [submenuHeight1, submenuSetHeight1] = useState("initial");
@@ -105,6 +285,9 @@ const Header = () => {
   const submenuRef1 = useRef(null);
   const submenuRef2 = useRef(null);
   const submenuRef3 = useRef(null);
+  const [activeLinkContainer, setActiveLinkContainer] = useState(null);
+  const [activeLinkContainerTitle, setActiveLinkContainerTitle] =
+    useState(null);
 
   // calculate mobile submenu height
   useEffect(() => {
@@ -322,34 +505,39 @@ const Header = () => {
           <div className="flex items-center justify-end flex-auto">
             <ul
               id="navigation-desktop"
-              className="hidden lg:flex lg:items-center lg:justify-end mr-8"
+              className="hidden lg:flex lg:items-center lg:justify-end mr-8 "
             >
               <li className="is-submenu-parent navigation-item">
                 <AniLink fade to="/business-insurance-chula-vista/">
                   Commercial
                 </AniLink>
-                <ul className="submenu overflow-y-scroll h-[600px]">
-                  {/* COPY */}
-                  {navBarTitleCom.map((item, i) => (
-                    <li className="navigation-item" key={i}>
-                      <AniLink fade to={`/${item.slug.current}/`}>
-                        {item.nav}
-                      </AniLink>
-                    </li>
-                  ))}
-                  {restOfCommercialNavItems
-                    .sort((a, b) =>
-                      a.itemLabel
-                        .toLowerCase()
-                        .localeCompare(b.itemLabel.toUpperCase())
-                    )
-                    .map((item, index) => (
-                      <li className="navigation-item" key={index}>
-                        <AniLink fade to={item.itemLink}>
-                          {item.itemLabel}
-                        </AniLink>
-                      </li>
-                    ))}
+                <ul className="submenu overflow-y-scroll h-[600px] !w-[600px] flex gap-x-10 lg:!flex-row lg:!grid grid-cols-[200px_1fr]">
+                  <div className="flex flex-col gap-y-3">
+                    <CategoryContainer
+                      title="Industries"
+                      categoryItems={commercialIndustries}
+                      setActiveLinkContainer={setActiveLinkContainer}
+                      setActiveLinkContainerTitle={setActiveLinkContainerTitle}
+                    />
+                    <CategoryContainer
+                      title="Coverages"
+                      categoryItems={commercialCoverages}
+                      setActiveLinkContainer={setActiveLinkContainer}
+                      setActiveLinkContainerTitle={setActiveLinkContainerTitle}
+                    />
+                    <CategoryContainer
+                      title="Employee benefits"
+                      categoryItems={commercialEmployeeBenefits}
+                      setActiveLinkContainer={setActiveLinkContainer}
+                      setActiveLinkContainerTitle={setActiveLinkContainerTitle}
+                    />
+                  </div>
+                  <div>
+                    <LinkContainer
+                      title={activeLinkContainerTitle}
+                      linkItems={activeLinkContainer}
+                    />
+                  </div>
                 </ul>
               </li>
               <li className="is-submenu-parent navigation-item">
@@ -468,7 +656,9 @@ const Header = () => {
                       Commercial Insurance
                     </a>
                     <ul
-                      className="submenu ml-6"
+                      className={`submenu ml-6 ${
+                        subMenuOpen1 ? "!max-h-none" : ""
+                      }`}
                       ref={submenuRef1}
                       style={{
                         maxHeight: submenuHeight1,
@@ -680,6 +870,67 @@ const Header = () => {
           </div>
         </div>
       </nav>
+    </div>
+  );
+};
+
+const CategoryContainer = ({
+  title,
+  categoryItems,
+  setActiveLinkContainer,
+  setActiveLinkContainerTitle,
+}) => {
+  const handleHover = (item) => {
+    // console.log(item);
+    setActiveLinkContainer(item.itemChildren);
+    setActiveLinkContainerTitle(item.itemLabel);
+  };
+
+  return (
+    <div className="flex flex-col gap-y-4 my-2">
+      <div className="font-bold text-[#1A1A1A] pl-2 border-transparent border-l-4 text-[18px] font-body">
+        {title && title}
+      </div>
+      <div className="flex flex-col gap-y-4">
+        {categoryItems.map((item, index) => (
+          <li
+            className="border-l-4 !no-underline hover:border-primary_600 pl-2 border-transparent hover:!text-primary_600 group cursor-pointer"
+            key={index}
+            onMouseEnter={() => handleHover(item)}
+          >
+            <div className="group-hover:!text-primary_600 !no-underline text-[#525252] !font-normal !text-[16px] !font-body">
+              {item.itemLabel}
+            </div>
+          </li>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const LinkContainer = ({ title, linkItems }) => {
+  return (
+    <div className="flex flex-col gap-y-4 my-2">
+      <div className="font-bold text-[#1A1A1A] pl-2 border-transparent border-l-4 text-[20px] font-body">
+        {title}
+      </div>
+      <div className="flex flex-col gap-y-4">
+        {linkItems &&
+          linkItems.map((item, index) => (
+            <li
+              className="border-l-4 !no-underline pl-2 border-transparent hover:!text-primary_600 group"
+              key={index}
+            >
+              <AniLink
+                fade
+                to={item.itemLink}
+                className="group-hover:!text-primary_600 !no-underline text-[#525252] !text-[16px] !font-body !font-medium"
+              >
+                {item.itemLabel}
+              </AniLink>
+            </li>
+          ))}
+      </div>
     </div>
   );
 };
