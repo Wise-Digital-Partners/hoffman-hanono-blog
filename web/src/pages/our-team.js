@@ -257,12 +257,12 @@ const teamMembers = [
     email: "jlopez@hhinsurance.com",
     ext: 135,
   },
-  {
-    name: "Carlos Garcia",
-    position: "Customer Service Representative",
-    email: "cgarcia@hhinsurance.com",
-    ext: 134,
-  },
+  // {
+  //   name: "Carlos Garcia",
+  //   position: "Customer Service Representative",
+  //   email: "cgarcia@hhinsurance.com",
+  //   ext: 134,
+  // },
 ];
 
 const TeamMemberRow = ({ teamMember }) => {
