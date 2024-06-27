@@ -61,6 +61,7 @@ export default {
                 title: "Form",
                 name: "formName",
                 type: "string",
+                initialValue: "Contact",
                 options: {
                   list: [
                     { title: "Contact Us", value: "Contact Us" },
