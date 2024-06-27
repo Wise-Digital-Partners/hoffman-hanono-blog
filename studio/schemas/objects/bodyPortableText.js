@@ -51,6 +51,26 @@ export default {
               },
             ],
           },
+          {
+            title: "Form",
+            name: "form",
+            type: "object",
+            icon: () => "F",
+            fields: [
+              {
+                title: "Form",
+                name: "formName",
+                type: "string",
+                options: {
+                  list: [
+                    { title: "Contact Us", value: "Contact Us" },
+                    // {title: 'Subscribe form', value: 'Subcriber Email'},
+                    // {title: 'Subscribe for Download', value: 'Subcriber Email Download Form'},
+                  ],
+                },
+              },
+            ],
+          },
         ],
       },
     },

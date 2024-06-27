@@ -1,0 +1,141 @@
+const teamMembers = [
+  {
+    name: "David Hoffman",
+    position: "President",
+    email: "david@hhinsurance.com",
+    ext: 101,
+  },
+  {
+    name: "Philip Hoffman",
+    position: "Vice President",
+    email: "phil@hhinsurance.com",
+    ext: 103,
+  },
+  {
+    name: "Ezra Hanono",
+    position: "Partner/Treasurer",
+    email: "ezra@hhinsurance.com",
+    ext: 102,
+  },
+  {
+    name: "Michelle Torres",
+    position: "Operations Manager",
+    email: "mtorres@hhinsurance.com",
+    ext: 104,
+  },
+  {
+    name: "Ben Antl",
+    position: "Account Executive",
+    email: "ben@hhinsurance.com",
+    ext: 113,
+  },
+  {
+    name: "Nestor Aguilar",
+    position: "Account Executive",
+    email: "naguilar@hhinsurance.com",
+    ext: 131,
+  },
+  {
+    name: "Johanna Guedea",
+    position: "Commercial Lines Account Manager",
+    email: "jguedea@hhinsurance.com",
+    ext: 120,
+  },
+  {
+    name: "Judy Schwartz",
+
+    position: "Commercial Lines Account Manager",
+    email: "jschwartz@hhinsurance.com",
+    ext: 107,
+  },
+  {
+    name: "Karen Hernandez",
+    position: "Director of First Impressions",
+    email: "khernandez@hhinsurance.com",
+    ext: 109,
+  },
+  {
+    name: "Lisa Preisler",
+    position: "Personal Lines Account Manager",
+    email: "lpreisler@hhinsurance.com",
+    ext: 108,
+  },
+  {
+    name: "Liliana Robles",
+    position: "Commercial Lines Account Manager",
+    email: "lrobles@hhinsurance.com",
+    ext: 106,
+  },
+
+  {
+    name: "Osmar Espinoza",
+    position: "Account Executive",
+    email: "osmar@hhinsurance.com",
+    ext: 105,
+  },
+  {
+    name: "Rosanne Fuentes",
+    position: "Commercial Lines Account Manager",
+    email: "rfuentes@hhinsurance.com",
+    ext: 110,
+  },
+  {
+    name: "Patricia Strand",
+    position: "Accounting",
+    email: "pstrand@hhinsurance.com",
+    ext: 122,
+  },
+  {
+    name: "Elias Vazquez",
+    position: "Account Executive",
+    email: "evazquez@hhinsurance.com",
+    ext: 118,
+  },
+  {
+    name: "John Borja",
+    position: " Account Executive",
+    email: "jborja@hhinsurance.com",
+    ext: 124,
+  },
+  {
+    name: "Pamela Garcia",
+    position: "Customer Service Representative",
+    email: "pgarcia@hhinsurance.com",
+    ext: 127,
+  },
+
+  {
+    name: "Samantha Arenas",
+    position: "Commercial Lines Account Manager",
+    email: "sarenas@hhinsurance.com",
+    ext: 128,
+  },
+  {
+    name: "Marlene Martinez ",
+    position: "Personal Lines Account Manager",
+    email: "mmartinez@hhinsurance.com",
+    ext: 133,
+  },
+];
+
+const MemberRow = ({ member }) => {
+  return (
+    <div className="md:table-row  rounded-sm px-4 py-3">
+      <div className="md:table-cell font-bold text-gray-900 md:px-4 md:py-2 mb-1 md:mb-0">
+        {member.name}
+      </div>
+      <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
+        {member.role}
+      </div>
+      <div className="md:table-cell md:px-4 md:py-4 mb-1 md:mb-0">
+        <a className="no-underline font-normal" href={`mailto:${member.mail}`}>
+          {member.mail}
+        </a>
+      </div>
+      <div className="md:table-cell md:px-4 md:py-2">
+        <span className="md:hidden">ext. </span>
+        {member.ext}
+      </div>
+    </div>
+  );
+};
