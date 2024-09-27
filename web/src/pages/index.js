@@ -54,8 +54,8 @@ const Page = ({ data }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-24">
             <div>
               <h1>
-                Commercial Insurance Company from Chula Vista to San Diego’s North
-                County
+                Commercial Insurance Company from Chula Vista to San Diego’s
+                North County
               </h1>
             </div>
             <div>
@@ -63,9 +63,16 @@ const Page = ({ data }) => {
                 Ready to go beyond coverage? Hoffman Hanono Insurance Services
                 is a family-owned, full-service commercial insurance agency in
                 Chula Vista serving clients throughout San Diego County. Since
-                1959, we’ve helped businesses and individuals get the best
-                premiums for their needs. Clients have trusted us for
-                generations because of our superior customer service,
+                1959, we’ve helped{" "}
+                <a href="https://www.hhinsurance.com/business-insurance-chula-vista/">
+                  businesses
+                </a>{" "}
+                and{" "}
+                <a href="https://www.hhinsurance.com/personal-insurance-agency/">
+                  individuals
+                </a>{" "}
+                get the best premiums for their needs. Clients have trusted us
+                for generations because of our superior customer service,
                 time-tested approach, and practical solutions. Whatever your
                 industry or personal needs, your peace of mind will always be
                 our business.

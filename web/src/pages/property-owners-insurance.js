@@ -61,9 +61,21 @@ const Page = ({ data }) => {
                 following:
               </p>
               <ul className="styled-list">
-                <li>Building Coverage</li>
-                <li>Loss of Rental Income</li>
-                <li>Earthquake Sprinkler Leakage</li>
+                <li>
+                  <a href="https://www.hhinsurance.com/building-insurance/">
+                    Building Coverage
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.hhinsurance.com/loss-of-income-insurance/">
+                    Loss of Rental Income
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.hhinsurance.com/earthquake-insurance/">
+                    Earthquake Sprinkler Leakage
+                  </a>
+                </li>
                 <li>Outdoor Signs</li>
                 <li>Glass Coverage</li>
                 <li>Building Ordinance or Law</li>

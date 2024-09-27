@@ -43,12 +43,18 @@ const Page = ({ data }) => {
             about comprehensive cargo coverage.
           </p>
           <p>
-            Cargo insurance protects businesses from financial losses resulting
-            from damage, loss, or cargo theft during transportation. It is
-            essential for those involved in shipping goods, as a single cargo
-            claim can lead to significant financial burdens. Policies vary, so
-            talk to our experts at Hoffman Hanono to find the best option for
-            your needs.
+            Cargo insurance protects businesses from{" "}
+            <a href="https://www.hhinsurance.com/loss-of-income-insurance/">
+              financial losses
+            </a>{" "}
+            resulting from damage, loss, or{" "}
+            <a href="https://www.hhinsurance.com/crime-insurance/">
+              cargo theft
+            </a>{" "}
+            during transportation. It is essential for those involved in
+            shipping goods, as a single cargo claim can lead to significant
+            financial burdens. Policies vary, so talk to our experts at Hoffman
+            Hanono to find the best option for your needs.
           </p>
         </div>
       </HeroSplit>

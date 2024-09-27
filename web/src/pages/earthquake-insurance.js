@@ -103,10 +103,26 @@ const Page = ({ data }) => {
                 more than worth it, as most policies cover:
               </p>
               <ul className="styled-list">
-                <li>Damage to your buildings</li>
-                <li>Stock, equipment, and even machinery</li>
-                <li>Loss of business income</li>
-                <li>Damage to the commercial property itself</li>
+                <li>
+                  <a href="https://www.hhinsurance.com/building-insurance/">
+                    Damage to your buildings
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.hhinsurance.com/contractors-equipment-insurance/">
+                    Stock, equipment, and even machinery
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.hhinsurance.com/loss-of-income-insurance/">
+                    Loss of business income
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.hhinsurance.com/business-insurance-chula-vista/">
+                    Damage to the commercial property itself
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

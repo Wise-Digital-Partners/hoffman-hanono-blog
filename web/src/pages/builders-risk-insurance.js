@@ -41,8 +41,11 @@ const Page = ({ data }) => {
             remodel, or installation in California, you’ll want to consider
             builder’s risk insurance (also referred to as course of construction
             coverage). It can protect you from loss and damage due to events out
-            of your control, such as natural disasters, severe weather, theft,
-            or vandalism.
+            of your control, such as{" "}
+            <a href="https://www.hhinsurance.com/earthquake-insurance/">
+              natural disasters
+            </a>
+            , severe weather, theft, or vandalism.
           </p>
         </div>
       </HeroSplit>

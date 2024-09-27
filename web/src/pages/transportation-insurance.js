@@ -66,8 +66,18 @@ const Page = ({ data }) => {
                 </li>
                 <li>Wheelchair accessible vehicles are acceptable </li>
                 <li>Blanket Additional insured endorsement available</li>
-                <li>General liability and excess</li>
-                <li>Professional Liability coverage</li>
+                <li>
+                  <a href="https://www.hhinsurance.com/general-liability-insurance/">
+                    General liability
+                  </a>{" "}
+                  and excess
+                </li>
+                <li>
+                  <a href="https://www.hhinsurance.com/professional-liability-insurance/">
+                    Professional Liability
+                  </a>{" "}
+                  coverage
+                </li>
               </ul>
             </div>
           </div>

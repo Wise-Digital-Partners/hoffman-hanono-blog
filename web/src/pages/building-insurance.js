@@ -55,8 +55,11 @@ const Page = ({ data }) => {
             <div className="md:col-end-13 md:col-span-6">
               <h2>What It Covers</h2>
               <p>
-                Building insurance protects you if a fire, flood, earthquake,
-                storm, theft, or vandalism occurs on your property. It covers
+                Building insurance protects you if a fire, flood,{" "}
+                <a href="https://www.hhinsurance.com/earthquake-insurance/">
+                  earthquake
+                </a>
+                , storm, theft, or vandalism occurs on your property. It covers
                 the physical building and the property it sits on. We offer
                 different types of building insurance plans and packages, and
                 we’ll pair you with trusted insurance providers to ensure you

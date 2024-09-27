@@ -61,14 +61,22 @@ const Page = ({ data }) => {
               </p>
               <ul className="styled-list">
                 <li>
-                  Insurance for non-emergency medical transportation companies
+                  Insurance for non-emergency{" "}
+                  <a href="https://www.hhinsurance.com/transportation-insurance/">
+                    medical transportation
+                  </a>{" "}
+                  companies
                 </li>
                 <li>Mistakes or Negligence</li>
                 <li>Misrepresentation</li>
                 <li>Copyright Infringement</li>
                 <li>Breach of Contract</li>
                 <li>Failure to Deliver a Promised Service On Timet</li>
-                <li>Personal Injury</li>
+                <li>
+                  <a href="https://www.hhinsurance.com/health-benefits-insurance/">
+                    Personal Injury
+                  </a>
+                </li>
                 <li>And more…</li>
               </ul>
             </div>

@@ -69,7 +69,11 @@ const Page = ({ data }) => {
                 associated with an attack, such as:
               </p>
               <ul className="styled-list">
-                <li>Lost business income</li>
+                <li>
+                  <a href="https://www.hhinsurance.com/loss-of-income-insurance/">
+                    Lost business income
+                  </a>
+                </li>
                 <li>
                   Fees associated with notifying customers affected by a data
                   breach

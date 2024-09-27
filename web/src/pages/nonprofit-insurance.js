@@ -39,11 +39,14 @@ const Page = ({ data }) => {
           <p className="mb-0">
             At Hoffman Hanono, we recognize the public nature of most nonprofit
             organizations in San Diego and beyond. This means nonprofits are
-            exposed to specific liabilities involving personal injury, contract
-            laws, and fiduciary liability to name a few. We connect nonprofits
-            with the best insurance providers and premiums to protect their
-            organization’s assets, employees, board members, and the population
-            they serve.
+            exposed to specific liabilities involving{" "}
+            <a href="https://www.hhinsurance.com/health-benefits-insurance/">
+              personal injury
+            </a>
+            , contract laws, and fiduciary liability to name a few. We connect
+            nonprofits with the best insurance providers and premiums to protect
+            their organization’s assets, employees, board members, and the
+            population they serve.
           </p>
         </div>
       </HeroSplit>

@@ -38,11 +38,13 @@ const Page = ({ data }) => {
           <h1>Restaurant Insurance</h1>
           <p className="mb-0">
             Restaurants face unique risks including food poisoning, injuries,
-            loss of business income, and many others. Hoffman Hanono’s
-            restaurant insurance solutions will help you find the most
-            comprehensive coverage for your business. No matter the size of your
-            restaurant, we’ll match you with the best policies to ensure your
-            business runs smoothly.
+            <a href="https://www.hhinsurance.com/loss-of-income-insurance/">
+              loss of business income
+            </a>
+            , and many others. Hoffman Hanono’s restaurant insurance solutions
+            will help you find the most comprehensive coverage for your
+            business. No matter the size of your restaurant, we’ll match you
+            with the best policies to ensure your business runs smoothly.
           </p>
         </div>
       </HeroSplit>

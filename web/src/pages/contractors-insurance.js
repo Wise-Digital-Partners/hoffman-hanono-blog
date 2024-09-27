@@ -39,9 +39,11 @@ const Page = ({ data }) => {
           <p className="mb-0">
             Having insurance is crucial for contractors, subcontractors, and
             other tradesmen such as carpenters, plumbers, painters, handymen,
-            landscapers, and more. Our expert team at Hoffman Hanono will match
-            you with the right coverage for your industry. Minimize risk and
-            liability with our contractors insurance products.
+            landscapers, and more. Our{" "}
+            <a href="https://www.hhinsurance.com/our-team/">expert team</a> at
+            Hoffman Hanono will match you with the right coverage for your
+            industry. Minimize risk and liability with our contractors insurance
+            products.
           </p>
         </div>
       </HeroSplit>
