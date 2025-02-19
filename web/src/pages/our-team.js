@@ -198,12 +198,6 @@ const teamMembers = [
     ext: 106,
   },
   {
-    name: "Osmar Espinoza",
-    position: "Account Executive",
-    email: "osmar@hhinsurance.com",
-    ext: 105,
-  },
-  {
     name: "Rosanne Fuentes",
     position: "Commercial Lines Account Manager",
     email: "rfuentes@hhinsurance.com",
@@ -252,9 +246,15 @@ const teamMembers = [
     ext: 136,
   },
   {
-    name: "Jorge Lopez",
-    position: "Commercial Lines Associate",
-    email: "jlopez@hhinsurance.com",
+    name: "Brad Wilson",
+    position: "Account Executive",
+    email: "brad@hhinsurance.com",
+    ext: 138,
+  },
+  {
+    name: "Nora Johnson",
+    position: "Commercial Lines Account Manager",
+    email: "njohnson@hhinsurance.com",
     ext: 135,
   },
   // {
