@@ -180,6 +180,12 @@ const teamMembers = [
     ext: 107,
   },
   {
+    name: "Nora Johnson",
+    position: "Commercial Lines Account Manager",
+    email: "njohnson@hhinsurance.com",
+    ext: 135,
+  },
+  {
     name: "Karen Hernandez",
     position: "Director of First Impressions",
     email: "khernandez@hhinsurance.com",
@@ -222,6 +228,12 @@ const teamMembers = [
     ext: 124,
   },
   {
+    name: "Brad Wilson",
+    position: "Account Executive",
+    email: "brad@hhinsurance.com",
+    ext: 138,
+  },
+  {
     name: "Pamela Garcia",
     position: "Customer Service Representative",
     email: "pgarcia@hhinsurance.com",
@@ -244,18 +256,6 @@ const teamMembers = [
     position: "Account Executive",
     email: "ggonzalez@hhinsurance.com ",
     ext: 136,
-  },
-  {
-    name: "Brad Wilson",
-    position: "Account Executive",
-    email: "brad@hhinsurance.com",
-    ext: 138,
-  },
-  {
-    name: "Nora Johnson",
-    position: "Commercial Lines Account Manager",
-    email: "njohnson@hhinsurance.com",
-    ext: 135,
   },
   // {
   //   name: "Carlos Garcia",
