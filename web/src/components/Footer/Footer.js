@@ -125,7 +125,7 @@ const Footer = () => {
                   <i className="fab fa-facebook-f text-primary_600 hover:text-primary_400 text-lg mr-6 base-animation-ease"></i>
                 </a>
                 <a
-                  href="https://www.instagram.com/hoffman.hanono.insurance/"
+                  href="https://www.instagram.com/hoffmanhanonoinsurance/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
