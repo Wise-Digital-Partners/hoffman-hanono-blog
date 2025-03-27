@@ -254,7 +254,7 @@ const teamMembers = [
   {
     name: "German Gonzalez ",
     position: "Account Executive",
-    email: "ggonzalez@hhinsurance.com ",
+    email: "german@hhinsurance.com",
     ext: 136,
   },
   // {
