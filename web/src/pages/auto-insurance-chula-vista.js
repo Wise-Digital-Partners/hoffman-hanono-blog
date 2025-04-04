@@ -301,7 +301,7 @@ export const query = graphql`
       relativePath: { eq: "personal-insurance/auto-insurance/hero-desktop.jpg" }
     ) {
       childImageSharp {
-        fixed(width: 548, height: 618) {
+        fixed(width: 2880, height: 1200) {
           ...GatsbyImageSharpFixed_withWebp
         }
       }
@@ -348,4 +348,3 @@ export const query = graphql`
     }
   }
 `;
-
