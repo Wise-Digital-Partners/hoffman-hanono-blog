@@ -68,7 +68,7 @@ const Page = ({ data }) => {
         </div>
       </section>
 
-      <section className="wrapper">
+      {/* <section className="wrapper">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8 md:gap-y-0 items-center">
             <div className="md:col-start-1 md:col-end-8">
@@ -89,17 +89,10 @@ const Page = ({ data }) => {
                 <li>Collision coverage</li>
                 <li>Comprehensive coverage for vehicle theft or vandalism</li>
               </ul>
-              {/* <ButtonWithIcon
-                href="/business-insurance-chula-vista/"
-                text={[
-                  "View Products",
-                  <i className="far fa-arrow-right ml-2"></i>,
-                ]}
-              /> */}
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="wrapper">
         <div className="container">
