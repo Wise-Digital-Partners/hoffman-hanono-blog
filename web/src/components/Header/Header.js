@@ -609,7 +609,7 @@ const Header = () => {
               </li>
               <li className="navigation-item">
                 <a
-                  href="https://hhinsurance.myhrsupportcenter.com/users/sign_in"
+                  href="https://apps.trustmineral.com/auth/login?from=%2Fdashboard"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -847,7 +847,7 @@ const Header = () => {
                     <a
                       onKeyDown={() => setOpen(!open)}
                       onClick={() => setOpen(!open)}
-                      href="https://hhinsurance.myhrsupportcenter.com/users/sign_in"
+                      href="https://apps.trustmineral.com/auth/login?from=%2Fdashboard"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
