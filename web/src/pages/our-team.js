@@ -88,13 +88,13 @@ const Page = ({ data }) => {
       ext: 120,
       image: "johanna-guedea.jpg",
     },
-    // {
-    //   name: "Judy Schwartz",
-    //   position: "Commercial Lines Account Manager",
-    //   email: "jschwartz@hhinsurance.com",
-    //   ext: 107,
-    //   image: "judy-schwartz.jpg",
-    // },
+    {
+      name: "Judy Schwartz",
+      position: "Commercial Lines Account Manager",
+      email: "jschwartz@hhinsurance.com",
+      ext: 107,
+      image: "placeholder.jpg",
+    },
     {
       name: "Liliana Robles",
       position: "Commercial Lines Account Manager",
@@ -116,13 +116,13 @@ const Page = ({ data }) => {
       ext: 127,
       image: "pamela-garcia.jpg",
     },
-    // {
-    //   name: "Rosanne Fuentes",
-    //   position: "Commercial Lines Account Manager",
-    //   email: "rfuentes@hhinsurance.com",
-    //   ext: 110,
-    //   image: "rosanna-fuentes.jpg",
-    // },
+    {
+      name: "Rosanne Fuentes",
+      position: "Commercial Lines Account Manager",
+      email: "rfuentes@hhinsurance.com",
+      ext: 110,
+      image: "placeholder.jpg",
+    },
     {
       name: "Samantha Arenas",
       position: "Commercial Lines Account Manager",
@@ -171,9 +171,9 @@ const Page = ({ data }) => {
 
   const administration = [
     {
-      name: "Nyah Costello Garcia",
+      name: "Nyah Costello",
       position: "Customer Service Representative",
-      email: "cgarcia@hhinsurance.com",
+      email: null,
       ext: 134,
       image: "nyah-costello.jpg",
     },
