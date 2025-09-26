@@ -18,6 +18,7 @@ const Page = ({ data }) => {
       email: "david@hhinsurance.com",
       ext: 101,
       image: "david-hoffman.jpg",
+      hasBio: true,
     },
     {
       name: "Michelle Torres",
@@ -25,6 +26,7 @@ const Page = ({ data }) => {
       email: "mtorres@hhinsurance.com",
       ext: 104,
       image: "michelle-torres.jpg",
+      hasBio: true,
     },
   ];
 
@@ -286,6 +288,7 @@ const DepartmentSection = ({ members, departmentName, setSlideIndex }) => {
               key={index}
               member={member}
               setSlideIndex={setSlideIndex}
+              slideIndex={index}
             />
           ))}
         </div>
@@ -294,23 +297,24 @@ const DepartmentSection = ({ members, departmentName, setSlideIndex }) => {
   );
 };
 
-const MemberCard = ({ member, setSlideIndex }) => {
+const MemberCard = ({ member, setSlideIndex, slideIndex }) => {
+  const handleClick = (slideIndex) => {
+    if (member.hasBio) {
+      setSlideIndex(slideIndex);
+    }
+  };
   return (
     <div className="">
       <div className="relative m-auto w-xl overflow-hidden mb-6 md:mb-8">
-        <button
-          data-modal-open="modal-team-members"
-          onClick={() => setSlideIndex(0)}
-          className="w-full h-full max-h-[424px]"
+        <div
+          data-modal-open={member.hasBio ? "modal-team-members" : null}
+          onClick={() => handleClick(slideIndex)}
+          className={`w-full h-full max-h-[424px] ${
+            member.hasBio ? "cursor-pointer" : ""
+          }`}
         >
-          {/* <GatsbyImage
-            className="transform scale-100 hover:scale-110 object-cover h-full transition-all duration-500 ease-linear"
-            fluid={member.image}
-            alt={member.name}
-            objectFit="cover"
-          /> */}
           <img src={`/images/our-team/${member.image}`} />
-        </button>
+        </div>
       </div>
       <h3 className="mb-1">{member.name}</h3>
       <p className="text-gray-900 opacity-50 text-large md:text-xlarge mb-0">
