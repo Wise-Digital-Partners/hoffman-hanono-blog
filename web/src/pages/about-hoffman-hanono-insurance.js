@@ -10,6 +10,7 @@ import ButtonWithIcon from "../components/Button/ButtonWithIcon";
 import WhyUs from "../components/Repeating/WhyUs";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import CallToAction from "../components/Repeating/CallToAction";
+import ButtonSolid from "../components/Button/ButtonSolid";
 
 const Page = ({ data }) => {
   return (
@@ -27,30 +28,36 @@ const Page = ({ data }) => {
             <div>
               <Img fluid={data.about.childImageSharp.fluid} />
             </div>
-            <div className="md:mt-20">
+            <div className="">
               <p className="decorative-text">Our History</p>
               <h1>About Hoffman Hanono Insurance</h1>
               <p>
                 In 1959, our founder Jerry Hoffman started our agency with one
                 thing in mind—to bring clients peace of mind by offering
                 affordable insurance solutions with the highest customer service
-                attainable. We’re committed to connecting our clients with the
-                best policies that suit their specific needs and budgets.
+                attainable.
               </p>
               <p>
-                Our name later changed to Hoffman Hanono in 1970. David Hoffman,
-                our third generation of the Hoffman family, joined us in 1995
-                and has taken us into the 21st century without a misstep in our
-                founder’s original commitment to our customers. David and his
-                team continue to provide modern insurance solutions grounded by
-                old school values. Today, you can expect nothing less than the
-                best customer service and the right insurance coverage that our
-                team will match you with.
+                Our name later changed to Hoffman Hanono in 1970 when Philip
+                Hoffman and Ezra Hanono teamed up to form a partnership—one that
+                would carry on the tradition that Jerry set in motion back in
+                the fifties. David Hoffman, our third generation of the Hoffman
+                family, joined us in 1995 and has taken us into the 21st century
+                without a misstep in our founder’s original commitment to our
+                customers.
               </p>
-              <p className="mb-0">
-                We look forward to serving San Diego and Chula Vista businesses
-                for many more generations to come!
+              <p>
+                Today you can expect nothing less than the best customer service
+                and insurance coverage. We look forward to serving San Diego and
+                Chula Vista businesses for many more generations to come!
               </p>
+              <h2>Our Team</h2>
+              <p className="">
+                Hoffman Hanono’s team draws on years of experience and an
+                unwavering commitment to the best customer service for our
+                clients.
+              </p>
+              <ButtonSolid href="/our-team/" text="Meet the Team" />
             </div>
           </div>
         </div>
@@ -153,7 +160,7 @@ export const query = graphql`
     ) {
       publicURL
     }
-    about: file(relativePath: { eq: "about/about-hoffman-hanono.png" }) {
+    about: file(relativePath: { eq: "about/about-hoffman-hanono-v2.png" }) {
       childImageSharp {
         fluid(maxWidth: 1176) {
           ...GatsbyImageSharpFluid_withWebp

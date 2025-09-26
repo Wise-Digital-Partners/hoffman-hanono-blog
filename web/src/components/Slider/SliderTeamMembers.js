@@ -113,13 +113,6 @@ const Slider = ({ slideIndex }) => {
           }
         }
       }
-      ezraHanono: file(relativePath: { eq: "about/our-team/ezra-hanono.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 363) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
       michelleTorres: file(
         relativePath: { eq: "about/our-team/michelle-torres.jpg" }
       ) {
@@ -163,7 +156,7 @@ const Slider = ({ slideIndex }) => {
               </div>
             </div>
           </div>
-          <div>
+          {/* <div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-y-0 md:gap-x-12">
               <div>
                 <Img
@@ -190,7 +183,7 @@ const Slider = ({ slideIndex }) => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-y-0 md:gap-x-12">
               <div>
