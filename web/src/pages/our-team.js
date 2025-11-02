@@ -34,7 +34,7 @@ const Page = ({ data }) => {
     {
       name: "Alejandro Torres",
       position: "Account Executive",
-      email: null,
+      email: "atorres@hhinsurance.com",
       ext: 113,
       image: "alejandro-torres.jpg",
     },
@@ -85,32 +85,32 @@ const Page = ({ data }) => {
   const commercialInsuranceService = [
     {
       name: "Johanna Guedea",
-      position: "Commercial Lines Account Manager",
+      position: "Account Manager",
       email: "jguedea@hhinsurance.com",
       ext: 120,
       image: "johanna-guedea.jpg",
     },
     {
       name: "Judy Schwartz",
-      position: "Commercial Lines Account Manager",
+      position: "Account Manager",
       email: "jschwartz@hhinsurance.com",
       ext: 107,
-      image: "placeholder.jpg",
+      image: "judy-schwartz.jpg",
     },
     {
       name: "Liliana Robles",
-      position: "Commercial Lines Account Manager",
+      position: "Account Manager",
       email: "lrobles@hhinsurance.com",
       ext: 106,
       image: "liliana-robles.jpg",
     },
-    {
-      name: "Nora Johnson",
-      position: "Commercial Lines Account Manager",
-      email: "njohnson@hhinsurance.com",
-      ext: 135,
-      image: "nora-johnson.jpg",
-    },
+    // {
+    //   name: "Nora Johnson",
+    //   position: "Account Manager",
+    //   email: "njohnson@hhinsurance.com",
+    //   ext: 135,
+    //   image: "nora-johnson.jpg",
+    // },
     {
       name: "Pamela Garcia",
       position: "Customer Service Representative",
@@ -120,31 +120,45 @@ const Page = ({ data }) => {
     },
     {
       name: "Rosanne Fuentes",
-      position: "Commercial Lines Account Manager",
+      position: "Account Manager",
       email: "rfuentes@hhinsurance.com",
       ext: 110,
       image: "placeholder.jpg",
     },
     {
       name: "Samantha Arenas",
-      position: "Commercial Lines Account Manager",
+      position: "Account Manager",
       email: "sarenas@hhinsurance.com",
       ext: 128,
       image: "samantha-arenas.jpg",
+    },
+    {
+      name: "Brittany Morales",
+      position: "Customer Service Representative",
+      email: "bmorales@hhinsurance.com",
+      ext: 110,
+      image: "placeholder.jpg",
+    },
+    {
+      name: "Emelyn Woods",
+      position: "Customer Service Representative",
+      email: "ewoods@hhinsurance.com",
+      ext: 110,
+      image: "placeholder.jpg",
     },
   ];
 
   const personalInsuranceService = [
     {
       name: "Lisa Preisler",
-      position: "Personal Lines Account Manager",
+      position: "Account Manager",
       email: "lpreisler@hhinsurance.com",
       ext: 108,
       image: "lisa-preisler.jpg",
     },
     {
       name: "Marlene Martinez ",
-      position: "Personal Lines Account Manager",
+      position: "Account Manager",
       email: "mmartinez@hhinsurance.com",
       ext: 133,
       image: "marlene-martinez.jpg",
@@ -154,8 +168,8 @@ const Page = ({ data }) => {
   const claims = [
     {
       name: "Karen Hernandez",
-      position: "Director of First Impressions",
-      email: "khernandez@hhinsurance.com",
+      position: "Claims",
+      email: "claims@hhinsurance.com",
       ext: 109,
       image: "karen-hernandez.jpg",
     },
@@ -175,7 +189,7 @@ const Page = ({ data }) => {
     {
       name: "Nyah Costello",
       position: "Customer Service Representative",
-      email: null,
+      email: "ncostello@hhinsurance.com",
       ext: 134,
       image: "nyah-costello.jpg",
     },
@@ -205,41 +219,43 @@ const Page = ({ data }) => {
           </div>
         </div>
       </section>
-      <DepartmentSection
-        departmentName="Leadership"
-        members={leadership}
-        setSlideIndex={setSlideIndex}
-      />
-      <DepartmentSection
-        departmentName="Account Executives"
-        members={accountExecutives}
-        setSlideIndex={setSlideIndex}
-      />
-      <DepartmentSection
-        departmentName="Commercial Insurance Service"
-        members={commercialInsuranceService}
-        setSlideIndex={setSlideIndex}
-      />
-      <DepartmentSection
-        departmentName="Personal Insurance Service"
-        members={personalInsuranceService}
-        setSlideIndex={setSlideIndex}
-      />
-      <DepartmentSection
-        departmentName="Claims"
-        members={claims}
-        setSlideIndex={setSlideIndex}
-      />{" "}
-      <DepartmentSection
-        departmentName="Accounting"
-        members={accounting}
-        setSlideIndex={setSlideIndex}
-      />{" "}
-      <DepartmentSection
-        departmentName="Administration"
-        members={administration}
-        setSlideIndex={setSlideIndex}
-      />
+      <div className="flex flex-col gap-y-16 mb-[156px]">
+        <DepartmentSection
+          departmentName="Leadership"
+          members={leadership}
+          setSlideIndex={setSlideIndex}
+        />
+        <DepartmentSection
+          departmentName="Account Executives"
+          members={accountExecutives}
+          setSlideIndex={setSlideIndex}
+        />
+        <DepartmentSection
+          departmentName="Commercial Insurance Service"
+          members={commercialInsuranceService}
+          setSlideIndex={setSlideIndex}
+        />
+        <DepartmentSection
+          departmentName="Personal Insurance Service"
+          members={personalInsuranceService}
+          setSlideIndex={setSlideIndex}
+        />
+        <DepartmentSection
+          departmentName="Claims"
+          members={claims}
+          setSlideIndex={setSlideIndex}
+        />
+        <DepartmentSection
+          departmentName="Accounting"
+          members={accounting}
+          setSlideIndex={setSlideIndex}
+        />
+        <DepartmentSection
+          departmentName="Administration"
+          members={administration}
+          setSlideIndex={setSlideIndex}
+        />
+      </div>
       {/* <section className="wrapper">
         <div className="container">
           <header className="mb-10 md:mb-20">
@@ -277,12 +293,12 @@ const Page = ({ data }) => {
 
 const DepartmentSection = ({ members, departmentName, setSlideIndex }) => {
   return (
-    <section className="wrapper">
+    <section className="wrapper mb-0">
       <div className="container">
-        <header className="mb-12 md:mb-20">
+        <header className="mb-6">
           <h2>{departmentName}</h2>
         </header>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-y-10 md:gap-x-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-y-12 md:gap-y-6 md:gap-x-6">
           {members.map((member, index) => (
             <MemberCard
               key={index}
@@ -305,22 +321,29 @@ const MemberCard = ({ member, setSlideIndex, slideIndex }) => {
   };
   return (
     <div className="">
-      <div className="relative m-auto w-xl overflow-hidden mb-6 md:mb-8">
+      <div className="relative m-auto w-xl overflow-hidden">
         <div
           data-modal-open={member.hasBio ? "modal-team-members" : null}
           onClick={() => handleClick(slideIndex)}
-          className={`w-full h-full max-h-[424px] ${
+          className={`w-full rounded-t-[20px] overflow-hidden h-full max-h-[424px] ${
             member.hasBio ? "cursor-pointer" : ""
           }`}
         >
           <img src={`/images/our-team/${member.image}`} />
         </div>
       </div>
-      <h3 className="mb-1">{member.name}</h3>
-      <p className="text-gray-900 opacity-50 text-large md:text-xlarge mb-0">
-        {member.position}
-      </p>
-      {member.email && <a href={`mailto:${member.email}`}>{member.email}</a>}
+      <div className="p-4 flex flex-col gap-y-2">
+        <h3 className="text-xl my-0 font-semibold">{member.name}</h3>
+        <p className="text-[#232B48] text-lg my-0">{member.position}</p>
+        {member.email && (
+          <a
+            className="text-lg text-[#232B48] font-normal"
+            href={`mailto:${member.email}`}
+          >
+            {member.email}
+          </a>
+        )}
+      </div>
     </div>
   );
 };
@@ -365,7 +388,7 @@ export const query = graphql`
       publicURL
     }
     meetTheTeam: file(
-      relativePath: { eq: "about/our-team/meet-the-team-v2.jpg" }
+      relativePath: { eq: "about/our-team/meet-the-team-v3.jpg" }
     ) {
       childImageSharp {
         fluid(maxWidth: 560) {
