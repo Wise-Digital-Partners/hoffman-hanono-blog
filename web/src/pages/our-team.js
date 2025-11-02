@@ -325,11 +325,14 @@ const MemberCard = ({ member, setSlideIndex, slideIndex }) => {
         <div
           data-modal-open={member.hasBio ? "modal-team-members" : null}
           onClick={() => handleClick(slideIndex)}
-          className={`w-full rounded-t-[20px] overflow-hidden h-full max-h-[424px] ${
+          className={`w-full rounded-t-[20px] overflow-hidden h-full lg:max-h-[424px] ${
             member.hasBio ? "cursor-pointer" : ""
           }`}
         >
-          <img src={`/images/our-team/${member.image}`} />
+          <img
+            src={`/images/our-team/${member.image}`}
+            className="object-contain w-full h-full"
+          />
         </div>
       </div>
       <div className="p-4 flex flex-col gap-y-2">
