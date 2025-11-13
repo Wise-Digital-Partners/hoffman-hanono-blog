@@ -66,13 +66,13 @@ const Page = ({ data }) => {
       ext: 136,
       image: "german-gonzalez.jpg",
     },
-    {
-      name: "John Borja",
-      position: "Account Executive",
-      email: "jborja@hhinsurance.com",
-      ext: 124,
-      image: "john-borja.jpg",
-    },
+    // {
+    //   name: "John Borja",
+    //   position: "Account Executive",
+    //   email: "jborja@hhinsurance.com",
+    //   ext: 124,
+    //   image: "john-borja.jpg",
+    // },
     {
       name: "Nestor Aguilar",
       position: "Account Executive",
