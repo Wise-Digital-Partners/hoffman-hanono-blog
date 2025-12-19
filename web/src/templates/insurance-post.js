@@ -91,8 +91,8 @@ const InsurancePostTemplate = (props) => {
       {insurance && <InsurancePost {...insurance} {...site} />}
       <WhyUs />
       <SliderTestimonials />
-      {faqs && faqs.length > 0 && (
-        <FaqSection faqGroup={{ faqs }} isHardcoded={false} />
+      {insurance.faqs && insurance.faqs.length > 0 && (
+        <FaqSection faqGroup={{ faqs: insurance.faqs }} isHardcoded={false} />
       )}
 
       <About />
