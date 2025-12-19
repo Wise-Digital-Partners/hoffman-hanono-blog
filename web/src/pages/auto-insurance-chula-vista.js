@@ -13,6 +13,42 @@ import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import WhyUs from "../components/Repeating/WhyUs";
+import FaqSection from "../components/Repeating/FaqSection";
+
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title: "1. What is auto insurance?",
+      body: "Auto insurance provides financial protection for you, your vehicle, and your passengers in the event of accidents, theft, vandalism, or other covered events. It also offers liability protection if you cause injury to someone else or damage their property.",
+    },
+    {
+      title:
+        "2. What types of auto insurance coverage are available in Chula Vista?",
+      body: "Drivers can choose from several coverage options depending on their needs. Liability insurance protects you financially if you cause bodily injury or property damage to others. Collision coverage pays for repairs to your own vehicle after an accident. Comprehensive coverage safeguards against theft, natural disasters, or other unexpected events. Additionally, MedPay, or Personal Injury Protection, covers medical bills and funeral expenses for you and your passengers regardless of fault.",
+    },
+    {
+      title: "3. What are California's minimum auto insurance requirements?",
+      body: "As of January 1, 2025, California requires $30,000 for bodily injury or death per person, $60,000 for bodily injury or death per accident, and $15,000 for property damage per accident. These limits have increased from previous minimums and ensure that all drivers carry a baseline level of financial protection.",
+    },
+    {
+      title: "4. Who needs collision and comprehensive coverage?",
+      body: "Collision coverage is generally required if you are financing or leasing your vehicle, while comprehensive coverage protects against theft, vandalism, and weather-related damage. Even for fully paid-off vehicles, many drivers opt for both collision and comprehensive coverage to maintain peace of mind and protect their investment.",
+    },
+    {
+      title: "5. How do I choose the right auto insurance in Chula Vista?",
+      body: "Choosing the right policy depends on your driving habits, lifestyle, and the type of vehicle you own. Daily commuters may need higher liability and full coverage to account for frequent travel. Remote workers might qualify for low-mileage discounts but still need sufficient liability protection. Families with new drivers should consider increased coverage limits along with collision and MedPay. Luxury vehicle owners often benefit from both collision and comprehensive coverage to protect their investment. Budget-conscious drivers can balance cost with coverage to ensure essential protection is maintained.",
+    },
+    {
+      title: "6. Why choose Hoffman Hanono for auto insurance?",
+      body: "Hoffman Hanono has served San Diego and Chula Vista since 1959, offering personalized insurance solutions with a focus on quality service and trusted carriers. Their family-owned, customer-focused approach ensures each policy is tailored to the driver's unique needs at a competitive price.",
+    },
+    {
+      title: "7. How do I get a quote for auto insurance?",
+      body: "You can request a quote online, by phone at (619) 420-1861, or via email at info@hhinsurance.com. Hoffman Hanono's agents guide you through selecting the coverage that best fits your lifestyle, driving habits, and financial goals.",
+    },
+  ],
+};
 
 const Page = ({ data }) => {
   const newHeroImages = [
@@ -270,6 +306,7 @@ const Page = ({ data }) => {
       </section>
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
       <About />
       <CallToAction />
     </Layout>

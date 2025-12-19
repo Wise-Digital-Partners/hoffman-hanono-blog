@@ -9,6 +9,37 @@ import WhyUs from "../components/Repeating/WhyUs";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
+import FaqSection from "../components/Repeating/FaqSection";
+
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title: "1. What is umbrella insurance?",
+      body: "Umbrella insurance is a type of policy that provides additional coverage when the limits of your existing insurance, such as home or auto, are reached. It helps protect your personal or business assets from unexpected accidents, lawsuits, or liabilities that could otherwise exceed your primary coverage limits.",
+    },
+    {
+      title: "2. What does umbrella insurance cover?",
+      body: "Umbrella insurance typically covers liabilities that arise from bodily injury, personal injury, property damage, and even landlord-related claims. It can step in when other insurance policies fall short, offering broader protection for both everyday risks and extraordinary events. Coverage varies by policy, and an experienced agent can help determine the right level of protection for your needs.",
+    },
+    {
+      title: "3. Who needs umbrella insurance?",
+      body: "Any individual or business that wants additional financial protection beyond standard insurance policies can benefit from an umbrella policy. It is particularly important for those with significant assets or exposure to potential lawsuits, including homeowners, drivers, and landlords.",
+    },
+    {
+      title: "4. How do I choose the right umbrella insurance policy?",
+      body: "Choosing the right umbrella policy depends on your current coverage, financial situation, and risk exposure. Working with a knowledgeable agent ensures your policy complements your existing insurance and provides the necessary protection without unnecessary gaps or overlaps.",
+    },
+    {
+      title: "5. Why choose Hoffman Hanono for umbrella insurance?",
+      body: "Hoffman Hanono has been serving the San Diego and Chula Vista communities since 1959, providing personalized insurance solutions that go beyond standard coverage. As a family-owned and customer-focused agency, they take the time to understand your unique needs and match you with the most suitable umbrella insurance to safeguard your assets and provide peace of mind.",
+    },
+    {
+      title: "6. How can I get a quote for umbrella insurance?",
+      body: "You can request a quote online, by calling (619) 420-1861, or by emailing info@hhinsurance.com. Hoffman Hanono's agents will guide you through the process, ensuring you receive comprehensive coverage tailored to your specific situation.",
+    },
+  ],
+};
 
 const Page = ({ data }) => {
   const heroImages = [
@@ -98,6 +129,7 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
       <About />
       <CallToAction />
     </Layout>

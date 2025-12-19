@@ -9,6 +9,45 @@ import WhyUs from "../components/Repeating/WhyUs";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
+import FaqSection from "../components/Repeating/FaqSection";
+
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title:
+        "1. What is business crime insurance and why do companies need it?",
+      body: "Business crime insurance protects your company from financial loss caused by illegal acts such as theft, fraud, forgery, or burglary. Even with careful hiring practices, dishonest behavior can happen unexpectedly, and a single incident can cost thousands of dollars. Crime insurance helps safeguard your business and your employees from the financial impact of criminal activity.",
+    },
+    {
+      title: "2. What does business crime insurance typically cover?",
+      body: "This coverage can protect your business against employee theft, fraud, embezzlement, burglary, forgery, cyber fraud, and dishonest acts committed by internal staff or outside third parties. Coverage varies depending on your industry and policy, so working with an insurance advisor ensures your plan fits your business risk.",
+    },
+    {
+      title: "3. Who should consider business crime insurance in California?",
+      body: "Any business that handles money, sensitive information, valuable inventory, financial transactions, or employee access to assets should consider crime insurance. It is especially important for retailers, financial service providers, manufacturers, contractors, transportation companies, and professional offices.",
+    },
+    {
+      title:
+        "4. Does business crime insurance protect against crimes committed by employees?",
+      body: "Yes, many crime insurance policies include coverage for losses caused by employee dishonesty, including embezzlement, internal theft, and fraud. This protection helps businesses recover financially from crimes committed by individuals inside the organization.",
+    },
+    {
+      title:
+        "5. Is business crime insurance the same as commercial property insurance?",
+      body: "No. Commercial property insurance generally covers physical damage such as fire, vandalism, or weather-related loss. Business crime insurance specifically protects against financial loss caused by criminal acts such as fraud, theft, or embezzlement. Many businesses need both for complete protection.",
+    },
+    {
+      title:
+        "6. Why choose Hoffman Hanono Insurance for crime insurance coverage?",
+      body: "Hoffman Hanono has provided customized commercial insurance solutions in California since 1959. Their team designs crime insurance policies tailored to your industry, financial risk level, and internal operations. This ensures you receive strong protection at a competitive price backed by decades of trusted service.",
+    },
+    {
+      title: "7. How can I get a quote for business crime insurance?",
+      body: "You can request a quote online or contact Hoffman Hanono Insurance at (619) 420-1861 to speak directly with an advisor. They will review your business needs and recommend the right level of crime insurance protection.",
+    },
+  ],
+};
 
 const Page = ({ data }) => {
   const heroImages = [
@@ -110,6 +149,8 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
+
       <About />
       <CallToAction />
     </Layout>

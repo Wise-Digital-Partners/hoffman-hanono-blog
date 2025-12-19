@@ -9,6 +9,39 @@ import WhyUs from "../components/Repeating/WhyUs";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
+import FaqSection from "../components/Repeating/FaqSection";
+
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title: "1. What is cyber liability insurance?",
+      body: "Cyber liability insurance is a policy that protects a company from cyber security issues, such as data breaches. It helps businesses mitigate the financial impact of cyber attacks, including lost income, system repairs, and legal costs.",
+    },
+    {
+      title:
+        "2. Who needs cyber liability insurance in San Diego and Chula Vista?",
+      body: "Any business that uses technology to conduct operations is vulnerable to cyber attacks and should consider cyber liability insurance. This applies to small businesses, mid-sized companies, and large corporations alike.",
+    },
+    {
+      title: "3. What does cyber liability insurance cover?",
+      body: "Cyber liability insurance typically covers lost business income, fees associated with notifying affected customers, costs to recover compromised information, repairs to damaged systems, litigation expenses, and crisis management fees. Coverage can be tailored to your business's technology use and risk profile.",
+    },
+    {
+      title: "4. How does Hoffman Hanono approach cyber liability insurance?",
+      body: "Hoffman Hanono partners with business owners to provide personalized cyber liability insurance solutions. We evaluate your business risks, connect you with trusted providers, and ensure your policy offers strong protection at competitive rates. Our approach focuses on advisory and partnership, not just selling coverage.",
+    },
+    {
+      title:
+        "5. Why choose Hoffman Hanono for cyber liability insurance in San Diego?",
+      body: "With over 50 years of experience serving the San Diego and Chula Vista communities, Hoffman Hanono is a family-owned, customer-focused agency. We deliver expert guidance, reliable service, and customized insurance solutions to protect your business against cyber risks.",
+    },
+    {
+      title: "6. How can I get a quote for cyber liability insurance?",
+      body: "You can request a quote online, call our office, or email our agents. Hoffman Hanono will guide you through your options and ensure you get the right cyber liability coverage to protect your business and minimize risk.",
+    },
+  ],
+};
 
 const Page = ({ data }) => {
   const heroImages = [
@@ -117,6 +150,7 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
       <About />
       <CallToAction />
     </Layout>

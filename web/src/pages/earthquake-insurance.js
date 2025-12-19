@@ -9,6 +9,38 @@ import WhyUs from "../components/Repeating/WhyUs";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
+import FaqSection from "../components/Repeating/FaqSection";
+
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title: "1. What is earthquake insurance?",
+      body: "Earthquake insurance is a specialized policy designed to protect businesses from the financial impact of seismic events. Standard commercial insurance policies typically do not cover earthquakes, so having dedicated coverage ensures that damage to buildings, equipment, stock, and machinery is financially protected.",
+    },
+    {
+      title: "2. Who needs earthquake insurance in California?",
+      body: "Any business owner with commercial property in California, especially in earthquake-prone areas like San Diego, should consider earthquake insurance. Without it, repair costs and loss of income after a seismic event can be substantial, putting your business at risk.",
+    },
+    {
+      title: "3. What does earthquake insurance cover?",
+      body: "Earthquake insurance generally covers damage to buildings, commercial property, equipment, stock, machinery, and loss of business income. Policies can vary based on the location, age, and condition of your commercial buildings, allowing coverage to be tailored to your specific needs.",
+    },
+    {
+      title: "4. How does Hoffman Hanono approach earthquake insurance?",
+      body: "At Hoffman Hanono, we partner with business owners to provide insurance solutions tailored specifically for their property and risk profile. We evaluate your business needs, connect you with trusted providers, and ensure your policy offers strong protection at competitive rates. Our approach is personalized because we know insurance is not one-size-fits-all.",
+    },
+    {
+      title:
+        "5. Why choose Hoffman Hanono for earthquake insurance in San Diego?",
+      body: "With over 50 years of experience serving the San Diego and Chula Vista communities, Hoffman Hanono is a family-owned, customer-focused agency. We provide expert guidance, reliable service, and customized insurance solutions to protect your business and give you peace of mind.",
+    },
+    {
+      title: "6. How can I get a quote for earthquake insurance?",
+      body: "You can request a quote online or contact our team directly by phone or email. Our agents will help you find the right earthquake insurance coverage for your California business to minimize risk and secure financial stability.",
+    },
+  ],
+};
 
 const Page = ({ data }) => {
   const [showTooltip, setShowTooltip] = useState(false);
@@ -158,6 +190,7 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
       <About />
       <CallToAction />
     </Layout>

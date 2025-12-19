@@ -9,6 +9,43 @@ import WhyUs from "../components/Repeating/WhyUs";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
+import FaqSection from "../components/Repeating/FaqSection";
+
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title: "1. What is health benefits insurance for businesses?",
+      body: "Health benefits insurance provides coverage options that help employers offer medical, dental, vision, and life insurance plans to their employees. It supports employee well-being and can help attract and retain top talent while ensuring compliance with applicable laws.",
+    },
+    {
+      title:
+        "2. What types of health benefits insurance does Hoffman Hanono offer?",
+      body: "Hoffman Hanono offers group medical insurance, HSA plans, group dental, group vision, and group life coverage. Policies are tailored to meet the needs of your business and employees.",
+    },
+    {
+      title:
+        "3. Who needs health benefits insurance in Chula Vista and San Diego?",
+      body: "Any business owner with employees should consider health benefits insurance. It is especially important for companies that want to provide competitive employee benefits, protect workers' health, and manage risks associated with employee medical costs.",
+    },
+    {
+      title: "4. How does health benefits insurance help employees?",
+      body: "Health benefits insurance gives employees access to medical, dental, and vision care, helps cover healthcare costs, and provides life insurance protection. It also ensures they receive financial support for health-related issues and enhances overall workplace satisfaction.",
+    },
+    {
+      title: "5. How does Hoffman Hanono approach health benefits insurance?",
+      body: "Hoffman Hanono works with employers to understand their business needs, employee demographics, and budget. They partner with trusted carriers to offer customized insurance solutions that provide the best coverage at competitive premiums.",
+    },
+    {
+      title: "6. Why choose Hoffman Hanono for health benefits insurance?",
+      body: "With over 50 years of experience serving the San Diego and Chula Vista communities, Hoffman Hanono is a family-owned, customer-focused agency. Their expertise, personalized service, and access to top carriers make them a trusted partner in securing comprehensive health benefits for your employees.",
+    },
+    {
+      title: "7. How can I get a quote for health benefits insurance?",
+      body: "You can request a quote online or contact Hoffman Hanono directly at (619) 420-1861. Their advisors will review your business needs and help you choose the right plan for your employees.",
+    },
+  ],
+};
 
 const Page = ({ data }) => {
   const heroImages = [
@@ -99,6 +136,7 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
       <About />
       <CallToAction />
     </Layout>

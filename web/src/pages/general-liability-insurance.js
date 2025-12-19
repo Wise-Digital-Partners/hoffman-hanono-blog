@@ -9,6 +9,43 @@ import WhyUs from "../components/Repeating/WhyUs";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
+import FaqSection from "../components/Repeating/FaqSection";
+
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title: "1. What is general liability insurance?",
+      body: "General liability insurance is a policy designed to protect businesses from financial losses due to claims of bodily injury, property damage, advertising injuries, or reputational harm. It is essential for businesses of all sizes in Chula Vista and the greater San Diego area.",
+    },
+    {
+      title: "2. Who needs general liability insurance?",
+      body: "Any business owner, contractor, or service provider operating in Chula Vista or San Diego should have general liability insurance. It safeguards against claims arising from accidents on your premises, damage caused by employees, or other unforeseen incidents that could lead to financial liability.",
+    },
+    {
+      title: "3. What does general liability insurance cover?",
+      body: "This insurance covers bodily injury, property damage, advertising injuries, reputational harm, and damage to premises you are renting for your business. Policies can be customized to meet the specific risks of your industry and business operations.",
+    },
+    {
+      title: "4. How does Hoffman Hanono approach general liability insurance?",
+      body: "Hoffman Hanono Insurance Services evaluates your business needs and partners you with the right insurance solutions. We specialize in providing policies tailored to your business rather than a one-size-fits-all approach, helping you secure the coverage you need at competitive rates.",
+    },
+    {
+      title:
+        "5. Why choose Hoffman Hanono for general liability insurance in Chula Vista?",
+      body: "With over 50 years of experience, Hoffman Hanono is a family-owned, customer-focused agency. We provide expert guidance, reliable service, and customized insurance solutions that protect your business and give you peace of mind.",
+    },
+    {
+      title:
+        "6. Is Hoffman Hanono licensed to provide insurance in California?",
+      body: "Yes, Hoffman Hanono is fully licensed in California under license number 0424824, ensuring professional and compliant insurance services for businesses throughout the region.",
+    },
+    {
+      title: "7. How can I get a quote for general liability insurance?",
+      body: 'You can request a quote on our website by clicking "Get a Quote" or contact our team by phone or email. Our experts will guide you in finding the right policy to protect your business and mitigate potential risks.',
+    },
+  ],
+};
 
 const Page = ({ data }) => {
   const heroImages = [
@@ -102,6 +139,7 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
       <About />
       <CallToAction />
     </Layout>

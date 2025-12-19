@@ -9,6 +9,37 @@ import WhyUs from "../components/Repeating/WhyUs";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
+import FaqSection from "../components/Repeating/FaqSection";
+
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title: "1. What is Employment Practices Liability Insurance (EPLI)?",
+      body: "Employment Practices Liability Insurance, or EPLI, is business insurance that protects your company from financial losses arising from employment-related claims, such as wrongful termination, discrimination, harassment, or retaliation.",
+    },
+    {
+      title: "2. Who needs EPLI in San Diego and Chula Vista?",
+      body: "Any business with employees should consider EPLI. This includes small, medium, and large businesses. With employment-related claims on the rise, EPLI helps protect your company from costly lawsuits and damages.",
+    },
+    {
+      title: "3. What does EPLI cover?",
+      body: "EPLI generally covers litigation costs and defense attorney fees, costs related to employee claims, allegations of wrongful termination, workplace harassment, discrimination, retaliation, and other employment-related claims like failure to promote.",
+    },
+    {
+      title: "4. How does Hoffman Hanono approach EPLI?",
+      body: "Hoffman Hanono partners with business owners to provide EPLI coverage tailored to their specific needs. Our agents assess your business, explore suitable policy options, and ensure you receive comprehensive coverage at competitive rates.",
+    },
+    {
+      title: "5. Why choose Hoffman Hanono for EPLI in San Diego?",
+      body: "With over 50 years of experience serving San Diego and Chula Vista, Hoffman Hanono is a family-owned, customer-focused agency. We provide expert guidance, reliable service, and customized EPLI solutions to protect your business and provide peace of mind.",
+    },
+    {
+      title: "6. How can I get a quote for EPLI?",
+      body: "You can request a quote online, call our office, or email our team. Hoffman Hanono will guide you through the options and help you secure the right EPLI coverage for your business.",
+    },
+  ],
+};
 
 const Page = ({ data }) => {
   const heroImages = [
@@ -111,6 +142,7 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
       <About />
       <CallToAction />
     </Layout>

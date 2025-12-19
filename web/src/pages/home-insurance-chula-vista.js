@@ -9,6 +9,37 @@ import WhyUs from "../components/Repeating/WhyUs";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
+import FaqSection from "../components/Repeating/FaqSection";
+
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title: "1. What is home insurance?",
+      body: "Home insurance provides coverage to protect your home, personal belongings, and other property, as well as liability protection for visitors and neighbors. It safeguards you from losses due to theft, fire, flood, and other covered events.",
+    },
+    {
+      title: "2. Who needs home insurance in Chula Vista and San Diego?",
+      body: "Any homeowner or property owner in Chula Vista, San Diego, or surrounding areas should have home insurance. It protects your investment and provides financial security in case of unexpected damage or loss.",
+    },
+    {
+      title: "3. What does home insurance cover?",
+      body: "Home insurance can cover building damage, personal property loss, personal liability, other structures on your property, medical payments for visitors, and additional living expenses if you cannot stay in your home.",
+    },
+    {
+      title: "4. How does Hoffman Hanono approach home insurance?",
+      body: "Hoffman Hanono works with you to find the best home insurance solution for your property and needs. They partner with trusted carriers to provide tailored coverage and help you secure better premiums.",
+    },
+    {
+      title: "5. Why choose Hoffman Hanono for home insurance in San Diego?",
+      body: "With over 50 years of experience, Hoffman Hanono is a family-owned agency with deep local knowledge. Their personalized service and long-standing relationships with carriers make them a trusted partner for homeowners.",
+    },
+    {
+      title: "6. How can I get a quote for home insurance?",
+      body: "You can request a quote online, call (619) 420-1861, or email info@hhinsurance.com. Their agents will help you evaluate coverage options and find the right policy for your home.",
+    },
+  ],
+};
 
 const Page = ({ data }) => {
   const heroImages = [
@@ -101,6 +132,7 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
       <About />
       <CallToAction />
     </Layout>

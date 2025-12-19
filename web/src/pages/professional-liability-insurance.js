@@ -9,6 +9,47 @@ import WhyUs from "../components/Repeating/WhyUs";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
+import FaqSection from "../components/Repeating/FaqSection";
+
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title:
+        "1. What is professional liability insurance and why do businesses in Chula Vista need it?",
+      body: "Professional liability insurance protects your business if a client claims you made a mistake, delivered poor service, or caused financial loss. Companies in Chula Vista and the greater San Diego area rely on it to avoid costly lawsuits and protect their reputation.",
+    },
+    {
+      title:
+        "2. What types of claims does professional liability insurance cover?",
+      body: "It covers claims such as negligence, mistakes, misrepresentation, copyright infringement, breach of contract, delayed services, personal injury, and related legal defense costs.",
+    },
+    {
+      title:
+        "3. Does professional liability insurance cover non-emergency medical transport companies?",
+      body: "Yes, Hoffman Hanono Insurance Services offers professional liability coverage specifically for non-emergency medical transportation providers, helping protect them from service-related claims.",
+    },
+    {
+      title:
+        "4. How is professional liability different from general liability insurance?",
+      body: "General liability covers physical injury or property damage, while professional liability protects you from financial losses caused by errors in the services you provide. Most service-based businesses need both.",
+    },
+    {
+      title:
+        "5. Why choose Hoffman Hanono Insurance for professional liability coverage?",
+      body: "Hoffman Hanono has served Chula Vista and San Diego since 1959 with personalized insurance solutions, quality service, and access to comprehensive coverage options designed for local businesses.",
+    },
+    {
+      title:
+        "6. Can Hoffman Hanono customize professional liability coverage for my industry?",
+      body: "Yes, coverage is not one-size-fits-all. Their experts evaluate your risks and build a plan tailored to your specific profession, helping you secure the right protection and competitive premiums.",
+    },
+    {
+      title: "7. How do I get a professional liability insurance quote?",
+      body: "You can request a quote directly through their website or contact their office in Chula Vista at (619) 420-1861. They will review your business needs and provide the best available options and pricing.",
+    },
+  ],
+};
 
 const Page = ({ data }) => {
   const heroImages = [
@@ -112,6 +153,7 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
       <About />
       <CallToAction />
     </Layout>

@@ -9,7 +9,48 @@ import WhyUs from "../components/Repeating/WhyUs";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
+import FaqSection from "../components/Repeating/FaqSection";
 
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title: "Frequently Asked Questions",
+      faqs: [
+        {
+          title: "1. What is restaurant insurance?",
+          body: "Restaurant insurance is a specialized policy designed to protect restaurants from financial losses due to property damage, liability claims, employee dishonesty, and other risks unique to the food service industry.",
+        },
+        {
+          title: "2. Who needs restaurant insurance in San Diego?",
+          body: "Any restaurant owner, whether running a small café or a large dining establishment in Chula Vista or the greater San Diego area, should have restaurant insurance to safeguard their business operations, property, and employees.",
+        },
+        {
+          title: "3. What does restaurant insurance cover?",
+          body: "Restaurant insurance can cover property and building damage, liability and excess coverage, equipment breakdown, liquor liability, food spoilage or contamination, employee dishonesty, money on and off premises, loss of business income, earthquake sprinkler leakage, and non-owned auto liability for delivery drivers.",
+        },
+        {
+          title: "4. How does Hoffman Hanono approach restaurant insurance?",
+          body: "Hoffman Hanono works closely with restaurant owners to evaluate their unique risks and connect them with the most appropriate coverage. We partner with trusted insurance carriers to create tailored policies that provide comprehensive protection and competitive premiums.",
+        },
+        {
+          title:
+            "5. Why choose Hoffman Hanono for restaurant insurance in Chula Vista?",
+          body: "With over 50 years of experience, our family-owned agency provides personalized service and expert guidance. We focus on quality coverage, reliable customer support, and peace of mind for restaurant owners throughout San Diego.",
+        },
+        {
+          title:
+            "6. Is Hoffman Hanono licensed to provide restaurant insurance in California?",
+          body: "Yes. Hoffman Hanono is fully licensed in California with license number 0424824, ensuring professional and compliant insurance services for your restaurant.",
+        },
+        {
+          title: "7. How can I get a quote for restaurant insurance?",
+          body: 'You can request a quote directly on our website by clicking "Get a Quote" or contact our team by phone or email to discuss customized restaurant insurance options that fit your business needs.',
+        },
+      ],
+    },
+  ],
+};
 const Page = ({ data }) => {
   const heroImages = [
     data.heroDesktop.childImageSharp.fixed,
@@ -109,6 +150,7 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
       <About />
       <CallToAction />
     </Layout>

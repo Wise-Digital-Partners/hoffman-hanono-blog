@@ -9,6 +9,44 @@ import WhyUs from "../components/Repeating/WhyUs";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
+import FaqSection from "../components/Repeating/FaqSection";
+
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title:
+        "1. What is errors and omissions insurance and why do businesses need it?",
+      body: "Errors and omissions insurance protects your business if a client claims you made a mistake or gave bad advice. It helps cover legal defense costs and damages, which can save your company thousands of dollars and protect your reputation.",
+    },
+    {
+      title: "2. What types of claims does E&O insurance cover?",
+      body: "E&O insurance can cover professional mistakes, negligence, misrepresentation, copyright issues, breach of contract, delays in delivering work, and personal injury related to advice or services. Coverage varies by policy, which is why speaking with an agent can help you choose the right protection.",
+    },
+    {
+      title: "3. Who needs errors and omissions insurance in California?",
+      body: "Businesses that provide advice or professional services need E&O coverage. This includes industries such as financial services, consulting, real estate, information technology, and other service-based professions. Small and mid-sized companies often need this coverage most because one lawsuit can have a major financial impact.",
+    },
+    {
+      title:
+        "4. How is E&O insurance different from general liability insurance?",
+      body: "General liability covers physical injuries or property damage, but it does not protect against financial losses caused by professional mistakes. E&O insurance fills that gap by protecting against service-based errors, incorrect advice, and missed deadlines.",
+    },
+    {
+      title: "5. Why choose Hoffman Hanono Insurance for E&O coverage?",
+      body: "Hoffman Hanono has been helping California businesses secure professional insurance since 1959. They tailor errors and omissions insurance based on your industry, risks, and budget, providing competitive rates and long-term peace of mind.",
+    },
+    {
+      title:
+        "6. Can Hoffman Hanono customize E&O insurance for my business needs?",
+      body: "Yes, their team reviews your industry, exposure, and risk level to recommend a policy that fits your operations. This customized approach helps you avoid paying for unnecessary coverage while still protecting your business from claims.",
+    },
+    {
+      title: "7. How do I get an errors and omissions insurance quote?",
+      body: "You can request a quote online or contact Hoffman Hanono Insurance at (619) 420-1861. Their licensed advisors will review your business and provide options that fit your needs and budget.",
+    },
+  ],
+};
 
 const Page = ({ data }) => {
   const heroImages = [
@@ -114,6 +152,7 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
       <About />
       <CallToAction />
     </Layout>

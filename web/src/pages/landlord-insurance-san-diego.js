@@ -9,6 +9,38 @@ import WhyUs from "../components/Repeating/WhyUs";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
+import FaqSection from "../components/Repeating/FaqSection";
+
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title: "1. What is landlord insurance?",
+      body: "Landlord insurance protects property owners from financial losses related to their rental properties. This includes risks such as theft, vandalism, water damage, and other unexpected events that can affect both the building and the personal property inside it.",
+    },
+    {
+      title: "2. What does landlord insurance cover?",
+      body: "Coverage generally includes protection for the building itself, liability in case a tenant or visitor is injured on the property, and personal property used to service the rental. Many policies also cover additional living expenses if the property becomes uninhabitable due to a covered loss. Specific coverage options vary by policy, and a qualified agent can help you determine the right combination for your property.",
+    },
+    {
+      title: "3. Who needs landlord insurance?",
+      body: "Any property owner who rents out a home, apartment, or other dwelling should have landlord insurance. Even well-maintained properties are vulnerable to accidents, natural disasters, or tenant-related damages. Insurance helps protect both your investment and your financial stability.",
+    },
+    {
+      title: "4. How do I choose the right landlord insurance policy?",
+      body: "Selecting the right policy depends on the size and type of your rental property, the location, and your personal risk tolerance. Consider what coverage is essential for your property, including liability and personal property protection. Experienced agents can customize a policy that balances cost with the level of protection needed.",
+    },
+    {
+      title:
+        "5. Why choose Hoffman Hanono for landlord insurance in San Diego?",
+      body: "Hoffman Hanono has been serving San Diego and Chula Vista since 1959, offering personalized insurance solutions for landlords. Their family-owned, customer-focused approach ensures that each property owner receives tailored coverage and support. With trusted carriers and decades of experience, they provide comprehensive insurance that safeguards your investment and offers peace of mind.",
+    },
+    {
+      title: "6. How can I get a quote for landlord insurance?",
+      body: "You can request a quote online, by calling (619) 420-1861, or by emailing info@hhinsurance.com. Hoffman Hanono's agents will guide you through the policy selection process and recommend the best coverage for your specific rental property.",
+    },
+  ],
+};
 
 const Page = ({ data }) => {
   const heroImages = [
@@ -98,6 +130,7 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
       <About />
       <CallToAction />
     </Layout>

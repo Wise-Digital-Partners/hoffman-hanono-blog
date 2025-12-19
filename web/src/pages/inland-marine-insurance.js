@@ -9,6 +9,45 @@ import WhyUs from "../components/Repeating/WhyUs";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
+import FaqSection from "../components/Repeating/FaqSection";
+
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title:
+        "1. What is inland marine insurance coverage and why do businesses need it?",
+      body: "Inland marine insurance protects your business from financial losses caused by damage, loss, or theft of goods while they are being transported. A single cargo claim can cost thousands of dollars, so this coverage helps prevent major financial setbacks.",
+    },
+    {
+      title: "2. What does inland marine insurance typically cover?",
+      body: "This type of policy can cover damage from collisions or overturns, theft or pilferage, loss during transportation, weather or natural disasters, fire damage to cargo, and legal expenses related to disputes over damaged or lost goods. Coverage varies by policy, so working with an expert ensures your business is fully protected.",
+    },
+    {
+      title: "3. Who needs inland marine insurance in California?",
+      body: "Businesses that transport goods, equipment, or supplies should consider this coverage. It is especially important for shipping companies, contractors, distributors, manufacturers, retailers, and any business that moves goods off-site or between locations.",
+    },
+    {
+      title:
+        "4. How is inland marine insurance different from cargo insurance?",
+      body: "Cargo insurance primarily covers goods transported by sea, while inland marine insurance protects goods moved on land. Inland marine insurance often covers more types of goods and equipment and applies to trucks, trains, and other land transportation.",
+    },
+    {
+      title:
+        "5. Does inland marine insurance cover goods stored temporarily during transport?",
+      body: "Yes, many policies protect goods while they are temporarily stored during the shipping process. This protection is especially useful if items need to be held at a warehouse or facility before reaching their final destination.",
+    },
+    {
+      title:
+        "6. Why choose Hoffman Hanono Insurance for inland marine coverage?",
+      body: "Hoffman Hanono has provided customized commercial insurance solutions in California since 1959. Their advisors tailor inland marine coverage to match your cargo value, transportation risks, and business operations, ensuring you get strong protection at a competitive price.",
+    },
+    {
+      title: "7. How can I get a quote for inland marine insurance?",
+      body: "You can request a quote online or contact Hoffman Hanono Insurance at (619) 420-1861. Their team will evaluate your transportation needs and recommend the best inland marine policy for your business.",
+    },
+  ],
+};
 
 const Page = ({ data }) => {
   const heroImages = [
@@ -116,6 +155,7 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
       <About />
       <CallToAction />
     </Layout>
