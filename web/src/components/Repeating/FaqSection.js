@@ -2,8 +2,9 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import styled from "@emotion/styled";
 import tw from "twin.macro";
+import PortableText from "../insurance/portableText";
 
-const FaqSection = ({ className, faqGroup }) => {
+const FaqSection = ({ className, faqGroup, isHardcoded }) => {
   const [activeFaq, setActiveFaq] = React.useState(null);
 
   return (
@@ -29,9 +30,15 @@ const FaqSection = ({ className, faqGroup }) => {
                     } transition-all ease-linear duration-200`}
                   />
                 </div>
-                <p className={activeFaq === index ? "" : "hidden"}>
-                  {faq.body}
-                </p>
+                {isHardcoded ? (
+                  <p className={activeFaq === index ? "" : "hidden"}>
+                    {faq.body}
+                  </p>
+                ) : (
+                  <p className="mb-0">
+                    {faq._rawBody && <PortableText blocks={faq._rawBody} />}
+                  </p>
+                )}
               </div>
             ))}
           </div>

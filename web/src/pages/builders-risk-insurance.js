@@ -9,6 +9,43 @@ import WhyUs from "../components/Repeating/WhyUs";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
+import FaqSection from "../components/Repeating/FaqSection";
+
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title: "1. What is builder’s risk insurance?",
+      body: "Builder's risk insurance, also known as course of construction coverage, protects contractors, property owners, and stakeholders in new construction, remodeling, or installation projects from loss or damage caused by events such as natural disasters, severe weather, theft, or vandalism.",
+    },
+    {
+      title: "2. Who can purchase builder’s risk insurance in California?",
+      body: "Builder’s risk insurance can be purchased by property owners, general contractors, subcontractors, architects, and anyone with a financial interest in a commercial or residential construction project. Policies are tailored to meet the specific needs of each stakeholder.",
+    },
+    {
+      title: "3. What does builder’s risk insurance cover?",
+      body: "Policies typically cover weather damage, fire damage, damage from natural disasters like earthquakes or flooding, theft and vandalism, and damage caused by faulty design or materials. Each policy is customized based on the project and risk exposures.",
+    },
+    {
+      title: "4. How does Hoffman Hanono approach builder’s risk insurance?",
+      body: "Hoffman Hanono partners with clients to provide personalized builder’s risk insurance solutions. We evaluate each project’s unique needs, ensure comprehensive coverage, and provide resources to help secure competitive premiums.",
+    },
+    {
+      title:
+        "5. Why choose Hoffman Hanono for builder’s risk insurance in San Diego?",
+      body: "With over 50 years of experience, our family-owned agency has earned the trust of San Diego and Chula Vista clients. We combine superior customer service, practical insurance solutions, and a time-tested approach to managing construction risks.",
+    },
+    {
+      title:
+        "6. Is Hoffman Hanono licensed to provide insurance in California?",
+      body: "Yes. Our California insurance license number is 0424824, ensuring that clients work with a fully licensed and compliant provider.",
+    },
+    {
+      title: "7. How can I get a quote for builder’s risk insurance?",
+      body: "You can request a quote directly on our website by clicking “Get a Quote,” or contact our team via phone or email to discuss builder’s risk insurance solutions for your project.",
+    },
+  ],
+};
 
 const Page = ({ data }) => {
   const heroImages = [
@@ -108,6 +145,7 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
       <About />
       <CallToAction />
     </Layout>

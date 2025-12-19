@@ -9,6 +9,42 @@ import WhyUs from "../components/Repeating/WhyUs";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
+import FaqSection from "../components/Repeating/FaqSection";
+
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title: "1. What is cargo insurance?",
+      body: "Cargo insurance protects businesses from financial losses due to damage, loss, or theft of goods during transportation. It is essential for companies involved in shipping or transporting products.",
+    },
+    {
+      title: "2. Who needs cargo insurance in California?",
+      body: "Any business that ships, transports, or delivers goods can benefit from cargo insurance. This includes companies in Chula Vista, San Diego, and throughout the state that want protection against cargo-related risks.",
+    },
+    {
+      title: "3. What does cargo insurance cover?",
+      body: "Cargo insurance can cover damage or loss of cargo during transit, theft, pilferage, failure to reach the destination, damage from accidents, natural disasters, bad weather, fire, claim handling costs, and legal expenses related to disputes or lawsuits.",
+    },
+    {
+      title: "4. How does Hoffman Hanono approach cargo insurance?",
+      body: "Hoffman Hanono partners with business owners to provide tailored cargo insurance solutions. We assess your transportation risks, connect you with trusted carriers, and help you secure comprehensive coverage with competitive premiums.",
+    },
+    {
+      title: "5. Why choose Hoffman Hanono for cargo insurance in San Diego?",
+      body: "With over 50 years of experience, our family-owned agency has earned a reputation for trust, reliability, and superior service. We offer practical insurance solutions to protect your business assets and provide peace of mind.",
+    },
+    {
+      title:
+        "6. Is Hoffman Hanono licensed to provide cargo insurance in California?",
+      body: "Yes. Our California insurance license number is 0424824, ensuring you work with a fully licensed and compliant insurance provider.",
+    },
+    {
+      title: "7. How can I get a quote for cargo insurance?",
+      body: 'You can request a quote on our website by clicking "Get a Quote," or contact our team via phone or email to discuss cargo insurance coverage options tailored to your business.',
+    },
+  ],
+};
 
 const Page = ({ data }) => {
   const heroImages = [
@@ -118,6 +154,8 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
+
       <About />
       <CallToAction />
     </Layout>

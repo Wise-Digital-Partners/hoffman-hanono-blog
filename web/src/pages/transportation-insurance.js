@@ -9,6 +9,43 @@ import WhyUs from "../components/Repeating/WhyUs";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
+import FaqSection from "../components/Repeating/FaqSection";
+
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title: "1. What is transportation insurance?",
+      body: "Transportation insurance protects your business from risks related to vehicles, drivers, and transported goods. It covers liabilities and potential losses while operating a commercial fleet, including non-emergency medical transportation services.",
+    },
+    {
+      title: "2. Who needs transportation insurance in San Diego?",
+      body: "Any business that operates a fleet of vehicles, including non-emergency medical transportation companies, delivery services, or commercial transportation providers, needs transportation insurance to protect assets and minimize liability.",
+    },
+    {
+      title: "3. What does transportation insurance cover?",
+      body: "Transportation insurance can cover general liability and excess, professional liability, vehicles and drivers, wheelchair accessible vehicles, and optional blanket additional insured endorsements, depending on your business needs.",
+    },
+    {
+      title: "4. How does Hoffman Hanono approach transportation insurance?",
+      body: "Hoffman Hanono partners with business owners to assess risks and connect them with trusted carriers. We provide tailored transportation insurance solutions designed specifically for your fleet and operational requirements.",
+    },
+    {
+      title:
+        "5. Why choose Hoffman Hanono for transportation insurance in Chula Vista?",
+      body: "With over 50 years of experience, our family-owned agency delivers reliable service and practical solutions. We focus on securing comprehensive coverage with competitive premiums while providing peace of mind for your business.",
+    },
+    {
+      title:
+        "6. Is Hoffman Hanono licensed to provide transportation insurance in California?",
+      body: "Yes. Hoffman Hanono is a fully licensed insurance provider in California, with license number 0424824, ensuring compliance and trustworthy service.",
+    },
+    {
+      title: "7. How can I get a quote for transportation insurance?",
+      body: 'You can request a quote on our website by clicking "Get a Quote" or contact our team via phone or email to discuss coverage options tailored to your business.',
+    },
+  ],
+};
 
 const Page = ({ data }) => {
   const heroImages = [
@@ -112,6 +149,8 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
+
       <About />
       <CallToAction />
     </Layout>

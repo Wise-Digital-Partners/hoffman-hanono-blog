@@ -9,6 +9,43 @@ import WhyUs from "../components/Repeating/WhyUs";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
+import FaqSection from "../components/Repeating/FaqSection";
+
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title: "1. What is contractors insurance?",
+      body: "Contractors insurance provides coverage for contractors, subcontractors, and tradesmen such as carpenters, plumbers, painters, handymen, landscapers, and other professionals. It helps minimize risk and liability while protecting your business and assets.",
+    },
+    {
+      title: "2. Who needs contractors insurance in California?",
+      body: "Any contractor, subcontractor, or trade professional working in California can benefit from contractors insurance. It is especially important for those managing projects, handling equipment, or providing services on client sites.",
+    },
+    {
+      title: "3. What does contractors insurance typically cover?",
+      body: "Policies can cover general liability and excess, property in transit, scheduled equipment and tools, equipment leased or rented to others, professional liability, pollution liability, employee dishonesty coverage, waiver of subrogation, additional insured endorsements, bid and performance bonds, per-project aggregate coverage, and new residential construction projects.",
+    },
+    {
+      title: "4. How does Hoffman Hanono approach contractors insurance?",
+      body: "Hoffman Hanono partners with clients to provide personalized insurance solutions. We match your business with trusted carriers and create policies tailored to your specific needs. Our team also helps you secure competitive premiums and comprehensive protection.",
+    },
+    {
+      title:
+        "5. Why choose Hoffman Hanono for contractors insurance in San Diego?",
+      body: "With over 50 years of experience, our family-owned agency has earned the trust of San Diego and Chula Vista contractors. We provide superior service, practical insurance solutions, and policies specifically customized for your industry.",
+    },
+    {
+      title:
+        "6. Is Hoffman Hanono licensed to provide contractors insurance in California?",
+      body: "Yes. Our California insurance license number is 0424824, ensuring you work with a fully licensed and compliant provider.",
+    },
+    {
+      title: "7. How can I get a quote for contractors insurance?",
+      body: 'You can request a quote directly on our website by clicking "Get a Quote", or contact our team via phone or email to discuss insurance solutions tailored to your contracting business.',
+    },
+  ],
+};
 
 const Page = ({ data }) => {
   const heroImages = [
@@ -108,6 +145,7 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
       <About />
       <CallToAction />
     </Layout>

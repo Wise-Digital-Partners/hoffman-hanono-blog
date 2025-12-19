@@ -11,6 +11,48 @@ import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
 import SliderMobileCards from "../components/Slider/SliderMobileCards";
+import FaqSection from "../components/Repeating/FaqSection";
+
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title: "1. What personal insurance products does Hoffman Hanono offer?",
+      body: "Hoffman Hanono Insurance Services provides a full range of personal insurance products, including home, auto, umbrella, landlord, recreational vehicle, boat and watercraft, life, family medical, and custom insurance solutions tailored to your family’s needs.",
+    },
+    {
+      title: "2. Who can benefit from Hoffman Hanono’s personal insurance?",
+      body: "We work with individuals and families throughout San Diego and Chula Vista who want coverage for their personal belongings, assets, and more. Our solutions are designed to protect what matters most to you and your loved ones.",
+    },
+    {
+      title:
+        "3. How does Hoffman Hanono customize personal insurance policies?",
+      body: "Our team carefully evaluates your needs and risks, then creates tailored policies that provide comprehensive protection without gaps. Each policy is designed to fit your family’s unique situation.",
+    },
+    {
+      title:
+        "4. Why choose Hoffman Hanono for personal insurance in San Diego?",
+      body: "With over 50 years of experience, our family-owned agency has earned the trust of San Diego and Chula Vista homeowners. We combine long-standing carrier relationships with superior service and practical solutions to ensure your peace of mind.",
+    },
+    {
+      title: "5. What insurance carriers does Hoffman Hanono work with?",
+      body: "We represent a large number of “A” rated admitted carriers, enabling us to find the most suitable personal insurance policy for your family while ensuring competitive premiums.",
+    },
+    {
+      title: "6. How can Hoffman Hanono help families lower insurance costs?",
+      body: "Our team provides quality service and resources to help clients secure better insurance premiums over time, ensuring comprehensive coverage without unnecessary costs.",
+    },
+    {
+      title:
+        "7. Is Hoffman Hanono licensed to provide insurance in California?",
+      body: "Yes. Our California insurance license number is 0424824, so you can trust that we are a fully licensed and compliant provider of personal insurance.",
+    },
+    {
+      title: "8. How can I get a quote for personal insurance?",
+      body: "You can request a quote directly on our website by clicking “Get a Quote,” or contact us via phone or email to speak with one of our personal insurance specialists.",
+    },
+  ],
+};
 
 const Page = ({ data }) => {
   const heroImages = [
@@ -201,6 +243,8 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
+
       <About />
       <CallToAction />
     </Layout>

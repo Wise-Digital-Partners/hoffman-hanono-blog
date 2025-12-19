@@ -66,8 +66,7 @@ export default {
       type: "image",
       title: "What It Covers image",
     },
-
-        {
+    {
       name: "titleSecond",
       type: "string",
       title: "What It Covers Title",
@@ -86,6 +85,17 @@ export default {
       name: "bodyThird",
       type: "bodyPortableText",
       title: "Our Approach Paragraph",
+    },
+    {
+      name: "faqTitle",
+      type: "string",
+      title: "FAQ Title",
+    },
+    {
+      name: "faqs",
+      type: "array",
+      title: "FAQs",
+      of: [{ type: "faq" }],
     },
     {
       name: "categories",

@@ -9,6 +9,7 @@ import WhyUs from "../components/Repeating/WhyUs";
 import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
+import FaqSection from "../components/Repeating/FaqSection";
 
 export const query = graphql`
   query InsurancePostTemplateQuery($id: String!) {
@@ -37,6 +38,12 @@ export const query = graphql`
       }
       seoTitle
       metaDescription
+      faqTitle
+      faqs {
+        identifier
+        title
+        _rawBody(resolveReferences: { maxDepth: 5 })
+      }
       _rawBody(resolveReferences: { maxDepth: 5 })
       _rawBodySecond(resolveReferences: { maxDepth: 5 })
       _rawBodyThird(resolveReferences: { maxDepth: 5 })
@@ -84,6 +91,10 @@ const InsurancePostTemplate = (props) => {
       {insurance && <InsurancePost {...insurance} {...site} />}
       <WhyUs />
       <SliderTestimonials />
+      {faqs && faqs.length > 0 && (
+        <FaqSection faqGroup={{ faqs }} isHardcoded={false} />
+      )}
+
       <About />
       <CallToAction />
     </Layout>

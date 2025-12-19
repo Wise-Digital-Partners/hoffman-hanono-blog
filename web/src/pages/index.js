@@ -177,7 +177,7 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
-      <FaqSection faqGroup={faqGroup} />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
       <About />
       <CallToAction />
     </Layout>

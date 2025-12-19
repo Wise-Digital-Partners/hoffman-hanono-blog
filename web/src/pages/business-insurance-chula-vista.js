@@ -11,6 +11,50 @@ import SliderTestimonials from "../components/Slider/SliderTestimonials";
 import About from "../components/Repeating/About";
 import CallToAction from "../components/Repeating/CallToAction";
 import SliderMobileCards from "../components/Slider/SliderMobileCards";
+import FaqSection from "../components/Repeating/FaqSection";
+
+const faqGroup = {
+  title: "Frequently Asked Questions",
+  faqs: [
+    {
+      title: "1. What types of commercial insurance does Hoffman Hanono offer?",
+      body: "Hoffman Hanono Insurance Services provides a wide range of commercial insurance products, including general liability, workers’ compensation, professional liability, property coverage, auto insurance, health benefits, bonds, and custom solutions tailored for your business needs.",
+    },
+    {
+      title:
+        "2. Which businesses can benefit from Hoffman Hanono's commercial insurance?",
+      body: "We work with a variety of clients, from small family operations to large multi-site businesses. Our specialties include manufacturers, property owners, contractors, restaurants, non-profits, transportation companies, and more.",
+    },
+    {
+      title:
+        "3. How does Hoffman Hanono tailor insurance policies for businesses?",
+      body: "We go on-site with business owners to assess exposures and determine the best coverage. Our approach ensures there are no gaps in protection and that each policy is specifically designed for the client’s unique needs.",
+    },
+    {
+      title:
+        "4. Why choose Hoffman Hanono for commercial insurance in San Diego?",
+      body: "With over 50 years of experience, our family-owned agency has built trust with San Diego and Chula Vista businesses through superior service, practical solutions, and a time-tested approach to managing risk.",
+    },
+    {
+      title: "5. What insurance carriers does Hoffman Hanono work with?",
+      body: "We represent a large number of “A” rated admitted carriers, allowing us to find the most suitable commercial insurance policy for your business while providing competitive premiums.",
+    },
+    {
+      title:
+        "6. How can Hoffman Hanono help businesses reduce insurance costs?",
+      body: "Our team provides quality service and resources to help clients secure better insurance premiums in the long run, ensuring comprehensive coverage without unnecessary costs.",
+    },
+    {
+      title:
+        "7. Is Hoffman Hanono licensed to provide insurance in California?",
+      body: "Yes. Our California insurance license number is 0424824, ensuring you work with a fully licensed and compliant commercial insurance provider.",
+    },
+    {
+      title: "8. How can I get a quote for commercial insurance?",
+      body: "You can request a quote directly on our website by clicking “Get a Quote,” or contact us via phone or email to speak with our commercial insurance specialists.",
+    },
+  ],
+};
 
 const Page = ({ data }) => {
   const heroImages = [
@@ -273,6 +317,7 @@ const Page = ({ data }) => {
 
       <WhyUs />
       <SliderTestimonials />
+      <FaqSection faqGroup={faqGroup} isHardcoded={true} />
       <About />
       <CallToAction />
     </Layout>
