@@ -17,39 +17,33 @@ const faqGroup = {
   title: "Frequently Asked Questions",
   faqs: [
     {
-      title: "1. What personal insurance products does Hoffman Hanono offer?",
-      body: "Hoffman Hanono Insurance Services provides a full range of personal insurance products, including home, auto, umbrella, landlord, recreational vehicle, boat and watercraft, life, family medical, and custom insurance solutions tailored to your family’s needs.",
+      title: "1. What is personal insurance?",
+      body: "Personal insurance provides coverage for individuals and families to protect their assets, health, and financial well-being. This can include home, auto, life, recreational vehicles, and medical insurance, among other types of coverage.",
     },
     {
-      title: "2. Who can benefit from Hoffman Hanono’s personal insurance?",
-      body: "We work with individuals and families throughout San Diego and Chula Vista who want coverage for their personal belongings, assets, and more. Our solutions are designed to protect what matters most to you and your loved ones.",
+      title: "2. Who needs personal insurance in San Diego and Chula Vista?",
+      body: "Any individual or family with assets to protect, such as a home, car, boat, or personal savings, should consider personal insurance. It ensures financial security and protection against unexpected events.",
     },
     {
-      title:
-        "3. How does Hoffman Hanono customize personal insurance policies?",
-      body: "Our team carefully evaluates your needs and risks, then creates tailored policies that provide comprehensive protection without gaps. Each policy is designed to fit your family’s unique situation.",
+      title: "3. What types of personal insurance does Hoffman Hanono offer?",
+      body: "Hoffman Hanono offers home insurance, auto insurance, umbrella insurance, landlord insurance, recreational vehicle insurance, boat and watercraft insurance, life insurance, and family medical insurance. Policies are tailored to meet your specific needs.",
     },
     {
-      title:
-        "4. Why choose Hoffman Hanono for personal insurance in San Diego?",
-      body: "With over 50 years of experience, our family-owned agency has earned the trust of San Diego and Chula Vista homeowners. We combine long-standing carrier relationships with superior service and practical solutions to ensure your peace of mind.",
+      title: "4. How does personal insurance help protect my family?",
+      body: "Personal insurance safeguards your family from financial losses due to accidents, natural disasters, theft, liability claims, or unexpected health costs. It ensures your loved ones are supported and your assets are secure.",
     },
     {
-      title: "5. What insurance carriers does Hoffman Hanono work with?",
-      body: "We represent a large number of “A” rated admitted carriers, enabling us to find the most suitable personal insurance policy for your family while ensuring competitive premiums.",
-    },
-    {
-      title: "6. How can Hoffman Hanono help families lower insurance costs?",
-      body: "Our team provides quality service and resources to help clients secure better insurance premiums over time, ensuring comprehensive coverage without unnecessary costs.",
+      title: "5. How does Hoffman Hanono approach personal insurance?",
+      body: "Hoffman Hanono works closely with individuals and families to understand their unique needs, risk profile, and budget. They partner with “A” rated carriers to provide customized policies, ensuring the right coverage at competitive premiums.",
     },
     {
       title:
-        "7. Is Hoffman Hanono licensed to provide insurance in California?",
-      body: "Yes. Our California insurance license number is 0424824, so you can trust that we are a fully licensed and compliant provider of personal insurance.",
+        "6. Why choose Hoffman Hanono for personal insurance in San Diego?",
+      body: "With over 50 years of experience, Hoffman Hanono is a family-owned, customer-focused agency. Their long-standing relationships with carriers, personalized service, and deep industry knowledge make them a trusted choice for personal insurance.",
     },
     {
-      title: "8. How can I get a quote for personal insurance?",
-      body: "You can request a quote directly on our website by clicking “Get a Quote,” or contact us via phone or email to speak with one of our personal insurance specialists.",
+      title: "7. How can I get a quote for personal insurance?",
+      body: "You can request a quote online, call (619) 420-1861, or email info@hhinsurance.com. Hoffman Hanono’s agents will review your needs and help you find the right personal insurance coverage.",
     },
   ],
 };
