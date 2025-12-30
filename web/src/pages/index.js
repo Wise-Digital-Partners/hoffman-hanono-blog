@@ -19,36 +19,36 @@ const faqGroup = {
   faqs: [
     {
       title:
-        "1. WHAT TYPES OF INSURANCE DOES HOFFMAN HANONO OFFER IN SAN DIEGO?",
+        "1. What types of insurance does Hoffman Hanono offer in San Diego?",
       body: "Hoffman Hanono Insurance Services provides commercial insurance for businesses and personal insurance to protect families and assets throughout San Diego County.",
     },
     {
-      title: "2. WHERE IS HOFFMAN HANONO INSURANCE SERVICES LOCATED?",
+      title: "2. Where is Hoffman Hanono Insurance Services located?",
       body: "Our main office is in Chula Vista, CA, serving clients from Chula Vista to San Diego’s North County with trusted, family-owned insurance services.",
     },
     {
-      title: "3. HOW LONG HAS HOFFMAN HANONO BEEN SERVING SAN DIEGO?",
+      title: "3. How long has Hoffman Hanono been serving San Diego?",
       body: "We have been a trusted San Diego insurance agency since 1959, offering over 50 years of experience in providing commercial and personal insurance solutions.",
     },
     {
       title:
-        "4. WHY CHOOSE HOFFMAN HANONO FOR COMMERCIAL OR PERSONAL INSURANCE?",
+        "4. Why choose Hoffman Hanono for commercial or personal insurance?",
       body: "Our clients trust us for generations due to our superior customer service, practical insurance solutions, and time-tested approach. We focus on providing peace of mind with the right coverage at competitive rates.",
     },
     {
-      title: "5. CAN HOFFMAN HANONO HELP ME FIND THE BEST INSURANCE PREMIUMS?",
+      title: "5. Can Hoffman Hanono help me find the best insurance premiums?",
       body: "Yes. Our experienced team specializes in finding the best insurance coverage and premiums for businesses and families across San Diego County.",
     },
     {
-      title: "6. HOW DO I GET A QUOTE FOR INSURANCE IN SAN DIEGO?",
+      title: "6. How do I get a quote for insurance in San Diego?",
       body: "Getting a San Diego insurance quote is easy. Click “Get a Quote” on our website or contact us via phone or email to speak with our team.",
     },
     {
-      title: "7. IS HOFFMAN HANONO LICENSED IN CALIFORNIA?",
+      title: "7. Is Hoffman Hanono licensed in California?",
       body: "Yes. Our California insurance license number is 0424824, ensuring you work with a fully licensed and compliant agency.",
     },
     {
-      title: "8. WHAT TYPES OF SERVICE CAN I EXPECT FROM HOFFMAN HANONO?",
+      title: "8. What types of service can I expect from Hoffman Hanono?",
       body: "We provide all lines of insurance with a focus on reliable customer service, comprehensive coverage, and tailor-made insurance solutions for businesses and families in San Diego.",
     },
   ],
