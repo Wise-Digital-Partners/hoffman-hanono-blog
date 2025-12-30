@@ -12,7 +12,7 @@ import CallToAction from "../components/Repeating/CallToAction";
 import FaqSection from "../components/Repeating/FaqSection";
 
 const faqGroup = {
-  title: "Frequently Asked Questions",
+  title: "Builders Risk Insurance FAQs",
   faqs: [
     {
       title: "1. What is builder’s risk insurance?",

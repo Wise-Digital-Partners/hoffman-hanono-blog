@@ -14,7 +14,7 @@ import SliderMobileCards from "../components/Slider/SliderMobileCards";
 import FaqSection from "../components/Repeating/FaqSection";
 
 const faqGroup = {
-  title: "Frequently Asked Questions",
+  title: "Personal Insurance Agency FAQs",
   faqs: [
     {
       title: "1. What is personal insurance?",

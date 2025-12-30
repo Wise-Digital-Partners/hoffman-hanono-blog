@@ -15,7 +15,7 @@ import CallToAction from "../components/Repeating/CallToAction";
 import FaqSection from "../components/Repeating/FaqSection";
 
 const faqGroup = {
-  title: "Frequently Asked Questions",
+  title: "San Diego Commercial Insurance FAQs",
   faqs: [
     {
       title: "1. What is building insurance?",

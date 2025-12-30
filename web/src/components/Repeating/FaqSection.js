@@ -11,7 +11,7 @@ const FaqSection = ({ className, faqGroup, isHardcoded }) => {
     <div>
       <section className={`wrapper ${className}`}>
         <div className="container flex flex-col items-center">
-          <h2>FAQ</h2>
+          <h2>{faqGroup.title}</h2>
           <div className="w-full max-w-[800px] border-t-[1px] pt-5 gap-y-5 flex flex-col">
             {faqGroup.faqs.map((faq, index) => (
               <div key={index} className="w-full border-b-[1px] pb-5">
@@ -21,7 +21,7 @@ const FaqSection = ({ className, faqGroup, isHardcoded }) => {
                     setActiveFaq(activeFaq === index ? null : index)
                   }
                 >
-                  <h4>{faq.title}</h4>
+                  <h4 className="!capitalize font-normal">{faq.title}</h4>
                   <img
                     src="/images/faq-chevron-down.svg"
                     alt="chevron-icon"

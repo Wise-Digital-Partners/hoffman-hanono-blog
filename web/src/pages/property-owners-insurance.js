@@ -12,43 +12,37 @@ import CallToAction from "../components/Repeating/CallToAction";
 import FaqSection from "../components/Repeating/FaqSection";
 
 const faqGroup = {
-  title: "Frequently Asked Questions",
+  title: "Property Owners Insurance FAQs",
   faqs: [
     {
-      title: "Frequently Asked Questions",
-      faqs: [
-        {
-          title: "1. What is property owners insurance?",
-          body: "Property owners insurance is a policy designed to protect property owners from financial losses due to damage, theft, or liability claims. It covers buildings, structures, and the property surrounding them, providing peace of mind for landlords and investors.",
-        },
-        {
-          title: "2. Who needs property owners insurance in San Diego?",
-          body: "Any property owner in Chula Vista or the greater San Diego area should consider property owners insurance to safeguard their investments. This includes residential landlords, commercial property owners, and those who manage rental properties.",
-        },
-        {
-          title: "3. What does property owners insurance cover?",
-          body: "Property owners insurance can cover building damage, loss of rental income, earthquake sprinkler leakage, outdoor signs, glass damage, building ordinance or law requirements, non-owned auto liability, general liability, water damage, and sewer back-up. Policies can be tailored to the unique needs of each property owner.",
-        },
-        {
-          title:
-            "4. How does Hoffman Hanono approach property owners insurance?",
-          body: "Hoffman Hanono works closely with property owners to assess their insurance needs and match them with the right policy. We partner with trusted carriers to provide customized coverage options that protect property and reduce financial risk.",
-        },
-        {
-          title:
-            "5. Why choose Hoffman Hanono for property owners insurance in Chula Vista?",
-          body: "With over 50 years of experience, Hoffman Hanono is a family-owned, customer-focused agency. We provide quality service, expert guidance, and reliable insurance solutions that give property owners confidence and peace of mind.",
-        },
-        {
-          title:
-            "6. Is Hoffman Hanono licensed to provide property owners insurance in California?",
-          body: "Yes, Hoffman Hanono is fully licensed in California under license number 0424824, ensuring professional, compliant, and trustworthy insurance services for property owners.",
-        },
-        {
-          title: "7. How can I get a quote for property owners insurance?",
-          body: 'You can request a quote on our website by clicking "Get a Quote" or contact our team by phone or email. Our experts will help you find the best policy to protect your property at competitive rates.',
-        },
-      ],
+      title: "1. What is property owners insurance?",
+      body: "Property owners insurance is a policy designed to protect property owners from financial losses due to damage, theft, or liability claims. It covers buildings, structures, and the property surrounding them, providing peace of mind for landlords and investors.",
+    },
+    {
+      title: "2. Who needs property owners insurance in San Diego?",
+      body: "Any property owner in Chula Vista or the greater San Diego area should consider property owners insurance to safeguard their investments. This includes residential landlords, commercial property owners, and those who manage rental properties.",
+    },
+    {
+      title: "3. What does property owners insurance cover?",
+      body: "Property owners insurance can cover building damage, loss of rental income, earthquake sprinkler leakage, outdoor signs, glass damage, building ordinance or law requirements, non-owned auto liability, general liability, water damage, and sewer back-up. Policies can be tailored to the unique needs of each property owner.",
+    },
+    {
+      title: "4. How does Hoffman Hanono approach property owners insurance?",
+      body: "Hoffman Hanono works closely with property owners to assess their insurance needs and match them with the right policy. We partner with trusted carriers to provide customized coverage options that protect property and reduce financial risk.",
+    },
+    {
+      title:
+        "5. Why choose Hoffman Hanono for property owners insurance in Chula Vista?",
+      body: "With over 50 years of experience, Hoffman Hanono is a family-owned, customer-focused agency. We provide quality service, expert guidance, and reliable insurance solutions that give property owners confidence and peace of mind.",
+    },
+    {
+      title:
+        "6. Is Hoffman Hanono licensed to provide property owners insurance in California?",
+      body: "Yes, Hoffman Hanono is fully licensed in California under license number 0424824, ensuring professional, compliant, and trustworthy insurance services for property owners.",
+    },
+    {
+      title: "7. How can I get a quote for property owners insurance?",
+      body: 'You can request a quote on our website by clicking "Get a Quote" or contact our team by phone or email. Our experts will help you find the best policy to protect your property at competitive rates.',
     },
   ],
 };

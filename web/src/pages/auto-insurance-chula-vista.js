@@ -16,7 +16,7 @@ import WhyUs from "../components/Repeating/WhyUs";
 import FaqSection from "../components/Repeating/FaqSection";
 
 const faqGroup = {
-  title: "Frequently Asked Questions",
+  title: "Auto Insurance FAQs",
   faqs: [
     {
       title: "1. What is auto insurance?",

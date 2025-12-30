@@ -12,7 +12,7 @@ import CallToAction from "../components/Repeating/CallToAction";
 import FaqSection from "../components/Repeating/FaqSection";
 
 const faqGroup = {
-  title: "Frequently Asked Questions",
+  title: "Errors and Omissions Insurance FAQs",
   faqs: [
     {
       title:

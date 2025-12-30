@@ -14,7 +14,7 @@ import SliderMobileCards from "../components/Slider/SliderMobileCards";
 import FaqSection from "../components/Repeating/FaqSection";
 
 const faqGroup = {
-  title: "Frequently Asked Questions",
+  title: "Business Insurance FAQs",
   faqs: [
     {
       title: "1. What types of commercial insurance does Hoffman Hanono offer?",
