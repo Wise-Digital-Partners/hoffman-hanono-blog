@@ -35,7 +35,7 @@ const FaqSection = ({ className, faqGroup, isHardcoded }) => {
                     {faq.body}
                   </p>
                 ) : (
-                  <p className="mb-0">
+                  <p className={`mb-0 ${activeFaq === index ? "" : "hidden"}`}>
                     {faq._rawBody && <PortableText blocks={faq._rawBody} />}
                   </p>
                 )}
