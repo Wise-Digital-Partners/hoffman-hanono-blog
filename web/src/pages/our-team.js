@@ -133,13 +133,6 @@ const Page = ({ data }) => {
       image: "samantha-arenas.jpg",
     },
     {
-      name: "Brittany Morales",
-      position: "Customer Service Representative",
-      email: "bmorales@hhinsurance.com",
-      ext: 110,
-      image: "placeholder.jpg",
-    },
-    {
       name: "Emelyn Woods",
       position: "Customer Service Representative",
       email: "ewoods@hhinsurance.com",
@@ -194,6 +187,23 @@ const Page = ({ data }) => {
       image: "nyah-costello.jpg",
     },
   ];
+
+  const benefits = [
+    {
+      name: "Laura Ayala",
+      position: "Employee Benefits Consultant",
+      email: null,
+      ext: 110,
+      image: "laura-ayala.jpg",
+    },
+    {
+      name: "Brittany Morales",
+      position: "Customer Service Representative",
+      email: "bmorales@hhinsurance.com",
+      ext: 110,
+      image: "brittany-morales.jpg",
+    },
+  ];
   return (
     <Layout>
       <SearchEngineOptimization
@@ -238,6 +248,11 @@ const Page = ({ data }) => {
         <DepartmentSection
           departmentName="Personal Insurance Service"
           members={personalInsuranceService}
+          setSlideIndex={setSlideIndex}
+        />
+        <DepartmentSection
+          departmentName="Benefits"
+          members={benefits}
           setSlideIndex={setSlideIndex}
         />
         <DepartmentSection
