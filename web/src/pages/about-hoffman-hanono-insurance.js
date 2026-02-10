@@ -51,13 +51,6 @@ const Page = ({ data }) => {
                 and insurance coverage. We look forward to serving San Diego and
                 Chula Vista businesses for many more generations to come!
               </p>
-              <h2>Our Team</h2>
-              <p className="">
-                Hoffman Hanono’s team draws on years of experience and an
-                unwavering commitment to the best customer service for our
-                clients.
-              </p>
-              <ButtonSolid href="/our-team/" text="Meet the Team" />
             </div>
           </div>
         </div>
@@ -167,7 +160,7 @@ export const query = graphql`
         }
       }
     }
-    meetTheTeam: file(relativePath: { eq: "about/meet-the-team.jpg" }) {
+    meetTheTeam: file(relativePath: { eq: "about/meet-the-team.png" }) {
       childImageSharp {
         fluid(maxWidth: 560) {
           ...GatsbyImageSharpFluid_withWebp
