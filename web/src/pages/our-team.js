@@ -198,7 +198,7 @@ const Page = ({ data }) => {
     },
     {
       name: "Brittany Morales",
-      position: "Customer Service Representative",
+      position: "Account Manager",
       email: "bmorales@hhinsurance.com",
       ext: 110,
       image: "brittany-morales.jpg",
