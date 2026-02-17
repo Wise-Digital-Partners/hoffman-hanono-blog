@@ -181,7 +181,7 @@ const Page = ({ data }) => {
   const administration = [
     {
       name: "Nyah Costello",
-      position: "Customer Service Representative",
+      position: "Administrative Assistant",
       email: "ncostello@hhinsurance.com",
       ext: 134,
       image: "nyah-costello.jpg",
@@ -192,7 +192,7 @@ const Page = ({ data }) => {
     {
       name: "Laura Ayala",
       position: "Employee Benefits Consultant",
-      email: null,
+      email: "layala@hhinsurance.com",
       ext: 110,
       image: "laura-ayala.jpg",
     },
