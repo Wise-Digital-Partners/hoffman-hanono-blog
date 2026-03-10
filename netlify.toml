@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build-web"
+  publish = "web/public"
+
+# Set SANITY_DEPLOY_STUDIO_TOKEN in Netlify UI (Environment variables) to run Sanity graphql deploy.
+# Without it, graphql-deploy is skipped and the site still builds if the API was deployed before.
+[build.environment]
+  NODE_VERSION = "18"
+  SHARP_IGNORE_GLOBAL_LIBVIPS = "1"
