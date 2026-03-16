@@ -31,6 +31,7 @@ function BlogPost(props) {
     _rawBody,
     author,
     slug,
+    
     // categories,
     title,
     image,
