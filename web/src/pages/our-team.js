@@ -80,6 +80,12 @@ const Page = ({ data }) => {
       ext: 131,
       image: "nestor-aguilar.jpg",
     },
+    {
+      name: "John Roberson",
+      position: "Account Executive",
+      email: "jroberson@hhinsurance.com",
+      image: "john-roberson.png",
+    },
   ];
 
   const commercialInsuranceService = [
@@ -96,13 +102,6 @@ const Page = ({ data }) => {
       email: "jschwartz@hhinsurance.com",
       ext: 107,
       image: "judy-schwartz.jpg",
-    },
-    {
-      name: "Liliana Robles",
-      position: "Account Manager",
-      email: "lrobles@hhinsurance.com",
-      ext: 106,
-      image: "liliana-robles.jpg",
     },
     // {
     //   name: "Nora Johnson",
@@ -137,7 +136,12 @@ const Page = ({ data }) => {
       position: "Customer Service Representative",
       email: "ewoods@hhinsurance.com",
       ext: 110,
-      image: "placeholder.jpg",
+      image: "emelyn-woods.png",
+    },
+    {
+      name: "Cheyenne Rushton",
+      position: "Customer Service Representative",
+      email: "crushton@hhinsurance.com",
     },
   ];
 
@@ -294,7 +298,7 @@ const Page = ({ data }) => {
             </div>
             <div className="md:table-row-group alternating-colors-1">
               {teamMembers.map((teamMember) => (
-                <TeamMemberRow teamMember={teamMember} key={teamMember.ext} />
+                <TeamMemberRow teamMember={teamMember} key={teamMember.email} />
               ))}
             </div>
           </div>
@@ -344,10 +348,13 @@ const MemberCard = ({ member, setSlideIndex, slideIndex }) => {
             member.hasBio ? "cursor-pointer" : ""
           }`}
         >
-          <img
-            src={`/images/our-team/${member.image}`}
-            className="object-contain w-full h-full"
-          />
+          {member.image && (
+            <img
+              src={`/images/our-team/${member.image}`}
+              alt={member.name}
+              className="object-contain w-full h-full"
+            />
+          )}
         </div>
       </div>
       <div className="p-4 flex flex-col gap-y-2">
@@ -384,8 +391,12 @@ const TeamMemberRow = ({ teamMember }) => {
         </a>
       </div>
       <div className="md:table-cell md:px-4 md:py-2">
-        <span className="md:hidden">ext. </span>
-        {teamMember.ext}
+        {teamMember.ext && (
+          <>
+            <span className="md:hidden">ext. </span>
+            {teamMember.ext}
+          </>
+        )}
       </div>
     </div>
   );
