@@ -142,6 +142,7 @@ const Page = ({ data }) => {
       name: "Cheyenne Rushton",
       position: "Customer Service Representative",
       email: "crushton@hhinsurance.com",
+      image: "placeholder.jpg",
     },
   ];
 
