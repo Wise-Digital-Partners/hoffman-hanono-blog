@@ -345,7 +345,7 @@ const MemberCard = ({ member, setSlideIndex, slideIndex }) => {
         <div
           data-modal-open={member.hasBio ? "modal-team-members" : null}
           onClick={() => handleClick(slideIndex)}
-          className={`w-full rounded-t-[20px] overflow-hidden h-full lg:max-h-[424px] ${
+          className={`w-full rounded-t-[20px] overflow-hidden ${
             member.hasBio ? "cursor-pointer" : ""
           }`}
         >
@@ -353,7 +353,8 @@ const MemberCard = ({ member, setSlideIndex, slideIndex }) => {
             <img
               src={`/images/our-team/${member.image}`}
               alt={member.name}
-              className="object-contain w-full h-full"
+              className="object-cover object-top w-full"
+              style={{ aspectRatio: "366 / 424" }}
             />
           )}
         </div>
